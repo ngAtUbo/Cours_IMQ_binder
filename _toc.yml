@@ -1,0 +1,15 @@
+format: jb-book
+root: coursMQ1
+
+parts:
+  - caption: Cours
+    chapters:
+      - file: index_general
+      - file: chap1-introduction
+      - file: chap2-ondulatoire-classique
+      - file: chap3-lumiere
+      - file: chap4-fondements
+      - file: chap5-mecanique-APetP
+      - file: chap6-etats-quantiques
+      - file: chap7-evolution-temporelle
+      - file: biblioCours

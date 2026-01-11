@@ -1,0 +1,36 @@
+title: "Introduction à la mécanique quantique"
+author: "Gilles Nguyen Vien"
+logo: media/image1.png
+language: fr
+
+html:
+  use_index: true
+  theme: "sphinx_book_theme"
+  extra_css:
+    - custom.css
+
+sphinx:
+  config:
+    root_doc: coursMQ1
+    copyright: "2026"
+    numfig: true    
+    html_theme_options:
+      show_toc_level: 2
+  extra_extensions:
+    - sphinx.ext.autodoc
+    - sphinx.ext.autosectionlabel
+launch_buttons:
+  binderhub_url: https://mybinder.org
+  thebe: true
+
+thebe:
+  use_thebe_lab: true
+  binder:
+    repo: "ngAtUbo/Cours_IMQ_binder"   # ← ton dépôt GitHub
+    branch: "main"               # ou "master" selon ton repo
+    ref: "HEAD"
+
+
+
+
+
