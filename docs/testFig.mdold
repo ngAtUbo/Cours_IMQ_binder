@@ -1,7 +1,0 @@
-# Test figure
-
-```{figure} media/image9.png
-:name: fig-test
-:width: 40%
-Figure de test
-```
