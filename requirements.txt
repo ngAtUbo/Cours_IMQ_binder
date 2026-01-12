@@ -1,3 +1,4 @@
+# rebuild binder
 numpy
 matplotlib
 scipy
