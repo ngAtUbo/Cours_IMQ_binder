@@ -1,5 +1,0 @@
-# rebuild binder
-numpy
-matplotlib
-scipy
-jupyterlab
