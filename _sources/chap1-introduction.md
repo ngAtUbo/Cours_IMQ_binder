@@ -11,10 +11,9 @@ kernelspec:
 ---
 # Origine de la mécanique quantique
 
-```{code-cell} Exemple simple
+```{code-cell} Exemple très simple
 print("Test d'exécution")
 ```
-
 
 A la fin du 19ème siècle, la physique dite classique formait un tout
 cohérent qui suffisait à expliquer la plupart des phénomènes physiques
