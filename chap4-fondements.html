@@ -1,0 +1,1309 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Les fondements de la mécanique quantique &#8212; Introduction à la mécanique quantique</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chap4-fondements';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Probabilités et amplitudes quantiques" href="chap5-mecanique-APetP.html" />
+    <link rel="prev" title="La lumière" href="chap3-lumiere.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="coursMQ1.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/image1.png" class="logo__image only-light" alt="Introduction à la mécanique quantique - Home"/>
+    <script>document.write(`<img src="_static/image1.png" class="logo__image only-dark" alt="Introduction à la mécanique quantique - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="coursMQ1.html">
+                    INTRODUCTION A LA MECANIQUE QUANTIQUE
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Présentation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index_general.html">Index des mots-clés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biblioCours.html">Bibliographie</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Cours</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chap1-introduction.html">Origine de la mécanique quantique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap2-ondulatoire-classique.html">Rappel comportement ondulatoire classique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap3-lumiere.html">La lumière</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Les fondements de la mécanique quantique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap5-mecanique-APetP.html">Probabilités et amplitudes quantiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap6-etats-quantiques.html">Etats quantiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap7-evolution-temporelle.html">Opérateur d’évolution et équation de Schrödinger</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Références</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="references.html">Références</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/chap4-fondements.md" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/chap4-fondements.ipynb" target="_blank"
+   class="btn btn-sm btn-download-notebook-button dropdown-item"
+   title="Download notebook file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="_sources/chap4-fondements.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Les fondements de la mécanique quantique</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evidence-experimentale-de-l-incompatibilite-de-certaines-grandeurs">Evidence expérimentale de l’incompatibilité de certaines grandeurs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dualite-onde-corpuscule">Dualité onde-corpuscule</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annexe-dualite-onde-corpuscule">Annexe : dualité onde-corpuscule</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifications-experimentales">Vérifications expérimentales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diffraction-des-electrons">Diffraction des électrons</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proprietes-ondulatoires-de-la-matiere-autres-aspects">Propriétés ondulatoires de la matière : autres aspects</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notions-de-paquets-d-onde">Notions de paquets d’onde</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mesures-de-la-position-et-l-impulsion">Mesures de la position et l’impulsion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation-des-inegalites-de-heisenberg">Interprétation des inégalités de Heisenberg</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effet-tunnel">Effet tunnel</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limite-de-validite-de-la-physique-classique">Limite de validité de la physique classique</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="les-fondements-de-la-mecanique-quantique">
+<h1>Les fondements de la mécanique quantique<a class="headerlink" href="#les-fondements-de-la-mecanique-quantique" title="Permalink to this heading">#</a></h1>
+<section id="evidence-experimentale-de-l-incompatibilite-de-certaines-grandeurs">
+<h2>Evidence expérimentale de l’incompatibilité de certaines grandeurs<a class="headerlink" href="#evidence-experimentale-de-l-incompatibilite-de-certaines-grandeurs" title="Permalink to this heading">#</a></h2>
+<p>On peut montrer qu’il est impossible de mesurer avec précision pour un
+corpuscule tel que l’électron à la fois sa position et son impulsion.
+Cherchons à mesurer simultanément <span class="math notranslate nohighlight">\(y = 0\)</span> et <span class="math notranslate nohighlight">\(p_{y} = 0\)</span>.</p>
+<figure class="align-default" id="fig-diffelecfente">
+<a class="reference internal image-reference" href="_images/image20.png"><img alt="Diffraction des électrons par une fente" src="_images/image20.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Diffraction des électrons par une fente</span><a class="headerlink" href="#fig-diffelecfente" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>On interpose sur le trajet d’un faisceau d’électrons une fente afin de
+sélectionner les électrons ayant une ordonnée <span class="math notranslate nohighlight">\(y\)</span> nulle. La précision
+est liée à la largeur de la fente <span class="math notranslate nohighlight">\(\delta y\)</span>. Les électrons triés ont
+donc une ordonnée comprise entre <span class="math notranslate nohighlight">\(- \delta y/2\)</span> et <span class="math notranslate nohighlight">\(\delta y/2\)</span>.</p>
+<p>Cependant si on observe le faisceau d’électrons qui a traversé la
+fente, nous mesurons que l’homogénéité de la direction des vitesses
+(<span class="math notranslate nohighlight">\(v_{y} = 0\)</span> avant la fente) a été détruite par le fait d’obliger les
+électrons à passer par la fente. Le faisceau issu de la fente a subi un
+étalement de la distribution angulaire des trajectoires dans un angle
+<span class="math notranslate nohighlight">\(\alpha\)</span> <strong><u>dont la mesure expérimentale donne</u></strong>
+<span class="math notranslate nohighlight">\(\lambda/\delta y\)</span> à la condition d’associer à l’électron une longueur
+d’onde</u> <span class="math notranslate nohighlight">\(\lambda\)</span> que l’expérience montre égale à :</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \frac{h}{p}\]</div>
+<p>où <span class="math notranslate nohighlight">\(p\)</span> est le module de la quantité de mouvement de l’électron
+<span class="math notranslate nohighlight">\(\overrightarrow{p}\)</span> et <span class="math notranslate nohighlight">\(h\)</span> la constante de Planck.</p>
+<p>Ce phénomène est appelé un phénomène de <strong>diffraction</strong> <span class="target" id="index-0"></span>Diffraction auquel la physique classique n’apporte aucune
+réponse.</p>
+<p>L’hypothèse que cette diffraction serait inhérente à l’action des bords
+de la fente sur la trajectoire des électrons pourrait être examinée si
+cette diffraction demeurait la même quel que soit la largeur de la
+fente. Tel n’est pas le cas. En effet, on observe que la diffraction
+devient plus faible lorsque l’on augmente la largeur de la fente.</p>
+<p>Ainsi, la fixation de <span class="math notranslate nohighlight">\(y\)</span> à <span class="math notranslate nohighlight">\(\delta y\)</span> près introduit donc
+nécessairement une incertitude <span class="math notranslate nohighlight">\(\delta p_{y}\)</span> sur la composante <span class="math notranslate nohighlight">\(p_{y}\)</span>
+de sa quantité de mouvement après traversée de la fente :</p>
+<div class="math notranslate nohighlight">
+\[\delta p_{y} = p\sin{\alpha \cong p\alpha \cong p\frac{\lambda}{\delta y}} = \frac{h}{\delta y}\]</div>
+<p>L’incertitude <span class="math notranslate nohighlight">\(\delta p_{y}\)</span> étant inversement proportionnelle à
+<span class="math notranslate nohighlight">\(\delta y\)</span>, il est impossible de fixer simultanément avec une parfaite
+précision des valeurs aux grandeurs <span class="math notranslate nohighlight">\(y\)</span> et <span class="math notranslate nohighlight">\(p_{y}\)</span>.</p>
+</section>
+<section id="dualite-onde-corpuscule">
+<h2>Dualité onde-corpuscule<a class="headerlink" href="#dualite-onde-corpuscule" title="Permalink to this heading">#</a></h2>
+<p>Les interprétations des expériences de Compton et de l’effet
+photoélectrique suffisent-elles pour rejeter définitivement la théorie
+ondulatoire électromagnétique de la lumière ?</p>
+<p>Faut-il rejeter définitivement la théorie ondulatoire et en revenir à la
+théorie corpusculaire aux prix de raffinements tentant d’expliquer la
+diffraction des électrons par une fente ?</p>
+<p>La réponse est bien évidemment non. On verra que les aspects
+ondulatoires et corpusculaires sont indissolublement liés pour rendre
+compte de nombreux faits expérimentaux. On parle alors de dualité onde
+corpuscule afin d’exprimer que les objets microscopiques possèdent de
+façon intrinsèque des propriétés qui les assimilent à la fois à des
+ondes et à des corpuscules matériels.</p>
+<p>En 1924 De Broglie a émis l’hypothèse que cette dualité est une
+caractéristique de tous les objets microscopiques considérés comme des
+particules.</p>
+<p>La formule donnant la longueur d’onde dite de de Broglie fonction de
+l’impulsion :</p>
+<div class="math notranslate nohighlight" id="equation-eq-longdebroglie">
+<span class="eqno">(28)<a class="headerlink" href="#equation-eq-longdebroglie" title="Permalink to this equation">#</a></span>\[\lambda = \frac{h}{p}\]</div>
+<p><u>est supposée être applicable selon De Broglie pour toute particule quel
+que soit leur masse à condition de prendre</u>
+<span class="math notranslate nohighlight">\(\overrightarrow{p} = \gamma m\overrightarrow{v}\)</span> si la particule est
+relativiste où <span class="math notranslate nohighlight">\(\gamma\)</span> est le facteur de Lorentz
+<span class="math notranslate nohighlight">\(\gamma = \frac{1}{\sqrt{1 - v^{2}/c^{2}}}\)</span>.</p>
+<p><a class="reference internal" href="#equation-eq-longdebroglie">(28)</a> est donnée souvent sous une forme équivalente :</p>
+<div class="math notranslate nohighlight">
+\[p = \frac{h}{2\pi}\frac{2\pi}{\lambda} = \hslash k\]</div>
+<p>L’énergie cinétique d’une particule non relativiste étant donnée par :
+<span class="math notranslate nohighlight">\(E_{cin} = \frac{p^{2}}{2m}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\lambda = \frac{h}{p}\]</div>
+<p>conduit :</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \frac{h}{\sqrt{2mE_{cin}}}\]</div>
+</section>
+<section id="annexe-dualite-onde-corpuscule">
+<h2>Annexe : dualité onde-corpuscule<a class="headerlink" href="#annexe-dualite-onde-corpuscule" title="Permalink to this heading">#</a></h2>
+<p>Nous verrons, par un cheminement simplifié, comment il a pu associer une
+longueur d’onde à toute particule.</p>
+<p>Revenons au cas des photons. Examinons de quelle manière l’hypothèse de
+l’existence du corpuscule de lumière par essence de nature relativiste
+concilie la relation de Planck-Einstein avec celle obtenue par Einstein
+dans son traité sur la relativité restreinte reliant l’énergie totale
+<span class="math notranslate nohighlight">\(E\)</span> d’une particule à l’impulsion <span class="math notranslate nohighlight">\(\overrightarrow{p}\)</span> et sa masse
+<span class="math notranslate nohighlight">\(m_{0}\)</span> (masse au repos ou propre).</p>
+<p>La formule relativiste reliant l’énergie et l’impulsion d’une
+particule s’écrit :</p>
+<div class="math notranslate nohighlight">
+\[E^{2} = p^{2}c^{2} + {m_{0}}^{2}c^{4}\]</div>
+<p>où <span class="math notranslate nohighlight">\(m_{0}\)</span> est la masse de la particule au repos,
+<span class="math notranslate nohighlight">\(\overrightarrow{p} = \gamma m\overrightarrow{v}\)</span> avec
+<span class="math notranslate nohighlight">\(\gamma = \frac{1}{\sqrt{1 - \beta^{2}}}\)</span> et <span class="math notranslate nohighlight">\(\ \beta = \frac{v}{c}\)</span></p>
+<p>On a donc :</p>
+<div class="math notranslate nohighlight">
+\[{E = h\nu = \sqrt{{p^{2}c}^{2} + {m_{0}}^{2}c^{4}}}\]</div>
+<p>La fréquence de l’onde pouvant être rendue arbitrairement aussi petite
+qu’on le souhaite, on obtient à la limite de la fréquence nulle :</p>
+<div class="math notranslate nohighlight">
+\[{0 \approx \left( \sqrt{{p^{2}c}^{2} + {m_{0}}^{2}c^{4}} \right)_{\nu \approx 0}}\]</div>
+<p>La formule ci-dessus est vérifiée si et seulement si les deux termes
+sous la racine sont nuls, ceci entraînant que la masse du photon est
+nulle : <span class="math notranslate nohighlight">\(m_{0} = 0\)</span>. Cette propriété est vraie quel que soit la
+fréquence.</p>
+<p>Dans ce cas, on a alors</p>
+<div class="math notranslate nohighlight">
+\[E = pc\]</div>
+<p>En utilisant la relation de Planck-Einstein <span class="math notranslate nohighlight">\(E = h\nu\)</span>, on peut ainsi
+lier l’aspect ondulatoire (la fréquence) et l’aspect corpusculaire
+(quantité de mouvement) :</p>
+<div class="math notranslate nohighlight">
+\[\frac{c}{\nu} = \frac{h}{p}\]</div>
+<p>c’est-à-dire :</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \frac{h}{p}\]</div>
+<p>On retrouve la relation expérimentale obtenue dans l’expérience de
+diffraction des électrons.</p>
+<p>Cette relation a été vérifiée dans le cas des photons par l’effet
+Compton. <strong><u>De Broglie a supposé qu’elle était vraie pour toute
+particule quel que soit leur masse à condition de prendre</u></strong>
+<span class="math notranslate nohighlight">\(\overrightarrow{p} = \gamma m\overrightarrow{v}\)</span>. On l’écrit souvent
+sous la forme équivalente :</p>
+<div class="math notranslate nohighlight">
+\[p = \frac{h}{2\pi}\frac{2\pi}{\lambda}\]</div>
+<p>c’est-à-dire :</p>
+<p><span class="math notranslate nohighlight">\(p = \hslash k\)</span> et plus généralement
+<span class="math notranslate nohighlight">\(\overrightarrow{p} = \hslash\overrightarrow{k}\)</span></p>
+<p>où <span class="math notranslate nohighlight">\(\hslash = \frac{h}{2\pi}\)</span>. L’impulsion est donc proportionnelle au
+vecteur d’onde.</p>
+<p>Nous allons chercher à exprimer la longueur d’onde en fonction de
+l’énergie cinétique de la particule. Lorsque la particule est au repos
+son impulsion est nulle et son énergie est :</p>
+<div class="math notranslate nohighlight">
+\[E_{0} = mc^{2}\]</div>
+<p>Lorsqu’elle est en mouvement son énergie est augmentée d’une quantité
+qui est par définition son énergie cinétique <span class="math notranslate nohighlight">\(E_{cin}\)</span>.</p>
+<p>On a donc :</p>
+<div class="math notranslate nohighlight">
+\[E = E_{0} + E_{cin}\]</div>
+<p>En élevant au carré il vient :</p>
+<div class="math notranslate nohighlight">
+\[E^{2} = {E_{0}}^{2} + {E_{cin}}^{2} + 2E_{0}E_{cin}\]</div>
+<p>D’après la formulation relativiste de l’énergie
+<span class="math notranslate nohighlight">\(E^{2} = p^{2}c^{2} + {m_{0}}^{2}c^{4}\)</span>, on a :</p>
+<div class="math notranslate nohighlight">
+\[{p^{2}c}^{2} = {E_{cin}}^{2} + 2E_{0}E_{cin}\]</div>
+<p>soit :</p>
+<div class="math notranslate nohighlight">
+\[p = \frac{1}{c}\sqrt{{E_{cin}}^{2} + 2E_{0}E_{cin}}\]</div>
+<p>ou encore :</p>
+<div class="math notranslate nohighlight">
+\[p = \frac{E_{0}}{c}\sqrt{\left( \frac{E_{cin}}{E_{0}} \right)^{2} + 2\left( \frac{E_{cin}}{E_{0}} \right)}\]</div>
+<p>La longueur d’onde s’écrit donc :</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \frac{hc}{E_{0}}\frac{1}{\sqrt{\left( \frac{E_{cin}}{E_{0}} \right)^{2} + 2\left( \frac{E_{cin}}{E_{0}} \right)}} = \frac{\lambda_{c}}{\sqrt{\left( \frac{E_{cin}}{E_{0}} \right)^{2} + 2\left( \frac{E_{cin}}{E_{0}} \right)}}\]</div>
+<p>où <span class="math notranslate nohighlight">\(\lambda_{c} = \frac{h}{mc}\)</span> est la longueur d’onde Compton de la
+particule.</p>
+<p>Dans l’approximation non relativiste, on a <span class="math notranslate nohighlight">\(E_{cin} \ll E_{0}\)</span> et on
+peut écrire :</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \frac{\lambda_{c}}{\sqrt{2\left( \frac{E_{cin}}{E_{0}} \right)}}\]</div>
+<p>L’énergie cinétique étant donnée par : <span class="math notranslate nohighlight">\(E_{cin} = \frac{p^{2}}{2m}\)</span></p>
+<p>et on retrouve bien :</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \frac{h}{p}\]</div>
+<p>ou :</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \frac{h}{\sqrt{2mE_{cin}}}\]</div>
+</section>
+<section id="verifications-experimentales">
+<h2>Vérifications expérimentales<a class="headerlink" href="#verifications-experimentales" title="Permalink to this heading">#</a></h2>
+<section id="diffraction-des-electrons">
+<h3>Diffraction des électrons<a class="headerlink" href="#diffraction-des-electrons" title="Permalink to this heading">#</a></h3>
+<p>De Broglie a prédit qu’il était possible de mettre en évidence l’onde
+associée à des électrons en mettant en évidence leur diffraction par un
+cristal à la manière de l’expérience de diffraction des rayons X <a class="footnote-reference brackets" href="#id4" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>38<span class="fn-bracket">]</span></a>
+par un cristal de Friedrich <a class="footnote-reference brackets" href="#id5" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>39<span class="fn-bracket">]</span></a> et Knipping <a class="footnote-reference brackets" href="#id6" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>40<span class="fn-bracket">]</span></a>.</p>
+<p>En 1924, Davisson et Germer réalisèrent une expérience de diffraction
+d’électrons par un cristal de Nickel :</p>
+<figure class="align-default" id="fig-davisson">
+<a class="reference internal image-reference" href="_images/image21.png"><img alt="Expérience de Davisson et Germer" src="_images/image21.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Expérience de Davisson et Germer</span><a class="headerlink" href="#fig-davisson" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>La relation de Bragg démontrée dans le cas de la diffraction des rayons X est :</p>
+<figure class="align-default" id="fig-bragg">
+<a class="reference internal image-reference" href="_images/image22.jpg"><img alt="Relation de Bragg" src="_images/image22.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Relation de Bragg</span><a class="headerlink" href="#fig-bragg" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="math notranslate nohighlight">
+\[2d \sin{\theta} = n \lambda\]</div>
+<p>En déplaçant l’électrode collectrice, Davisson et Germer mesure que les
+intensités maximales du courant mesuré avaient lieu pour des angles
+<span class="math notranslate nohighlight">\(\theta\)</span> vérifiant la relation de Bragg à la condition de prendre pour
+longueur d’onde <span class="math notranslate nohighlight">\(\lambda\)</span> la longueur d’onde de De Broglie associée
+aux électrons :</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \frac{h}{p} = \frac{h}{\sqrt{2meV}}\]</div>
+</section>
+<section id="proprietes-ondulatoires-de-la-matiere-autres-aspects">
+<h3>Propriétés ondulatoires de la matière : autres aspects<a class="headerlink" href="#proprietes-ondulatoires-de-la-matiere-autres-aspects" title="Permalink to this heading">#</a></h3>
+<p>La diffraction des électrons par un métal requiert pour être observée
+que la longueur d’onde de De Broglie soit de l’ordre de grandeur des
+distances entre les atomes dans le cristal.</p>
+<p>Le microscope électronique constitue une application intéressante des
+caractéristiques ondulatoires de l’électron. On sait que le pouvoir
+séparateur est lié à la longueur d’onde. En accélérant les électrons à
+quelques dizaines de <em>keV</em> leur longueur d’onde devient très courte
+(<em>10^-11^</em> à <em>10^-12^</em> m) ce qui permet d’atteindre un très bon pouvoir
+séparateur.</p>
+<p>Le neutron possédant une masse de l’ordre de 1800 fois celle des
+électrons peut-il manifester une propriété ondulatoire comme l’a
+supposé De Broglie ?</p>
+<p>Aux énergies thermiques (quelques centièmes d’<em>eV</em>) les neutrons ont
+des longueurs d’onde de l’ordre de <em>1 Å</em> ce qui permet de les utiliser
+dans l’étude de la structure cristalline. Contrairement aux atomes
+neutres ils sont très pénétrants car ils n’interagissent pratiquement
+pas avec les électrons. Ils sont essentiellement diffusés par les
+noyaux. Ils ne fournissent cependant aucune information sur la structure
+nucléaire car la longueur d’onde associée est beaucoup plus grande que
+le rayon nucléaire. Pour étudier la structure nucléaire il faut des
+longueurs d’onde comparables aux dimensions nucléaires. Pour cela
+l’énergie des neutrons doit atteindre quelques <em>MeV</em>. Des expériences
+de diffraction des neutrons permettent à nouveau de vérifier la relation
+de De Broglie.</p>
+<p>Les particules possédant cette dualité onde et corpuscule sont souvent
+désignées de <strong>quantons</u></strong> <span class="target" id="index-1"></span>Quantons ou
+particules quantiques.</p>
+</section>
+</section>
+<section id="notions-de-paquets-d-onde">
+<h2>Notions de paquets d’onde<a class="headerlink" href="#notions-de-paquets-d-onde" title="Permalink to this heading">#</a></h2>
+<p>Dans un milieu homogène et isotrope, le type le plus simple d’onde est
+l’onde monochromatique dont la représentation complexe est donnée :</p>
+<div class="math notranslate nohighlight">
+\[e^{i(\overrightarrow{k}.\overrightarrow{r} - \omega t)}\]</div>
+<p>représentant une vibration de longueur d’onde
+<span class="math notranslate nohighlight">\(\lambda = \frac{2\pi}{k}\)</span> se propageant dans la direction de son
+vecteur d’onde <span class="math notranslate nohighlight">\(\overrightarrow{k}\)</span> à la vitesse constante. La vitesse
+de propagation est la vitesse de phase.</p>
+<p><span class="math notranslate nohighlight">\(\omega\)</span> est indépendante de la direction de <span class="math notranslate nohighlight">\(\overrightarrow{k}\)</span>
+(milieu isotrope) mais peut dépendre éventuellement du module de ce
+vecteur.</p>
+<p>On associe l’onde ci-dessus à un mouvement rectiligne uniforme
+d’énergie
+<span class="math notranslate nohighlight">\(E = \hslash\omega\)</span> dirigée parallèlement à <span class="math notranslate nohighlight">\(\overrightarrow{k}\)</span>.</p>
+<p>Comme toute onde peut être considérée comme une superposition d’ondes
+planes monochromatiques, la connaissance de la loi de dispersion
+<span class="math notranslate nohighlight">\(\omega(k)\)</span> suffit à déterminer le comportement de n’importe quelle
+onde au cours du temps.</p>
+<p>Considérons le cas particulier d’une onde plane monochromatique se
+propageant dans le sens positif de l’axe Ox. Elle est représentée par
+la fonction :</p>
+<div class="math notranslate nohighlight" id="equation-eq-oppsi0">
+<span class="eqno">(29)<a class="headerlink" href="#equation-eq-oppsi0" title="Permalink to this equation">#</a></span>\[\Psi_{0}(x,t) = A_{0}\cos{(k_{0}x - \omega_{0}t)}\]</div>
+<p>D’après la formule de De Broglie elle est associée à une particule
+d’impulsion bien définie <span class="math notranslate nohighlight">\(p_{0} = \hslash k_{0}\)</span> et d’énergie bien
+définie <span class="math notranslate nohighlight">\(E_{0} = \hslash\omega_{0}\)</span>.</p>
+<p>L’onde plane <a class="reference internal" href="#equation-eq-oppsi0">(29)</a> ne peut pas représenter une
+particule localisée dans une région de l’espace d’extension
+finie car son extension spatiale est infinie comme toute
+fonction sinusoïdale.</p>
+<p>C’est la raison pour laquelle, il est nécessaire <u>pour représenter le
+comportement ondulatoire d’une particule localisée à un instant dans une
+portion de l’espace</u> de construire une superposition
+d’ondes planes qui interfèrent de manière constructive dans une région
+limitée de l’espace (où se trouve la particule) et de façon destructive
+ailleurs. Cette idée est le fondement de la notion de <strong>paquet
+d’ondes</strong> <span class="target" id="index-2"></span>Paquet d’ondes.</p>
+<p>Pour une particule libre non relativiste l’énergie purement cinétique
+est donnée par :</p>
+<div class="math notranslate nohighlight">
+\[E_{0} = \frac{{p_{0}}^{2}}{2m}\]</div>
+<p>On en déduit la relation de dispersion :</p>
+<div class="math notranslate nohighlight" id="equation-eq-dispomega0">
+<span class="eqno">(30)<a class="headerlink" href="#equation-eq-dispomega0" title="Permalink to this equation">#</a></span>\[\omega_{0} = \frac{E_{0}}{\hslash} = \frac{{p_{0}}^{2}}{2m\hslash} = \frac{\hslash{k_{0}}^{2}}{2m}\]</div>
+<p>La vitesse de phase est donc :</p>
+<div class="math notranslate nohighlight">
+\[v_{\varphi} = \frac{\omega_{0}}{k_{0}} = \frac{\hslash k_{0}}{2m}\]</div>
+<p>Pour construire une fonction qui ne possède de valeurs appréciables que
+dans une région limitée de l’espace, il faut superposer des ondes ayant
+différentes valeurs de k et de ω.</p>
+<p>Considérons une fonction de la forme :</p>
+<div class="math notranslate nohighlight">
+\[\Psi(x,t) = \sum_{S}^{}{{A_{S}\cos}{(k_{S}x - \omega_{S}t)}}\]</div>
+<p>où les amplitudes <span class="math notranslate nohighlight">\(A_{S}\)</span> mesurent l’importance relative des
+différentes ondes superposées. On peut en principe choisir les <span class="math notranslate nohighlight">\(A_{S}\)</span>
+de manière à produire une fonction <span class="math notranslate nohighlight">\(\Psi(x,t)\)</span> qui n’a des valeurs
+importantes que dans une région localisée de l’espace.</p>
+<p>Supposons qu’à <span class="math notranslate nohighlight">\(\ t = 0\)</span>, <span class="math notranslate nohighlight">\(\Psi(x,0)\)</span> est la superposition de trois
+ondes telles que :</p>
+<p><span class="math notranslate nohighlight">\(k_{1} = k_{0} - \frac{\Delta k}{2}\)</span>, <span class="math notranslate nohighlight">\(k_{2} = k_{0}\)</span>,
+<span class="math notranslate nohighlight">\(k_{3} = k_{0} + \frac{\Delta k}{2}\)</span>, <span class="math notranslate nohighlight">\(A_{1} = A_{3} = \frac{A_{0}}{2}\)</span>
+et <span class="math notranslate nohighlight">\(A_{2} = A_{0}\)</span></p>
+<p>De plus, nous supposerons que <span class="math notranslate nohighlight">\(\ \Delta k \ll k_{0}\)</span>, c’est-à-dire que
+la dispersion des valeurs de <span class="math notranslate nohighlight">\(k\)</span> est petite par rapport à la moyenne
+<span class="math notranslate nohighlight">\(k_{0}\)</span>.</p>
+<p>On a donc :</p>
+<div class="math notranslate nohighlight">
+\[\Psi(x,0) = A_{0}\left\lbrack \frac{1}{2}\cos\left( x(k_{0} - \frac{\Delta k}{2}) \right) + \cos\left( k_{0}x \right) + \frac{1}{2}\cos\left( x(k_{0} + \frac{\Delta k}{2}) \right) \right\rbrack\]</div>
+<p>d’où :</p>
+<div class="math notranslate nohighlight">
+\[\Psi(x,0) = A_{0}\left\lbrack 1 + \cos\left( \frac{\Delta k}{2}x \right) \right\rbrack\cos\left( k_{0}x \right)\]</div>
+<p>soit :</p>
+<div class="math notranslate nohighlight">
+\[\Psi(x,0) = {2A}_{0}\cos^{2}\left( \frac{\Delta k}{4}x \right)\cos\left( k_{0}x \right)\]</div>
+<p>On a donc une fonction qui oscille très rapidement
+<span class="math notranslate nohighlight">\(\cos\left( k_{0}x \right)\)</span> et dont l’amplitude est modulée par une
+autre fonction dont l’oscillation est beaucoup plus lente. L’amplitude
+oscille entre les valeurs <span class="math notranslate nohighlight">\(0\)</span> et <span class="math notranslate nohighlight">\({2A}_{0}\)</span>et elle atteint son maximum
+en <span class="math notranslate nohighlight">\(x = 0\)</span> à <span class="math notranslate nohighlight">\(t = 0\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">&quot;Agg&quot;</span><span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">paquet</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">k0</span><span class="p">,</span> <span class="n">delta_k</span><span class="p">,</span> <span class="n">A0</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    paquet d&#39;ondes</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">A0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">k0</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">delta_k</span> <span class="o">*</span> <span class="n">x</span> <span class="o">/</span> <span class="mf">4.</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># script principal</span>
+
+<span class="c1"># donnees</span>
+<span class="n">A0</span> <span class="o">=</span> <span class="mf">10.</span>
+<span class="n">deltak</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">k0</span> <span class="o">=</span> <span class="mf">30.</span>
+<span class="n">nbPeriodes</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">npPointsParPeriode</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="c1">#dicretisation abscisses</span>
+<span class="n">nbPointsDiscrt</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">nbPeriodes</span> <span class="o">*</span> <span class="n">npPointsParPeriode</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span><span class="n">deltak</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span> <span class="n">nbPeriodes</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="n">deltak</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="n">nbPeriodes</span> <span class="o">*</span><span class="mi">4</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="n">deltak</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="n">nbPointsDiscrt</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">paquet</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">k0</span><span class="p">,</span> <span class="n">deltak</span><span class="p">,</span> <span class="n">A0</span><span class="p">)</span>
+
+<span class="c1"># Premieres annulations du cos()**2 pour phase = +/- pi / 2</span>
+
+<span class="n">xnulNeg</span> <span class="o">=</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="n">deltak</span>
+<span class="n">xnulPos</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="n">deltak</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;paquet d</span><span class="se">\&#39;</span><span class="s1">ondes&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">xnulNeg</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span><span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">label</span> <span class="o">=</span>
+<span class="s1">&#39;-2pi/deltak&#39;</span><span class="p">)</span> <span class="c1"># tracer droite verticale</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">xnulPos</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">label</span> <span class="o">=</span>
+<span class="s1">&#39;+2pi/deltak&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;paquetO.jpg&#39;</span><span class="p">,</span><span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;numpy&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default" id="fig-paquetonde">
+<a class="reference internal image-reference" href="_images/image23.jpg"><img alt="Paquet d'ondes périodique" src="_images/image23.jpg" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">Paquet d’ondes périodique</span><a class="headerlink" href="#fig-paquetonde" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>A <span class="math notranslate nohighlight">\(t = 0\)</span>, la fonction <span class="math notranslate nohighlight">\(\cos^{2}\left( \frac{\Delta k}{4}x \right)\)</span>
+s’annule en :</p>
+<div class="math notranslate nohighlight">
+\[x = \pm \frac{2\pi}{\Delta k}\]</div>
+<p>La largeur spatiale de l’enveloppe est :</p>
+<div class="math notranslate nohighlight">
+\[\Delta x = \frac{4\pi}{\Delta k}\]</div>
+<p>alors que la largeur en impulsion est :</p>
+<div class="math notranslate nohighlight">
+\[\Delta p = \hslash\Delta k\]</div>
+<p>Le mouvement étant unidimensionnel selon l’axe <span class="math notranslate nohighlight">\(Ox\)</span>, le produit de ces
+deux grandeurs est donné par :</p>
+<div class="math notranslate nohighlight" id="equation-eq-deltaxdeltap">
+<span class="eqno">(31)<a class="headerlink" href="#equation-eq-deltaxdeltap" title="Permalink to this equation">#</a></span>\[\Delta x\Delta p = \Delta x\Delta p_{x} = 4\pi\hslash\]</div>
+<p>C’est donc une grandeur fondamentale indépendante des caractéristiques
+des ondes superposées. Ainsi pour construire une fonction bien localisée
+dans l’espace il faut superposer des ondes correspondant à une grande
+dispersion des impulsions. <strong><u>Il est donc impossible de représenter une
+particule ayant une impulsion et une position bien définies
+simultanément.</u></strong></p>
+<p>Le calcul simple effectué ici avec seulement trois ondes planes donne en
+fait une fonction périodique de <span class="math notranslate nohighlight">\(x\)</span> ; la particule possède donc une
+infinité d’images du lobe centrale comme le montre la <a class="reference internal" href="#fig-paquetonde"><span class="std std-numref">Fig. 22</span></a>. En réalité il est possible de construire une
+fonction qui ne possède qu’une seule image (ou lobe de l’enveloppe) ou
+qui interfère de manière constructive dans une seule région de l’espace
+d’extension finie. Pour cela il est nécessaire de superposer un très
+grand nombre d’onde de valeurs de <span class="math notranslate nohighlight">\(k\)</span> très proches.</p>
+<p>A la limite, la superposition forme un continuum de telle manière que la
+somme sur les différentes valeurs de <span class="math notranslate nohighlight">\(k\)</span> devient une intégrale. En
+représentation complexe on a :</p>
+<div class="math notranslate nohighlight">
+\[\Psi(x,t) = \int_{- \infty}^{+ \infty}{A(k)e^{i(kx - \omega t)}dk}\]</div>
+<p>où l’amplitude <span class="math notranslate nohighlight">\(A(k)\)</span> peut être complexe.</p>
+<p>On écrit, de manière équivalente :</p>
+<div class="math notranslate nohighlight" id="equation-eq-paquetint1d">
+<span class="eqno">(32)<a class="headerlink" href="#equation-eq-paquetint1d" title="Permalink to this equation">#</a></span>\[\Psi(x,t) = \int_{- \infty}^{+ \infty}{\left| A(k) \right|{e^{i\alpha(k)}e}^{i(kx - \omega t)}dk}\]</div>
+<p>On suppose que <span class="math notranslate nohighlight">\(\left| A(k) \right|\)</span> possède des valeurs appréciables
+dans un intervalle <span class="math notranslate nohighlight">\(\Delta k\)</span> centré autour d’une valeur <span class="math notranslate nohighlight">\(k_{0}\)</span>.
+L’intégrale <a class="reference internal" href="#equation-eq-paquetint1d">(32)</a> sera maximale en module à chaque
+instant lorsque les ondes d’amplitudes les plus grandes c’est-à-dire
+celles qui correspondent à <span class="math notranslate nohighlight">\(k\)</span> voisin de <span class="math notranslate nohighlight">\(k_{0}\)</span> interfèreront de
+manière constructive. Ceci se produit lorsque la phase de ces ondes qui
+dépend de] <span class="math notranslate nohighlight">\(k\)</span> ne varie pratiquement pas autour de
+<span class="math notranslate nohighlight">\(k = k_{0}\)</span>. On écrit donc la condition de phase stationnaire :</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dk}\ (\alpha + kx - \omega t) = 0\]</div>
+<p>c’est-à-dire :</p>
+<div class="math notranslate nohighlight">
+\[\frac{d\alpha}{dk} + x - \frac{d\omega}{dk}t = 0\]</div>
+<p>soit :</p>
+<div class="math notranslate nohighlight">
+\[x = \frac{d\omega}{dk}t - \frac{d\alpha}{dk}\]</div>
+<p>La relation ci-dessus est l’équation d’un mouvement uniforme à la
+vitesse :</p>
+<div class="math notranslate nohighlight">
+\[v_{g} = \frac{d\omega}{dk}\]</div>
+<p>Cette grandeur est appelée vitesse de groupe <span class="target" id="index-3"></span>Vitesse de groupe. Elle correspond précisément à la vitesse de
+déplacement du centre du paquet d’onde.</p>
+<p>La quantité <span class="math notranslate nohighlight">\(- \frac{d\alpha}{dk}\)</span> est indépendante du temps et joue le
+rôle de position initiale.</p>
+<p>En utilisant la relation de dispersion <a class="reference internal" href="#equation-eq-dispomega0">(30)</a>, on trouve
+:</p>
+<div class="math notranslate nohighlight">
+\[v_{g} = \frac{\hslash k}{m}\]</div>
+<p>c’est-à-dire :</p>
+<div class="math notranslate nohighlight">
+\[v_{g} = \frac{p}{m} = v\]</div>
+<p>C’est donc la vitesse de groupe qui est associée à la vitesse de la
+particule.</p>
+<p>Remarque</p>
+<p>Chaque onde composant le paquet d’onde se déplace avec sa propre
+vitesse qui est la vitesse de phase puisque cette dernière dépend de la
+valeur de <span class="math notranslate nohighlight">\(k\)</span>. Ainsi l’évolution temporelle d’un paquet d’onde montre
+une propagation du paquet subissant une déformation de la forme du
+paquet. C’est la raison pour laquelle la relation qui donne <span class="math notranslate nohighlight">\(\omega\)</span> en
+fonction de <span class="math notranslate nohighlight">\(k\)</span> s’appelle la relation de dispersion.</p>
+<p>Il est donc possible de construire une fonction localisée dans l’espace
+mais <u>à la condition d’accepter une certaine dispersion des vecteurs
+d’onde</u> c’est-à-dire des impulsions. Or pour qu’une
+particule possède une trajectoire bien définie il faut qu’elle possède
+à chaque instant une position et une impulsion bien définies. Il semble
+donc impossible d’attribuer de telles grandeurs à une particule si on la
+représente à l’aide d’un paquet d’ondes.</p>
+<p>On retrouve le constat fait dans le cas de la diffraction des électrons
+par une fente quant à l’incompatibilité de la grandeur position et
+impulsion.</p>
+</section>
+<section id="mesures-de-la-position-et-l-impulsion">
+<h2>Mesures de la position et l’impulsion<a class="headerlink" href="#mesures-de-la-position-et-l-impulsion" title="Permalink to this heading">#</a></h2>
+<p>Nous venons de voir, dans une tentative de réduire la réalité du monde
+physique à celle des ondes (paquet d’ondes) ou à celle des particules
+(diffraction des électrons par une fente), qu’il est impossible
+d’attribuer une position et une impulsion bien définies à une particule,
+et donc de lui attribuer une trajectoire.</p>
+<p>Cette limitation constitue-elle un échec fatal pour cette démarche ?</p>
+<p><u>Est-il possible de connaître la position et l’impulsion d’une particule
+avec une précision illimitée ?</u> L’utilisation d’un
+diaphragme est sans doute la méthode la plus directe pour mesurer la
+position d’un électron. Cependant, on peut également éclairer cet
+objet et observer sa position au travers d’un microscope.</p>
+<p>Heisenberg a fait une analyse critique de ce processus de mesure
+(<em>observer effect</em>) en s’intéressant à la mesure précise de la position
+d’un électron. L’expérience de pensée qu’il a proposée est connue sous
+le nom de microscope de Heisenberg <span class="target" id="index-4"></span>Microscope de Heisenberg. Nous allons la décrire ici.</p>
+<p>Lorsqu’un objet macroscopique est éclairé, il n’est pas perturbé par
+l’impact des photons et on peut l’observer sans le déranger. Il n’en
+va pas de même d’un objet microscopique comme un électron par exemple</p>
+<p>Ainsi si on éclaire un électron et que l’on observe les photons
+défléchis dans une lentille, on remonte à la connaissance de la position
+de l’électron. L’expérience de Compton a montré qu’il subit un recul
+sous l’impact du photon. <u>On perturbe donc l’électron en lui imposant
+un changement d’impulsion</u>. Or pour obtenir une bonne
+résolution spatiale il faut utiliser une longueur d’onde courte
+c’est-à-dire des photons de grande impulsion. La perturbation que subit
+l’électron est alors plus grande. Si l’on souhaitait mesurer de manière
+subséquente l’impulsion de l’électron, il faudrait évaluer la
+perturbation provoquée par la mesure qui relève du processus de mesure.
+On peut évaluer une telle perturbation en mesurant le changement
+d’impulsion du photon. On mesure donc l’impulsion finale du
+photon en supposant que la seule source d’imprécision provient de cette
+mesure.</p>
+<p>Considérons un électron éclairé par un faisceau de lumière (pas
+nécessairement visible pour l’œil humain). L’observation, à l’aide
+d’un microscope, d’un photon diffusé par l’électron permet d’obtenir
+une information sur sa position <a class="reference internal" href="#fig-micheisen"><span class="std std-numref">Fig. 23</span></a>. Or la
+précision obtenue sur la mesure de la position est limitée par le
+pouvoir séparateur du microscope. Puisque celui-ci ne peut pas donner
+des images distinctes de deux points dont la différence d’ordonnées est
+inférieure à :</p>
+<div class="math notranslate nohighlight">
+\[\delta = \frac{\lambda}{2\sin(\theta/2)}\]</div>
+<p>l’incertitude sur l’ordonnée de l’électron est de l’ordre de
+<span class="math notranslate nohighlight">\(\Delta y = \delta\)</span>.</p>
+<figure class="align-default" id="fig-micheisen">
+<a class="reference internal image-reference" href="_images/image17.png"><img alt="Principe du microscope d\'Heisenberg" src="_images/image17.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Principe du microscope d’Heisenberg</span><a class="headerlink" href="#fig-micheisen" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>On suppose que l’impulsion initiale du photon <span class="math notranslate nohighlight">\(\overrightarrow{p}\)</span> est
+connue avec une précision illimitée. L’observateur ou instrument qui
+reçoit le photon sait uniquement que celui-ci a traversé la lentille
+mais il ignore par quel endroit il est passé.</p>
+<p>Evaluons l’impulsion transférée par le photon à l’électron. Avant la
+collision, nous supposons que l’électron est au repos
+<span class="math notranslate nohighlight">\(\overrightarrow{p^{e}} = \overrightarrow{0}\)</span> en <span class="math notranslate nohighlight">\(y = 0\)</span>. L’impulsion
+du photon est supposée connue avec une précision illimitée. Sa direction
+est le long <span class="math notranslate nohighlight">\(Oy\)</span> est son module est <span class="math notranslate nohighlight">\(p = \frac{h}{\lambda}\)</span>. Après la
+collision, l’impulsion transférée à l’électron sur Oy est
+<span class="math notranslate nohighlight">\(mv_{y}^{e}\)</span>. Cette dernière est maximale lorsque la composante selon
+<span class="math notranslate nohighlight">\(Oy\)</span> de l’impulsion du photon est négative et que la direction de
+diffusion correspond à l’angle maximal autorisé par l’ouverture
+angulaire de la lentille (chemin <strong><u>2</u></strong>). On a alors
+d’après la relation de conservation de l’impulsion totale pour le
+chemin <strong><u>2</u></strong>:</p>
+<div class="math notranslate nohighlight">
+\[\overrightarrow{p} + \overrightarrow{0} = \overrightarrow{p'} + \overrightarrow{p'^{e}}\]</div>
+<p>On projette sur <span class="math notranslate nohighlight">\(Oy\)</span> en multipliant scalairement par le vecteur
+unitaire <span class="math notranslate nohighlight">\(\overrightarrow{e_{y}}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\frac{h}{\lambda} + 0 = - \frac{h}{\lambda{}'}\sin\frac{\theta}{2} + mv^{e}_{y}{}'\]</div>
+<p>L’impulsion transférée est minimale lorsque la composante selon <span class="math notranslate nohighlight">\(Oy\)</span> du
+photon est positive (chemin <strong><u>1</u></strong>) :</p>
+<div class="math notranslate nohighlight">
+\[\frac{h}{\lambda} + 0 = \frac{h}{\lambda&quot;}\sin\frac{\theta}{2} + mv_{y}^{e}{}&quot;\]</div>
+<p>Des équations précédentes, on peut tirer que l’impulsion suivant <span class="math notranslate nohighlight">\(Oy\)</span>
+de l’électron est comprise entre
+<span class="math notranslate nohighlight">\({p_{y}^{e}{}&quot;} = \frac{h}{\lambda} - \frac{h}{\lambda&quot;}\sin\frac{\theta}{2}\)</span>
+et
+<span class="math notranslate nohighlight">\({p_{y}{}'^{e}} = \frac{h}{\lambda} + \frac{h}{\lambda'}\sin\frac{\theta}{2}\)</span></p>
+<p>En supposant que <span class="math notranslate nohighlight">\(\lambda' \simeq \lambda\)</span> et que
+<span class="math notranslate nohighlight">\(\lambda&quot; \simeq \lambda\)</span>, on en déduit que l’incertitude sur la
+composante suivant <span class="math notranslate nohighlight">\(Oy\)</span> de l’électron après la collision est :</p>
+<div class="math notranslate nohighlight">
+\[{\Delta p}_{y}^{e} = \frac{h}{\lambda}\sin\frac{\theta}{2} = p\sin\frac{\theta}{2}\]</div>
+<p>L’utilisation d’une courte longueur d’onde et d’une grande ouverture
+angulaire pour la lentille conduit à une petite incertitude sur la
+position mais à une grande incertitude sur l’impulsion. Le produit des
+incertitudes est indépendant de la longueur d’onde et de l’ouverture
+de la lentille.</p>
+<p>En effet, on a :</p>
+<div class="math notranslate nohighlight">
+\[\Delta y{\Delta p}_{y}^{e} = \frac{h}{2}\]</div>
+<p>Ce produit ne peut pas être rendu arbitrairement petit car il est
+proportionnel à une constante fondamentale de la physique. Nous avons
+obtenu en fait une limite inférieure pour le produit des incertitudes.</p>
+<p>On peut donc écrire :</p>
+<div class="math notranslate nohighlight">
+\[\Delta y{\Delta p}_{y}^{e} \geq \frac{h}{2}\]</div>
+<p>La détermination de la trajectoire d’une particule implique la mesure
+simultanée de sa position et de sa vitesse (ou de son impulsion).</p>
+<p>La relation précédente implique donc que la trajectoire des objets
+<strong>microscopiques n’est pas mesurable</strong>.</p>
+<p>Ceci contredit le modèle de Bohr dans lequel le mouvement de l’électron
+décrit une orbite bien définie. Si ces trajectoires existaient vraiment,
+pour les observer, il faudrait utiliser des photons dont la longueur
+d’onde soit inférieure à 10^-10^ m (diamètre de l’atome d’hydrogène
+dans son état fondamental). De tels photons se trouvent dans la gamme
+des rayons X et leur énergie est supérieure à 12500 eV. Cette énergie
+est considérable par rapport à l’énergie de liaison de l’électron
+(13,6 eV). L’électron risquerait donc d’être éjecté de l’atome. Ces
+considérations montrent qu’il est impossible d’observer la trajectoire
+d’un électron dans un atome.</p>
+<p>La trajectoire n’étant pas observable à l’échelle atomique d’après
+Heisenberg, il n’est pas nécessaire de construire une théorie dans
+laquelle cette notion est définie. En effet la physique doit fournir une
+réponse uniquement aux questions qui se posent en termes d’expériences.</p>
+</section>
+<section id="interpretation-des-inegalites-de-heisenberg">
+<h2>Interprétation des inégalités de Heisenberg<a class="headerlink" href="#interpretation-des-inegalites-de-heisenberg" title="Permalink to this heading">#</a></h2>
+<p>La position et l’impulsion d’une particule ne peuvent pas être connues
+simultanément avec une précision illimitée. En effet nous avons vu
+formule <a class="reference internal" href="#equation-eq-deltaxdeltap">(31)</a> que le produit <span class="math notranslate nohighlight">\(\Delta x\Delta p_{x}\)</span> ne
+peut pas être rendu arbitrairement petit car il est proportionnel à une
+constante fondamentale de la physique. Nous avons obtenu en fait une
+limite inférieure pour le produit des incertitudes dont on peut donner
+une formulation plus générale appelé inégalité d’Heisenberg <span class="target" id="index-5"></span>Inégalité d’Heisenberg :</p>
+<div class="math notranslate nohighlight">
+\[\Delta x\Delta p_{x} \geq \hslash\]</div>
+<p>La valeur précise de la limite n’a pas de sens tant qu’une définition
+précise de <span class="math notranslate nohighlight">\(\Delta x\)</span> et de <span class="math notranslate nohighlight">\(\Delta p_{x}\)</span> n’a pas été donnée. Cette
+limite est cependant toujours liée à la constante de Planck.</p>
+<p><em><strong>Question</strong></em> : l’inégalité de Heisenberg traduit-elle une incertitude
+(liée au processus de mesure) ou une indétermination ?</p>
+<p><u>La première hypothèse</u> suppose que la position et
+l’impulsion ont des valeurs bien définies dans la nature mais que les
+limitations liées au processus de mesure (<em>observer effect</em> <span class="target" id="index-6"></span>observer effect) ou aux appareils de mesure nous empêchent de
+les connaître avec une précision illimitée.</p>
+<p><u>La seconde hypothèse</u> suppose au contraire que ces
+grandeurs ne sont pas bien définies dans la nature et qu’en conséquence
+il est impossible de les mesurer avec une précision illimitée. Nous
+allons adopter ce second point de vue et nous allons voir que les
+inégalités de Heisenberg nous permettent d’apprendre quelque chose sur
+le comportement des systèmes physiques.</p>
+<p>La quantité <span class="math notranslate nohighlight">\(\Delta x\)</span> représente l’extension spatiale d’un objet
+microscopique tandis que <span class="math notranslate nohighlight">\(\Delta p_{x}\)</span> représente son extension en
+impulsion. Du point de vue d’une répartition statistique des résultats
+d’une mesure, ces valeurs sont assimilables à l’écart type ou écart
+quadratique moyen.</p>
+<p>On aura donc :
+<span class="math notranslate nohighlight">\(\Delta x = \sqrt{\left\langle x^{2} \right\rangle - \left\langle x \right\rangle^{2}}\)</span>
+et
+<span class="math notranslate nohighlight">\(\Delta p_{x} = \sqrt{\left\langle {p_{x}}^{2} \right\rangle - \left\langle p_{x} \right\rangle^{2}}\)</span></p>
+<p>Si la valeur moyenne est nulle il vient :</p>
+<p><span class="math notranslate nohighlight">\(\Delta x = \sqrt{\left\langle x^{2} \right\rangle}\)</span> et <span class="math notranslate nohighlight">\(\Delta p_{x} = \sqrt{\left\langle {p_{x}}^{2} \right\rangle}\)</span></p>
+<p>Ainsi les quantités <span class="math notranslate nohighlight">\(\Delta x\)</span> et <span class="math notranslate nohighlight">\(\Delta p_{x}\)</span> fournissent un ordre de
+grandeur ou une estimation de <span class="math notranslate nohighlight">\(|x|\)</span> et de <span class="math notranslate nohighlight">\(\left| p_{x} \right|\)</span>. Si on
+note <em>a</em> l’extension spatiale, l’extension en impulsion s’écrit
+d’après la limite inférieure de l’inégalité d’Heisenberg :</p>
+<div class="math notranslate nohighlight">
+\[\Delta p_{x} \simeq \frac{\hslash}{\Delta x} = \frac{\hslash}{a}\]</div>
+<p>C’est une valeur représentative de <span class="math notranslate nohighlight">\(\left| p_{x} \right|\)</span>.</p>
+<section id="effet-tunnel">
+<h3>Effet tunnel<a class="headerlink" href="#effet-tunnel" title="Permalink to this heading">#</a></h3>
+<p>Nous allons terminer par un exemple qui présente un immense intérêt
+aussi bien pratique que théorique : l’effet tunnel <span class="target" id="index-7"></span>Effet tunnel.</p>
+<p>Considérons le mouvement unidimensionnel d’une particule soumise à une
+interaction qui lui donne une énergie potentielle V(x) (<a class="reference internal" href="#fig-effettunnel"><span class="std std-numref">Fig. 24</span></a>).</p>
+<figure class="align-default" id="fig-effettunnel">
+<a class="reference internal image-reference" href="_images/tunnel.png"><img alt="Angles de polarisationEffet tunnel" src="_images/tunnel.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Effet tunnel</span><a class="headerlink" href="#fig-effettunnel" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Supposons que son énergie totale soit inférieure
+à la valeur maximale de V(x). En chaque point son énergie cinétique est
+donnée par :</p>
+<div class="math notranslate nohighlight">
+\[E_{cin} = E - V(x)\]</div>
+<p>D’après la théorie classique la particule ralentit lorsque l’énergie
+potentielle augmente et la région où <span class="math notranslate nohighlight">\(E &lt; V_{0}\)</span> est interdite car
+l’énergie cinétique ne peut pas être négative.</p>
+<p>D’après la théorie classique, si la particule se trouve d’un côté de
+la barrière à un instant donné elle y reste. En effet pour aller de A en
+B elle devrait passer par toutes les positions intermédiaires
+d’abscisses pour lesquelles l’énergie cinétique serait négative car la
+particule possède une trajectoire bien définie.</p>
+<p>La relation d’indétermination de Heisenberg implique que la particule
+ne possède pas de trajectoire. Il ne lui serait donc pas interdit de
+faire la transition de A à B. En effet considérer cette transition
+n’implique pas que <strong><u>son énergie cinétique puisse être considérée comme
+négative à un instant donné !</u></strong> Pour pouvoir faire une
+telle affirmation, il faudrait mesurer sa position avec une précision
+nettement meilleure que la largeur de la barrière. Nous
+trouverions alors que la limitation de l’extension spatiale
+<span class="math notranslate nohighlight">\(\Delta x = a\)</span> produirait une augmentation de l’impulsion (et donc de
+l’énergie cinétique) tellement grande qu’on ne pourrait pas affirmer
+que l’énergie totale serait inférieure à la hauteur de la barrière. En
+fait, il n’y a pas de contradiction entre la traversée de la barrière
+et la conservation de l’énergie parce que le concept de trajectoire
+(évolution continue dans l’espace-temps) n’a pas de sens.</p>
+<p>Ce genre de phénomène se produit couramment dans les atomes, les
+molécules, les solides et les noyaux. Il a reçu le nom d’effet tunnel.</p>
+</section>
+</section>
+<section id="limite-de-validite-de-la-physique-classique">
+<h2>Limite de validité de la physique classique<a class="headerlink" href="#limite-de-validite-de-la-physique-classique" title="Permalink to this heading">#</a></h2>
+<p>Si les électrons passent à travers une fente de largeur <span class="math notranslate nohighlight">\(d\)</span>,
+l’expérience montre que les effets quantiques sont négligeables si
+<span class="math notranslate nohighlight">\(\lambda \ll d\)</span>. Il suffit de quelques dizaines d’<em>eV</em> pour qu’un
+électron ait une longueur d’onde de l’ordre de l’Angström,
+c’est-à-dire une distance très courte à l’échelle macroscopique.
+Cependant, lorsqu’il atteint un cristal ou une poudre c’est la
+distance inter atomique qui joue le rôle de distance caractéristique.
+Comme elle est de l’ordre de 1 Å, des effets quantiques se manifestent.</p>
+<p>Reprenons en guise d’illustration l’expérience de diffraction des
+électrons par un diaphragme. La diffraction est négligeable si :</p>
+<div class="math notranslate nohighlight">
+\[\frac{\delta p_{y}}{p_{x}} \ll 1\]</div>
+<p>soit :</p>
+<div class="math notranslate nohighlight">
+\[\delta p_{y} \ll p_{x} \simeq p\]</div>
+<p>ou encore :</p>
+<div class="math notranslate nohighlight">
+\[\frac{h}{\delta y} \ll \frac{h}{\lambda}\]</div>
+<p>ce qui est toujours le cas si <span class="math notranslate nohighlight">\(\lambda \ll d\)</span>.</p>
+<p>Pour conclure, on peut formuler le critère de validité de la mécanique
+classique à l’aide des inégalités de Heisenberg. Tant que la précision
+des mesures est telle que :</p>
+<p><span class="math notranslate nohighlight">\(\Delta x\Delta p_{x} \gg \hslash\)</span>, <span class="math notranslate nohighlight">\(\Delta y\Delta p_{y} \gg \hslash\)</span>
+et <span class="math notranslate nohighlight">\(\Delta z\Delta p_{z} \gg \hslash\)</span></p>
+<p>les effets quantiques ne se manifestent pas dans l’expérience.</p>
+<hr class="footnotes docutils" />
+<aside class="footnote brackets" id="id4" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">38</a><span class="fn-bracket">]</span></span>
+<p>Les rayons X sont des radiations électromagnétiques très
+énergétiques (0.5 à 30 KeV). Ils peuvent être produits par
+ionisation en couche interne d’un atome. Le trou est comblé par un
+électron provenant d’une couche externe avec émission d’un photon
+X. Ils peuvent être également produit par l’accélération (freinage)
+des électrons sur une cible dans un tube à rayons X : les électrons
+sont extraits d’une cathode
+de tungstène chauffée, accélérés par une tension électrique dans un
+tube sous vide, ce faisceau sert à bombarder une cible métallique
+(appelée anode ou anti-cathode) ; le ralentissement des électrons
+par les atomes de la cible provoque un rayonnement continu de
+freinage</p>
+</aside>
+<aside class="footnote brackets" id="id5" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">39</a><span class="fn-bracket">]</span></span>
+<p>Walter Friedrich ()</p>
+</aside>
+<aside class="footnote brackets" id="id6" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">40</a><span class="fn-bracket">]</span></span>
+<p>Paul Knipping ()</p>
+</aside>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "executablebooks/jupyter-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chap3-lumiere.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">La lumière</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chap5-mecanique-APetP.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Probabilités et amplitudes quantiques</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evidence-experimentale-de-l-incompatibilite-de-certaines-grandeurs">Evidence expérimentale de l’incompatibilité de certaines grandeurs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dualite-onde-corpuscule">Dualité onde-corpuscule</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annexe-dualite-onde-corpuscule">Annexe : dualité onde-corpuscule</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifications-experimentales">Vérifications expérimentales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diffraction-des-electrons">Diffraction des électrons</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proprietes-ondulatoires-de-la-matiere-autres-aspects">Propriétés ondulatoires de la matière : autres aspects</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notions-de-paquets-d-onde">Notions de paquets d’onde</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mesures-de-la-position-et-l-impulsion">Mesures de la position et l’impulsion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation-des-inegalites-de-heisenberg">Interprétation des inégalités de Heisenberg</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effet-tunnel">Effet tunnel</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limite-de-validite-de-la-physique-classique">Limite de validité de la physique classique</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Gilles Nguyen Vien
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

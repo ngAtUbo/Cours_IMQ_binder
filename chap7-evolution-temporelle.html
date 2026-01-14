@@ -1,0 +1,965 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Opérateur d’évolution et équation de Schrödinger &#8212; Introduction à la mécanique quantique</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chap7-evolution-temporelle';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Références" href="references.html" />
+    <link rel="prev" title="Etats quantiques" href="chap6-etats-quantiques.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="coursMQ1.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/image1.png" class="logo__image only-light" alt="Introduction à la mécanique quantique - Home"/>
+    <script>document.write(`<img src="_static/image1.png" class="logo__image only-dark" alt="Introduction à la mécanique quantique - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="coursMQ1.html">
+                    INTRODUCTION A LA MECANIQUE QUANTIQUE
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Présentation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index_general.html">Index des mots-clés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biblioCours.html">Bibliographie</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Cours</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chap1-introduction.html">Origine de la mécanique quantique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap2-ondulatoire-classique.html">Rappel comportement ondulatoire classique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap3-lumiere.html">La lumière</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap4-fondements.html">Les fondements de la mécanique quantique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap5-mecanique-APetP.html">Probabilités et amplitudes quantiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap6-etats-quantiques.html">Etats quantiques</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Opérateur d’évolution et équation de Schrödinger</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Références</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="references.html">Références</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/chap7-evolution-temporelle.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Opérateur d’évolution et équation de Schrödinger</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-de-schrodinger-dans-une-base-donnee">Equation de Schrödinger dans une base donnée</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etats-stationnaires">Etats stationnaires</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recherche-systematique-des-etats-stationnaires">Recherche systématique des états stationnaires</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constantes-du-mouvement">Constantes du mouvement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemple-systeme-a-deux-etats">Exemple : système à deux états</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-ion-moleculaire-h-2">L’ion moléculaire <span class="math notranslate nohighlight">\(H_{2}^{+}\)</span></a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="operateur-d-evolution-et-equation-de-schrodinger">
+<h1>Opérateur d’évolution et équation de Schrödinger<a class="headerlink" href="#operateur-d-evolution-et-equation-de-schrodinger" title="Permalink to this heading">#</a></h1>
+<p>L’opérateur d’évolution <span class="math notranslate nohighlight">\(\widehat{U}\left( t_{2},t_{1} \right)\)</span> associe
+au ket
+<span class="math notranslate nohighlight">\(\left. \ \left| \Psi\left( t_{1} \right) \right.\  \right\rangle\)</span>
+représentant l’état d’un système au temps <span class="math notranslate nohighlight">\(t_{1}\)</span> un autre ket, noté
+<span class="math notranslate nohighlight">\(\left. \ \left| \Psi\left( t_{2} \right) \right.\  \right\rangle\)</span>,
+représentant l’état du même système au temps <span class="math notranslate nohighlight">\(t_{2}\)</span>. On peut donc
+écrire :</p>
+<div class="math notranslate nohighlight">
+\[\left. \ \left| \Psi\left( t_{2} \right) \right.\  \right\rangle = \widehat{U}\left. \ \left( t_{2},t_{1} \right)\left| \Psi\left( t_{1} \right) \right.\  \right\rangle\]</div>
+<p>Dans l’espace dual s’écrit :</p>
+<div class="math notranslate nohighlight">
+\[\left\langle \left. \ \Psi\left( t_{2} \right) \right| \right.\  = \left\langle \left. \ \Psi\left( t_{1} \right) \right| \right.\ {\widehat{U}}^{\dagger}\left( t_{2},t_{1} \right)\]</div>
+<p>Pour que la norme du vecteur d’état se conserve au cours du temps il
+faut que l’opérateur d’évolution soit unitaire. En effet, on a :</p>
+<div class="math notranslate nohighlight">
+\[\left\langle \Psi\left( t_{2} \right) \middle| \Psi\left( t_{2} \right) \right\rangle = \left\langle \left. \ \Psi\left( t_{1} \right) \right| \right.\ {\widehat{U}}^{\dagger}\left( t_{2},t_{1} \right)\widehat{U}\left. \ \left( t_{2},t_{1} \right)\left| \Psi\left( t_{1} \right) \right.\  \right\rangle\]</div>
+<p>Si <span class="math notranslate nohighlight">\(\widehat{U}\)</span> est unitaire on a bien :</p>
+<div class="math notranslate nohighlight">
+\[\left\langle \Psi\left( t_{2} \right) \middle| \Psi\left( t_{2} \right) \right\rangle = \left\langle \Psi\left( t_{1} \right) \middle| \Psi\left( t_{1} \right) \right\rangle\]</div>
+<p>Il est évident que <span class="math notranslate nohighlight">\(\widehat{U}(t,t)\)</span> est l’opérateur identité. En
+conséquence <span class="math notranslate nohighlight">\(\widehat{U}(t + dt,t)\)</span> pour un <span class="math notranslate nohighlight">\(dt\)</span> infinitésimal est un
+opérateur peu différent de l’identité qu’on peut écrire sous la forme :</p>
+<div class="math notranslate nohighlight">
+\[\widehat{U}(t + dt,t) = \widehat{1} + \widehat{K}(t)dt\]</div>
+<p>L’unitarité de l’opérateur d’évolution implique la condition :</p>
+<div class="math notranslate nohighlight">
+\[\widehat{1} = \left( \widehat{1} + \widehat{K}dt \right)\left( \widehat{1} + {\widehat{K}}^{\dagger}dt \right) = \widehat{1} + \left( \widehat{K} + {\widehat{K}}^{\dagger} \right)dt + O(dt)\]</div>
+<p>Le terme de second ordre étant négligeable et <span class="math notranslate nohighlight">\(\widehat{U}\)</span> étant
+unitaire, cela conduit à :</p>
+<div class="math notranslate nohighlight">
+\[\left( \widehat{K} + {\widehat{K}}^{\dagger} \right) = \widehat{0}\]</div>
+<p>L’opérateur <span class="math notranslate nohighlight">\(\widehat{K}\)</span> est donc anti-hermitique et homogène à
+l’inverse d’un temps. Il est plus commode de faire intervenir un
+opérateur hermitique <span class="math notranslate nohighlight">\(\widehat{H}\)</span> car il possède des propriétés plus
+intéressantes.</p>
+<p>Posons : <span class="math notranslate nohighlight">\(\widehat{K} = \widehat{H}/(i\hslash)\)</span></p>
+<p>L’adjoint est donné par :</p>
+<div class="math notranslate nohighlight">
+\[{\widehat{K}}^{\dagger} = \frac{{\widehat{H}}^{\dagger}}{( - i\hslash)} = \frac{\widehat{H}}{( - i\hslash)} = - \widehat{K}\]</div>
+<p>L’opérateur <span class="math notranslate nohighlight">\(\widehat{H}\)</span> est homogène à une énergie. On l’appelle
+opérateur hamiltonien <span class="target" id="index-0"></span>Opérateur hamiltonien.</p>
+<p>Nous allons maintenant obtenir l’équation différentielle vérifiée par le
+vecteur d’état. L’application de l’opérateur d’évolution au vecteur
+d’état donne la relation :</p>
+<div class="math notranslate nohighlight">
+\[\widehat{U}(t + dt,t)\left. \ \left| \Psi(t) \right.\  \right\rangle = \left. \ \left| \Psi(t + dt) \right.\  \right\rangle\]</div>
+<p>soit :</p>
+<div class="math notranslate nohighlight">
+\[\left( \widehat{1} + \frac{\widehat{H}}{i\hslash}dt \right)\left. \ \left| \Psi(t) \right.\  \right\rangle = \left. \ \left| \Psi(t + dt) \right.\  \right\rangle\]</div>
+<div class="math notranslate nohighlight">
+\[\left. \ \widehat{H}dt\left| \Psi(t) \right.\  \right\rangle = i\hslash\left\lbrack \left. \ \left| \Psi(t + dt) \right.\  \right\rangle - \left. \ \left| \Psi(t) \right.\  \right\rangle \right\rbrack\]</div>
+<p>et finalement l’équation différentielle :</p>
+<div class="math notranslate nohighlight">
+\[\left. \ \widehat{H}\left| \Psi(t) \right.\  \right\rangle = i\hslash\frac{d}{dt}\left. \ \left| \Psi(t) \right.\  \right\rangle\]</div>
+<p>C’est l’équation de Schrödinger (dépendante du temps). Elle est écrite
+ici sous une forme abstraite mais très générale.</p>
+<p>On postule donc :</p>
+<blockquote>
+<div><p>6°) <u>L’évolution temporelle de</u>
+<span class="math notranslate nohighlight">\(\left| \Psi(t) \right\rangle\)</span> décrivant l’état du système au temps t
+est régie par :</p>
+<div class="math notranslate nohighlight">
+\[\left. \ \widehat{H}\left| \Psi(t) \right.\  \right\rangle = i\hslash\frac{d}{dt}\left. \ \left| \Psi(t) \right.\  \right\rangle\]</div>
+<p>où <span class="math notranslate nohighlight">\(\widehat{H}(t)\)</span> est l’observable associée à l’énergie totale du
+système.</p>
+</div></blockquote>
+<section id="equation-de-schrodinger-dans-une-base-donnee">
+<h2>Equation de Schrödinger dans une base donnée<a class="headerlink" href="#equation-de-schrodinger-dans-une-base-donnee" title="Permalink to this heading">#</a></h2>
+<p>On choisit des états de base dont le choix arbitraire nous permet
+d’appréhender le comportement du système.</p>
+<p>Supposons que l’ensemble des vecteurs
+<span class="math notranslate nohighlight">\(\left\{ \left. \ \left| u_{k} \right.\  \right\rangle \right\}\)</span> forme
+une base orthonormée de l’espace des états. En projetant l’équation de
+Schrödinger sur un vecteur de base donné il vient :</p>
+<div class="math notranslate nohighlight">
+\[\left. \ \left\langle \left. \ u_{k} \right| \right.\ \widehat{H}\left| \Psi(t) \right.\  \right\rangle = i\hslash\frac{d}{dt}\left\langle u_{k} \middle| \Psi(t) \right\rangle\]</div>
+<p>En utilisant la relation de fermeture :</p>
+<div class="math notranslate nohighlight">
+\[\sum_{l = 1}^{N}\left. \ \left\langle \left. \ u_{k} \right| \right.\ \widehat{H}\left| u_{l} \right.\  \right\rangle\left\langle u_{l} \middle| \Psi(t) \right\rangle = i\hslash\frac{d}{dt}\left\langle u_{k} \middle| \Psi(t) \right\rangle\]</div>
+<p>soit :</p>
+<div class="math notranslate nohighlight">
+\[\sum_{l = 1}^{N}{\widehat{H}}_{kl}c_{l}(t) = i\hslash\frac{d}{dt}c_{k}(t)\]</div>
+<p>Les amplitudes d’état vérifient donc un système d’équations
+différentielles couplées du premier ordre par rapport à <span class="math notranslate nohighlight">\(t\)</span>. La donnée
+des amplitudes à <span class="math notranslate nohighlight">\(t = 0\)</span> permet donc de les déterminer à tout instant
+ultérieur. Ainsi lorsque l’état est connu à un instant donné l’équation
+de Schrödinger permet de le connaître à tout instant ultérieur.</p>
+</section>
+<section id="etats-stationnaires">
+<h2>Etats stationnaires<a class="headerlink" href="#etats-stationnaires" title="Permalink to this heading">#</a></h2>
+<p>Soit <span class="math notranslate nohighlight">\(\left\{ \left. \ \left| \Phi_{k} \right.\  \right\rangle \right\}\)</span>
+une base orthonormée de kets propres du l’hamiltonien. Nous supposerons
+que toutes les valeurs propres de <span class="math notranslate nohighlight">\(\widehat{H}\)</span> sont non dégénérées. On
+a donc :</p>
+<p><span class="math notranslate nohighlight">\(\widehat{H}\left. \ \left| \Phi_{k} \right.\  \right\rangle = E_{k}\left. \ \left| \Phi_{k} \right.\  \right\rangle\)</span>
+<span class="math notranslate nohighlight">\(E_{k}\)</span> et <span class="math notranslate nohighlight">\(\left. \ \left| \Phi_{k} \right.\  \right\rangle\)</span> ne
+dépendent pas du temps.</p>
+<p><span class="math notranslate nohighlight">\(\widehat{H}\)</span> étant une observable et ses valeurs propres étant non
+dégénérées, on développe
+<span class="math notranslate nohighlight">\(\left. \ \left| \Psi(t) \right.\  \right\rangle\)</span> sur la base des
+vecteurs propres de <span class="math notranslate nohighlight">\(\widehat{H}\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\left. \ \left| \Psi(t) \right.\  \right\rangle = \sum_{k}^{}{c_{k}(t)}\left. \ \left| \Phi_{k} \right.\  \right\rangle\]</div>
+<p>Toute la dépendance temporelle de
+<span class="math notranslate nohighlight">\(\left. \ \left| \Psi(t) \right.\  \right\rangle\)</span> est contenue dans les
+amplitudes d’états <span class="math notranslate nohighlight">\(c_{k}(t)\)</span>. L’équation de Schrödinger donne :</p>
+<div class="math notranslate nohighlight">
+\[\left. \ \left\langle \left. \ \Phi_{k} \right| \right.\ \widehat{H}\left| \Psi(t) \right.\  \right\rangle = i\hslash\frac{d}{dt}\left\langle \Phi_{k} \middle| \Psi(t) \right\rangle\]</div>
+<p><span class="math notranslate nohighlight">\(\widehat{H}\)</span> étant hermitique :</p>
+<div class="math notranslate nohighlight">
+\[\left\langle \left. \ \Phi_{k} \right| \right.\ \widehat{H} = E_{k}\left\langle \left. \ \Phi_{k} \right| \right.\ \]</div>
+<p>Ainsi on a :</p>
+<div class="math notranslate nohighlight">
+\[i\hslash\frac{d}{dt}c_{k}(t) = {E_{k}c}_{k}(t)\]</div>
+<p>Le Hamiltonien est bien diagonal dans la base de ses vecteurs propres
+(valeurs propres non dégénérées).</p>
+<p>Dans le cas d’un système à deux états de base et en représentation
+matricielle dans la base des états solutions de <span class="math notranslate nohighlight">\(\widehat{H}\)</span> (états
+stationnaires) :</p>
+<p><span class="math notranslate nohighlight">\(\begin{pmatrix}
+E_{1} &amp; 0 \\
+0 &amp; E_{2}
+\end{pmatrix}\begin{pmatrix}
+c_{1} \\
+c_{2}
+\end{pmatrix} = i\hslash\frac{d}{dt}\begin{pmatrix}
+c_{1} \\
+c_{2}
+\end{pmatrix}\)</span> avec
+<span class="math notranslate nohighlight">\(E_{i} = \left. \ \left\langle \left. \ \Phi_{i} \right| \right.\ \widehat{H}\left| \Phi_{i} \right.\  \right\rangle\)</span></p>
+<p>Le Hamiltonien joue cependant un rôle privilégié car c’est le générateur
+de l’évolution temporelle. Lorsqu’il est diagonal les équations
+d’évolution des amplitudes sont découplées. Dans le cas particulier d’un
+système à deux états de base l’équation de Schrödinger s’écrit :</p>
+<p>On a donc deux équations différentielles indépendantes :</p>
+<div class="math notranslate nohighlight">
+\[{E_{1}c}_{1}(t) = i\hslash\frac{d}{dt}c_{1}(t)\]</div>
+<div class="math notranslate nohighlight">
+\[{E_{2}c}_{2}(t) = i\hslash\frac{d}{dt}c_{2}(t)\]</div>
+<p>Elles s’intègrent facilement et les solutions sont données par :</p>
+<div class="math notranslate nohighlight">
+\[c_{1}(t) = c_{1}(0)e^{- iE_{1}t/\hslash}\]</div>
+<div class="math notranslate nohighlight">
+\[c_{2}(t) = c_{2}(0)e^{- iE_{2}t/\hslash}\]</div>
+<p>Les probabilités pour trouver le système dans les deux états sont
+données respectivement par :</p>
+<div class="math notranslate nohighlight">
+\[P_{1} = {c_{1}(t)}^{*}c_{1}(t) = {c_{1}(0)}^{*}c_{1}(0)\]</div>
+<div class="math notranslate nohighlight">
+\[P_{2} = {c_{2}(t)}^{*}c_{2}(t) = {c_{2}(0)}^{*}c_{2}(0)\]</div>
+<p>Elles sont indépendantes du temps ce qui justifie l’appellation d’états
+stationnaires <span class="target" id="index-1"></span>Etats stationnaires pour ces états
+qui diagonalisent l’opérateur Hamiltonien. En effet, si à <span class="math notranslate nohighlight">\(t = 0\)</span> le
+système se trouve dans l’état
+<span class="math notranslate nohighlight">\(\left. \ \left| \Phi_{1} \right.\  \right\rangle\)</span> il y reste
+indéfiniment.</p>
+<p>Lorsqu’un système est dans un état stationnaire, c’est-à-dire un état
+propre de son opérateur Hamiltonien, une mesure de son énergie donne
+certainement la valeur propre correspondant à ce ket propre. L’énergie
+du système est donc bien définie. C’est un cas limite de la relation
+d’indétermination temps-énergie : <span class="math notranslate nohighlight">\(\Delta E\)</span> tend vers zéro et la durée
+tend vers l’infini.</p>
+<p>Ainsi dans la base des états propres de <span class="math notranslate nohighlight">\(\widehat{H}\)</span> les équations
+d’évolution des amplitudes sont découplées et celles-ci ne varient que
+par un facteur de phase dans le temps. Le problème à résoudre dans le
+cas général est donc la recherche des états propres de <span class="math notranslate nohighlight">\(\widehat{H}\)</span>.</p>
+</section>
+<section id="recherche-systematique-des-etats-stationnaires">
+<h2>Recherche systématique des états stationnaires<a class="headerlink" href="#recherche-systematique-des-etats-stationnaires" title="Permalink to this heading">#</a></h2>
+<p>Supposons que les N vecteurs
+<span class="math notranslate nohighlight">\(\left\{ \left. \ \left| u_{k} \right.\  \right\rangle,k = 1\ à\ N \right\}\)</span>
+forment une base de l’espace des états d’un système. Les états
+stationnaires sont notés
+<span class="math notranslate nohighlight">\(\left. \ \left| \Phi_{k} \right.\  \right\rangle\)</span>.</p>
+<p>Tout état du système peut être développé sur la base choisie :</p>
+<div class="math notranslate nohighlight">
+\[\left. \ \left| \Psi(t) \right.\  \right\rangle = \sum_{k}^{}{b_{k}(t)}\left. \ \left| u_{k} \right.\  \right\rangle\]</div>
+<p>Si le système est initialement dans un état stationnaire particulier,
+<span class="math notranslate nohighlight">\(\left. \ \left| \Phi_{1} \right.\  \right\rangle\)</span> par exemple, on a :</p>
+<p><span class="math notranslate nohighlight">\(\left. \ \left| \Psi(0) \right.\  \right\rangle = \left. \ \left| \Phi_{1} \right.\  \right\rangle\)</span></p>
+<p>et</p>
+<p><span class="math notranslate nohighlight">\({\left. \ \left| \Psi(t) \right.\  \right\rangle = e}^{- iE_{1}t/\hslash}\left. \ \left| \Phi_{1} \right.\  \right\rangle\)</span></p>
+<p>soit :</p>
+<div class="math notranslate nohighlight">
+\[{\left. \ \left| \Psi(t) \right.\  \right\rangle = e}^{- iE_{1}t/\hslash}\left. \ \left| \Psi(0) \right.\  \right\rangle\]</div>
+<p>Ainsi, l’évolution temporelle d’un état stationnaire se traduit
+simplement par la multiplication du vecteur d’état par un facteur de
+phase.</p>
+<p><strong><u>Lorsqu’un état stationnaire est développé sur une base donnée il faut
+donc que toutes les amplitudes d’état varient de la même manière dans le
+temps</u></strong>. La recherche d’un état stationnaire
+<span class="math notranslate nohighlight">\(\left. \ \left| \Phi_{k} \right.\  \right\rangle\)</span> d’énergie <span class="math notranslate nohighlight">\(E_{k}\)</span>
+équivaut donc à chercher une solution de l’équation de Schrödinger sous
+la forme :</p>
+<div class="math notranslate nohighlight">
+\[c_{l}(t) = c_{l}(0)e^{- iE_{k}t/\hslash}\ l = 1,\ 2\ à\ N\]</div>
+<p>où <span class="math notranslate nohighlight">\(E_{k}\)</span> est l’énergie de l’état stationnaire recherché
+<span class="math notranslate nohighlight">\(\left. \ \left| \Phi_{k} \right.\  \right\rangle\)</span>.</p>
+<p>On a alors :</p>
+<div class="math notranslate nohighlight">
+\[i\hslash\frac{d}{dt}c_{l}(t) = {E_{k}c}_{l}(t)\]</div>
+<p>et l’équation de Schrödinger s’écrit :</p>
+<div class="math notranslate nohighlight">
+\[\sum_{m = 1}^{N}{\widehat{H}}_{lm}c_{m}(t) = E_{k}c_{l}(t)\]</div>
+<p>ou :</p>
+<div class="math notranslate nohighlight">
+\[\sum_{m = 1}^{N}{\widehat{H}}_{lm}c_{m}(0) = E_{k}c_{l}(0)\]</div>
+<p>Les énergies possibles sont donc les valeurs propres de l’opérateur
+Hamiltonien et les vecteurs propres ont comme composantes les amplitudes
+donnant le développement de l’état stationnaire sur la base des
+<span class="math notranslate nohighlight">\(\left. \ \left| u_{l} \right.\  \right\rangle\)</span>. L’équation précédente
+est appelée équation de Schrödinger indépendante du temps ou équation
+aux valeurs propres <span class="target" id="index-2"></span>Equation aux valeurs propres.</p>
+<p>Dans le cas particulier d’un système à deux états de base. L’équation de
+Schrödinger indépendante du temps s’écrit :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{pmatrix}
+H_{11} &amp; H_{12} \\
+H_{21} &amp; H_{22}
+\end{pmatrix}\begin{pmatrix}
+c_{1} \\
+c_{2}
+\end{pmatrix} = E\begin{pmatrix}
+c_{1} \\
+c_{2}
+\end{pmatrix}\end{split}\]</div>
+<p>soit :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{pmatrix}
+H_{11} - E &amp; H_{12} \\
+H_{21} &amp; H_{22} - E
+\end{pmatrix}\begin{pmatrix}
+c_{1} \\
+c_{2}
+\end{pmatrix} = \begin{pmatrix}
+0 \\
+0
+\end{pmatrix}\end{split}\]</div>
+<p>Ce système d’équations admet des solutions non triviales à la condition
+que le déterminant de la matrice des coefficients s’annule. Il faut donc
+avoir :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left| \begin{matrix}
+H_{11} - E &amp; H_{12} \\
+H_{21} &amp; H_{22} - E
+\end{matrix} \right| = 0\end{split}\]</div>
+<p>Les valeurs possibles de <span class="math notranslate nohighlight">\(E\)</span> sont solutions de l’équation quadratique :</p>
+<div class="math notranslate nohighlight">
+\[E^{2} - \left( H_{11} + H_{22} \right)E + H_{11}H_{22} - H_{12}H_{21} = 0\]</div>
+<p>Le discriminant est donné par :</p>
+<p><span class="math notranslate nohighlight">\(\Delta = \left( H_{11} + H_{22} \right)^{2} - 4\; H_{11}H_{22} + 4\; H_{12}H_{21}\)</span>
+avec <span class="math notranslate nohighlight">\(\left( \; H_{12} \right)^{*} = H_{21}\)</span></p>
+<p>soit :</p>
+<p><span class="math notranslate nohighlight">\(\Delta = \left( H_{11} - H_{22} \right)^{2} + 4\;\left| H_{12} \right|^{2}\)</span>
+soit <span class="math notranslate nohighlight">\(\Delta &gt; 0\)</span></p>
+<p>On a donc :</p>
+<div class="math notranslate nohighlight">
+\[E = \frac{H_{11} + H_{22}}{2} \pm \frac{1}{2}\sqrt{\left( H_{11} - H_{22} \right)^{2} + 4\; H_{12}H_{21}}\]</div>
+<p>Remarquons enfin que la somme des énergies des états stationnaires est
+égale à la trace de H et que leur produit est égal à son déterminant.</p>
+<blockquote>
+<div><p>Connaissant l’état <span class="math notranslate nohighlight">\(\left. \ \left| \Psi(0) \right.\  \right\rangle\)</span>
+décrivant l’état du système à l’instant <span class="math notranslate nohighlight">\(t = 0\)</span>. Pour connaître
+l’état <span class="math notranslate nohighlight">\(\left. \ \left| \Psi(t) \right.\  \right\rangle\)</span> à l’instant
+<span class="math notranslate nohighlight">\(t\)</span>, on procède systématiquement de la manière suivante :</p>
+<p>1°) On développe <span class="math notranslate nohighlight">\(\left| \Psi(0) \right\rangle\)</span>sur la base des états
+propre de <span class="math notranslate nohighlight">\(\widehat{H}\)</span> :</p>
+<p><span class="math notranslate nohighlight">\(\left. \ \left| \Psi(0) \right.\  \right\rangle = \sum_{l}^{}{c_{l}(0)}\left. \ \left| \Phi_{l} \right.\  \right\rangle\)</span>
+avec
+<span class="math notranslate nohighlight">\(c_{l}(0) = \left\langle \Phi_{l} \middle| \Psi(t0) \right\rangle\)</span> et
+<span class="math notranslate nohighlight">\(\widehat{H}\left. \ \left| \Phi_{l} \right.\  \right\rangle\left. \  = E_{l}\left| \Phi_{l} \right.\  \right\rangle\)</span></p>
+<p>1°) On calcule alors
+<span class="math notranslate nohighlight">\(\left. \ \left| \Psi(t) \right.\  \right\rangle\)</span>pour tout <span class="math notranslate nohighlight">\(t\)</span> en
+multipliant chaque coefficient <span class="math notranslate nohighlight">\(c_{l}(0)\)</span> par <span class="math notranslate nohighlight">\(e^{- iE_{l}t/\hslash}\)</span>
+:
+<span class="math notranslate nohighlight">\(\left. \ \left| \Psi(t) \right.\  \right\rangle = \sum_{l}^{}{c_{l}(0)}e^{- iE_{l}t/\hslash}\left. \ \left| \Phi_{l} \right.\  \right\rangle\)</span></p>
+</div></blockquote>
+</section>
+<section id="constantes-du-mouvement">
+<h2>Constantes du mouvement<a class="headerlink" href="#constantes-du-mouvement" title="Permalink to this heading">#</a></h2>
+<p>La valeur moyenne d’une grandeur physique est donnée par :</p>
+<div class="math notranslate nohighlight">
+\[\left\langle \widehat{A} \right\rangle_{\Psi} = \left\langle \left. \ \Psi(t) \right| \right.\ \widehat{A}\left. \ \left| \Psi(t) \right.\  \right\rangle\]</div>
+<p>Sa dérivée par rapport au temps s’écrit :</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left\langle \widehat{A} \right\rangle_{\Psi} = \left( \frac{d}{dt}\left\langle \Psi(t) \right| \right)\widehat{A}\left| \Psi(t) \right\rangle + \left\langle \Psi(t) \right|\frac{\partial\widehat{A}}{\partial t}\left| \Psi(t) \right\rangle + \left\langle \Psi(t) \right|\widehat{A}\left( \frac{d}{dt}\left| \Psi(t) \right\rangle \right)\]</div>
+<p>La variation temporelle de cette grandeur peut être due à une dépendance
+explicite sur le temps ainsi qu’à une évolution de l’état du système. A
+l’aide de l’équation de Schrödinger :</p>
+<div class="math notranslate nohighlight">
+\[\left. \ \widehat{H}\left| \Psi(t) \right.\  \right\rangle = i\hslash\frac{d}{dt}\left. \ \left| \Psi(t) \right.\  \right\rangle\]</div>
+<p>et de l’équation correspondante dans l’espace dual :</p>
+<div class="math notranslate nohighlight">
+\[\left\langle \left. \ \Psi(t) \right|\widehat{H} \right.\  = - i\hslash\frac{d}{dt}\left\langle \left. \ \Psi(t) \right| \right.\ \]</div>
+<p>On obtient :</p>
+<div class="math notranslate nohighlight">
+\[i\hslash\left\langle \widehat{A} \right\rangle_{\Psi} = - \left\langle \left. \ \Psi(t) \right| \right.\ \widehat{H}\widehat{A}\left. \ \left| \Psi(t) \right.\  \right\rangle + \left\langle \left. \ \Psi(t) \right| \right.\ \widehat{A}\left. \ \widehat{H}\left| \Psi(t) \right.\  \right\rangle + i\hslash\left\langle \left. \ \Psi(t) \right| \right.\ \frac{\partial\widehat{A}}{\partial t}\left. \ \left| \Psi(t) \right.\  \right\rangle\]</div>
+<p>soit :</p>
+<div class="math notranslate nohighlight">
+\[i\hslash\left\langle \widehat{A} \right\rangle_{\Psi} = \left\langle \left. \ \Psi(t) \right| \right.\ \left\lbrack \widehat{A,}\widehat{H} \right\rbrack\left. \ \left| \Psi(t) \right.\  \right\rangle + i\hslash\left\langle \left. \ \Psi(t) \right| \right.\ \frac{\partial\widehat{A}}{\partial t}\left. \ \left| \Psi(t) \right.\  \right\rangle\]</div>
+<p>c’est-à-dire :</p>
+<div class="math notranslate nohighlight">
+\[i\hslash\left\langle \widehat{A} \right\rangle_{\Psi} = \left\langle \left\lbrack \widehat{A,}\widehat{H} \right\rbrack \right\rangle_{\Psi} + i\hslash\left\langle \frac{\partial\widehat{A}}{\partial t} \right\rangle_{\Psi}\]</div>
+<p>Si une observable ne dépend pas explicitement du temps et si elle
+commute avec le Hamiltonien alors sa valeur moyenne ne dépend pas du
+temps : on dit qu’elle représente une grandeur physique qui est une
+constante du mouvement <span class="target" id="index-3"></span>Constante du mouvement.</p>
+</section>
+<section id="exemple-systeme-a-deux-etats">
+<h2>Exemple : système à deux états<a class="headerlink" href="#exemple-systeme-a-deux-etats" title="Permalink to this heading">#</a></h2>
+<section id="l-ion-moleculaire-h-2">
+<h3>L’ion moléculaire <span class="math notranslate nohighlight">\(H_{2}^{+}\)</span><a class="headerlink" href="#l-ion-moleculaire-h-2" title="Permalink to this heading">#</a></h3>
+<p>L’ion moléculaire <span class="math notranslate nohighlight">\(H_{2}^{+}\)</span> est constitué de deux protons et un
+électron. Si l’électron est au voisinage d’un des protons, le système
+peut être considéré comme étant la superposition d’un atome d’hydrogène
+interagissant avec un proton. Si la distance internucléaire tend vers
+l’infini le proton et l’atome d’hydrogène sont supposés isolés. Le
+système <span class="math notranslate nohighlight">\(H_{2}^{+}\)</span> possède un grand nombre d’états de translation, de
+rotation et de vibration. C’est la raison pour laquelle nous supposons
+que la molécule est au repos c’est-à-dire que les énergies de
+translation, rotation et de vibrations sont aussi basses que possibles
+(cas limite : elles sont nulles). Dans ce cas, il reste encore deux
+états possibles selon que l’électron se trouve au voisinage du premier
+ou du second proton. Nous notons <span class="math notranslate nohighlight">\(\left| u_{1} \right\rangle\)</span> et
+<span class="math notranslate nohighlight">\(\left| u_{2} \right\rangle\)</span> ces deux états et nous supposons</p>
+<figure class="align-default" id="fig-ionh2plus">
+<a class="reference internal image-reference" href="_images/image28.png"><img alt="Ion moléculaire $H_2^+$" src="_images/image28.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">Ion moléculaire <span class="math notranslate nohighlight">\(H_2^+\)</span></span><a class="headerlink" href="#fig-ionh2plus" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Examinons la forme de l’énergie potentielle électrostatique au voisinage
+de la mi-distance entre les deux protons.</p>
+<p>A mi-distance, la somme vectorielle de forces électrostatiques exercées
+par les deux <span class="math notranslate nohighlight">\(H^{+}\)</span> sur l’électron est nulle car les 2 forces se
+compensent exactement donc <span class="math notranslate nohighlight">\(\frac{\partial V}{\partial x} = 0\)</span>.
+L’énergie potentielle <span class="math notranslate nohighlight">\(V\)</span> présente un extremum. Afin de déterminer s’il
+s’agit d’un maximum ou d’un minimum, on écarte l’électron de cette
+position. L’électron est alors attiré par le proton le plus proche. La
+mi-distance est donc un maximum local car il ne correspond pas à une
+position d’équilibre.</p>
+<p>Si <span class="math notranslate nohighlight">\(\left| u_{1} \right\rangle\)</span> et <span class="math notranslate nohighlight">\(\left| u_{2} \right\rangle\)</span> étaient
+stationnaires, c’est à dire si l’amplitude de probabilité que l’électron
+passe d’un proton à un autre, il correspondrait à la même énergie compte
+tenu de la symétrie du système. On a donc :</p>
+<div class="math notranslate nohighlight">
+\[H_{11} = \left\langle u_{1} \right|H\left| u_{1} \right\rangle = H_{22} = \left\langle u_{2} \right|H\left| u_{2} \right\rangle = E_{0}\]</div>
+<p>où <span class="math notranslate nohighlight">\(E_{0}\)</span> correspond à l’énergie d’un atome d’hydrogène à laquelle
+s’ajoute celle d’un proton.</p>
+<p>Il existe une amplitude de probabilité de transition que l’électron
+franchisse la barrière d’énergie potentielle par effet tunnel. Par
+conséquent <span class="math notranslate nohighlight">\(\left| u_{1} \right\rangle\)</span> et <span class="math notranslate nohighlight">\(\left| u_{2} \right\rangle\)</span>
+ne sont pas stationnaires et le Hamiltonien n’est pas diagonal dans
+cette base.</p>
+<p>Nous posons <span class="math notranslate nohighlight">\(H_{12} = H_{21} = - a\)</span>. Ainsi :</p>
+<p>$H_{\left{ \left| u_{1} \right\rangle,\left| u_{2} \right\rangle \right}} = \begin{pmatrix}
+E_{0} &amp; - a \</p>
+<ul class="simple">
+<li><p>a &amp; E_{0}
+\end{pmatrix}<span class="math notranslate nohighlight">\( avec \)</span>a &gt; 0$</p></li>
+</ul>
+<p>Recherchons les valeurs propres du Hamiltonien <span class="math notranslate nohighlight">\(H\)</span> et les états propres
+(états stationnaires) :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\det|H - \lambda I| = \left| \begin{matrix}
+E_{0} - \lambda &amp; - a \\
+ - a &amp; E_{0} - \lambda
+\end{matrix} \right| = 0\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\left( E_{0} - \lambda \right)^{2} - a^{2} = 0\]</div>
+<div class="math notranslate nohighlight">
+\[\left( E_{0} - \lambda + a \right)\left( E_{0} - \lambda - a \right) = 0\]</div>
+<p>Donc  <span class="math notranslate nohighlight">\(\lambda = E_{0} \pm a\)</span>sont les énergies des nouveaux états
+stationnaires.</p>
+<p>Recherchons le développement de l’état propre
+<span class="math notranslate nohighlight">\(\left| \varphi_{a} \right\rangle\)</span> (resp.
+<span class="math notranslate nohighlight">\(\left| \varphi_{b} \right\rangle\)</span>) associé à la valeur propre
+<span class="math notranslate nohighlight">\(E_{0} - a\)</span> (resp. <span class="math notranslate nohighlight">\(E_{0} + a\)</span>) dans la base des états
+<span class="math notranslate nohighlight">\(\left| u_{1} \right\rangle\)</span> et <span class="math notranslate nohighlight">\(\left| u_{2} \right\rangle\)</span>.</p>
+<p>En notation matricielle dans la base
+<span class="math notranslate nohighlight">\(\left\{ \ \left| u_{1} \right\rangle,\left| u_{2} \right\rangle \right\}\)</span>,
+on cherche donc les composantes <span class="math notranslate nohighlight">\(x\)</span> et <span class="math notranslate nohighlight">\(y\)</span> telles que :</p>
+<p>$\begin{pmatrix}
+E_{0} &amp; - a \</p>
+<ul class="simple">
+<li><p>a &amp; E_{0}
+\end{pmatrix}\begin{pmatrix}
+x \
+y
+\end{pmatrix} = \left( E_{0} - a \right)\begin{pmatrix}
+x \
+y
+\end{pmatrix}<span class="math notranslate nohighlight">\( avec
+\)</span>\left| \varphi_{a} \right\rangle = x\left| u_{1} \right\rangle + y\left| u_{2} \right\rangle$</p></li>
+</ul>
+<p>On obtient <span class="math notranslate nohighlight">\(x = y\)</span>. En normalisant l’état
+<span class="math notranslate nohighlight">\(\left| \varphi_{a} \right\rangle\)</span>, on trouve :</p>
+<div class="math notranslate nohighlight" id="equation-eq-47">
+<span class="eqno">(42)<a class="headerlink" href="#equation-eq-47" title="Permalink to this equation">#</a></span>\[\left| \varphi_{a} \right\rangle = \frac{1}{\sqrt{2}}\left( \left| u_{1} \right\rangle + \left| u_{2} \right\rangle \right)\]</div>
+<p>De même, on obtient :</p>
+<div class="math notranslate nohighlight" id="equation-eq-48">
+<span class="eqno">(43)<a class="headerlink" href="#equation-eq-48" title="Permalink to this equation">#</a></span>\[\left| \varphi_{b} \right\rangle = \frac{1}{\sqrt{2}}\left( \left| u_{1} \right\rangle - \left| u_{2} \right\rangle \right)\]</div>
+<p>L’état <span class="math notranslate nohighlight">\(\left| \varphi_{a} \right\rangle\)</span> possède une énergie inférieure
+à celle d’un proton séparé à l’infini d’un atome d’hydrogène (<span class="math notranslate nohighlight">\(E_{0}\)</span>)
+et l’énergie de liaison est numériquement égale à l’élément non diagonal
+du Hamiltonien <span class="math notranslate nohighlight">\(H\)</span>.</p>
+<p>L’amplitude de localisation pour l’état
+<span class="math notranslate nohighlight">\(\left. \ \left| \Phi_{a} \right.\  \right\rangle\)</span> est
+<span class="math notranslate nohighlight">\(\Phi_{a}\left( \overrightarrow{r} \right)\)</span> avec :</p>
+<div class="math notranslate nohighlight">
+\[\Phi_{a}\left( \overrightarrow{r} \right) = \frac{1}{\sqrt{2}}\left( \left\langle \overrightarrow{r} \middle| u_{1} \right\rangle + \left\langle \overrightarrow{r} \middle| u_{2} \right\rangle \right)\]</div>
+<p>Or par hypothèse
+<span class="math notranslate nohighlight">\(\left\langle \overrightarrow{r} \middle| u_{1} \right\rangle\)</span> (resp.
+<span class="math notranslate nohighlight">\(\left\langle \overrightarrow{r} \middle| u_{2} \right\rangle\)</span>) est une
+fonction qui présente des valeurs importantes pour des valeurs de
+<span class="math notranslate nohighlight">\(\overrightarrow{r}\)</span> correspondant à une localisation de l’électron au
+voisinage du premier (resp. second) proton.</p>
+<p>Si l’état de l’électron est décrit par
+<span class="math notranslate nohighlight">\(\left. \ \left| \varphi_{a} \right.\  \right\rangle\)</span>, l’électron
+possède la même AP de se trouver au voisinage du premier ou du second
+proton. Puisque l’électron possède une AP non nulle de passer d’un
+proton à l’autre, l’électron possède un AP non nulle entre les protons :
+son AP de localisation est donc symétrique par rapport au plan <span class="math notranslate nohighlight">\(x = 0\)</span>.
+Comme elle est associée à l’état lié, on dit que l’AP de localisation
+est liante. On parle d’orbitale liante.</p>
+<p>Si l’électron est dans l’état
+<span class="math notranslate nohighlight">\(\left. \ \left| \Phi_{b} \right.\  \right\rangle\)</span> l’électron possède la
+même AP de se trouver au voisinage du premier ou du second proton au
+signe près. L’amplitude de localisation est donc une fonction
+antisymétrique par rapport au plan <span class="math notranslate nohighlight">\(x = 0\)</span>. On dit que
+<span class="math notranslate nohighlight">\(\Phi_{b}\left( \overrightarrow{r} \right)\)</span> est une orbitale antiliante
+car son énergie est supérieure à celle d’un proton et d’un atome
+d’hydrogène isolé.</p>
+<p>Cependant que l’électron soit dans l’état
+<span class="math notranslate nohighlight">\(\left. \ \left| \Phi_{a} \right.\  \right\rangle\)</span> ou
+<span class="math notranslate nohighlight">\(\left. \ \left| \Phi_{b} \right.\  \right\rangle\)</span>, il possède la même
+probabilité de se trouver au voisinage de l’un ou l’autre des protons.</p>
+<p>On souhaite déterminer la variation temporelle
+<span class="math notranslate nohighlight">\(\left| u_{1} \right\rangle\)</span> des AP <span class="math notranslate nohighlight">\(c_{1}(t)\)</span> et <span class="math notranslate nohighlight">\(c_{2}(t)\)</span> de trouver
+le système dans l’état <span class="math notranslate nohighlight">\(\left| u_{1} \right\rangle\)</span> respectivement
+<span class="math notranslate nohighlight">\(\left| u_{2} \right\rangle\)</span> sachant qu’à <span class="math notranslate nohighlight">\(t = 0\)</span> le système est dans
+l’état <span class="math notranslate nohighlight">\(\left| \Psi(t = 0) \right\rangle = \left| u_{1} \right\rangle\)</span>.</p>
+<p>On développe l’état <span class="math notranslate nohighlight">\(\left| \Psi(t) \right\rangle\)</span> sur la base des états
+stationnaires
+<span class="math notranslate nohighlight">\(\left\{ \left| \varphi_{a} \right\rangle,\left| \varphi_{b} \right\rangle \right\}\)</span>
+car on sait comment évoluent les amplitudes des états stationnaires.</p>
+<p>On fait donc agir la relation de fermeture
+<span class="math notranslate nohighlight">\(\left| \varphi_{a} \right\rangle\left\langle \left. \ \varphi_{a} \right| + \ \left| \varphi_{b} \right\rangle\left\langle \left. \ \varphi_{b} \right|\  = \right.\ \widehat{1} \right.\ \)</span>
+sur l’état <span class="math notranslate nohighlight">\(\left| \Psi(t) \right\rangle\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\left| \Psi(t) \right\rangle = \left| \varphi_{a} \right\rangle\left\langle \varphi_{a} \middle| \Psi(t) \right\rangle + \left| \varphi_{b} \right\rangle\left\langle \varphi_{b} \middle| \Psi(t) \right\rangle = c_{a}(t)\left| \varphi_{a} \right\rangle + c_{b}(t)\left| \varphi_{b} \right\rangle\]</div>
+<p>On connaît la forme des amplitudes d’états <span class="math notranslate nohighlight">\(c_{a}(t)\)</span> et <span class="math notranslate nohighlight">\(c_{b}(t)\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\left| \Psi(t) \right\rangle = c_{a}(0)e^{- iE_{a}t/\hslash}\left| \varphi_{a} \right\rangle + c_{b}(0)e^{- iE_{b}t/\hslash}\left| \varphi_{b} \right\rangle = c_{a}(0)e^{- i\left( E_{0} - a \right)t/\hslash}\left| \varphi_{a} \right\rangle + c_{b}(0)e^{- i\left( E_{0} + a \right)t/\hslash}\left| \varphi_{b} \right\rangle\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-49">
+<span class="eqno">(44)<a class="headerlink" href="#equation-eq-49" title="Permalink to this equation">#</a></span>\[\left| \Psi(t) \right\rangle = e^{- iE_{0}t/\hslash}\left\lbrack c_{a}(0)e^{iat/\hslash}\left| \varphi_{a} \right\rangle + c_{b}(0)e^{- iat/\hslash}\left| \varphi_{b} \right\rangle \right\rbrack\]</div>
+<p>Or à t=0 :</p>
+<div class="math notranslate nohighlight" id="equation-eq-50">
+<span class="eqno">(45)<a class="headerlink" href="#equation-eq-50" title="Permalink to this equation">#</a></span>\[\left| \Psi(t = 0) \right\rangle = \left| u_{1} \right\rangle\]</div>
+<p>En identifiant <a class="reference internal" href="#equation-eq-49">(44)</a> et <a class="reference internal" href="#equation-eq-50">(45)</a> on
+obtient :</p>
+<div class="math notranslate nohighlight">
+\[\left| u_{1} \right\rangle = c_{a}(0)\left| \varphi_{a} \right\rangle + c_{b}(0)\left| \varphi_{b} \right\rangle\]</div>
+<p>Développons l’état <span class="math notranslate nohighlight">\(\left| u_{1} \right\rangle\)</span> sur les états
+stationnaires afin de déterminer par identification les amplitudes
+d’état <span class="math notranslate nohighlight">\(c_{a}(0)\)</span> et <span class="math notranslate nohighlight">\(c_{b}(0)\)</span>. D’après <a class="reference internal" href="#equation-eq-47">(42)</a> et
+<a class="reference internal" href="#equation-eq-48">(43)</a>, on a :</p>
+<p><span class="math notranslate nohighlight">\(\left| \varphi_{a} \right\rangle + \left| \varphi_{b} \right\rangle = \sqrt{2}\left| u_{1} \right\rangle\)</span>
+soit
+<span class="math notranslate nohighlight">\(\left| u_{1} \right\rangle = \frac{1}{\sqrt{2}}\left( \left| \varphi_{a} \right\rangle + \left| \varphi_{b} \right\rangle \right)\)</span></p>
+<p>Cela entraîne :</p>
+<div class="math notranslate nohighlight">
+\[c_{a}(0) = c_{b}(0) = \frac{1}{\sqrt{2}}\]</div>
+<p>soit  :</p>
+<div class="math notranslate nohighlight">
+\[\left| \Psi(t) \right\rangle = \frac{e^{- iE_{0}t/\hslash}}{\sqrt{2}}\left\lbrack e^{iat/\hslash}\left| \varphi_{a} \right\rangle + e^{- iat/\hslash}\left| \varphi_{b} \right\rangle \right\rbrack\]</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "executablebooks/jupyter-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chap6-etats-quantiques.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Etats quantiques</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="references.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Références</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-de-schrodinger-dans-une-base-donnee">Equation de Schrödinger dans une base donnée</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etats-stationnaires">Etats stationnaires</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recherche-systematique-des-etats-stationnaires">Recherche systématique des états stationnaires</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constantes-du-mouvement">Constantes du mouvement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemple-systeme-a-deux-etats">Exemple : système à deux états</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-ion-moleculaire-h-2">L’ion moléculaire <span class="math notranslate nohighlight">\(H_{2}^{+}\)</span></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Gilles Nguyen Vien
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
