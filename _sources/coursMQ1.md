@@ -22,6 +22,10 @@ Ce contenu pédagogique est adressé à des étudiant.e.s de deuxième année de
 }
 ```
 
+```{thebe-button}
+```
+
+
 
 Brest, le 7 janvier 2026
 Département de Physique
