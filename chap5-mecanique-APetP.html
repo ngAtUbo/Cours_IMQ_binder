@@ -71,6 +71,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="/Cours_IMQ_binder/chap5-mecanique-APetP.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Etats quantiques" href="chap6-etats-quantiques.html" />
+    <link rel="prev" title="Les fondements de la mécanique quantique" href="chap4-fondements.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -164,7 +166,26 @@ const thebe_selector_output = ".output, .cell_output"
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Présentation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index_general.html">Index des mots-clés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biblioCours.html">Bibliographie</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Cours</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chap1-introduction.html">Origine de la mécanique quantique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap2-ondulatoire-classique.html">Rappel comportement ondulatoire classique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap3-lumiere.html">La lumière</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap4-fondements.html">Les fondements de la mécanique quantique</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Probabilités et amplitudes quantiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap6-etats-quantiques.html">Etats quantiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap7-evolution-temporelle.html">Opérateur d’évolution et équation de Schrödinger</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Références</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="references.html">Références</a></li>
+</ul>
+
     </div>
 </nav></div>
     </div>
@@ -381,7 +402,7 @@ est :</p>
 <figure class="align-default" id="fig-anglespolar">
 <a class="reference internal image-reference" href="_images/imagePol19.png"><img alt="Angles de polarisation" src="_images/imagePol19.png" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-text">Angles de polarisation.</span><a class="headerlink" href="#fig-anglespolar" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Angles de polarisation.</span><a class="headerlink" href="#fig-anglespolar" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>L’intensité mesurée après le second  polariseur est donnée par :</p>
@@ -465,18 +486,18 @@ fluctuations statistiques deviennent relativement moins importantes
 lorsque le nombre de photons est grand.</p>
 <p>L’expérience d’Young réalisée avec une source de très faible intensité
 permet de mettre en évidence les impacts localisés des photons sur la
-plaque photographique <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig-clichés</span></code> :</p>
+plaque photographique <a class="reference internal" href="#fig-cliches"><span class="std std-numref">Fig. 26</span></a> :</p>
 <p><strong>Photographie prise avec :</strong></p>
 <figure class="align-default" id="fig-cliches">
 <a class="reference internal image-reference" href="_images/image24.png"><img alt="Clichés sous différentes intensités" src="_images/image24.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Clichés pris avec : a) <span class="math notranslate nohighlight">\(10^3\)</span> photons b) <span class="math notranslate nohighlight">\(1,2 \times 10^4\)</span> photons c) <span class="math notranslate nohighlight">\(9,3 \times 10^4\)</span> photons d) <span class="math notranslate nohighlight">\(7,4 \times ^5\)</span> photons e) <span class="math notranslate nohighlight">\(3,6 \times 10^6\)</span> photons f) <span class="math notranslate nohighlight">\(2,8 \times 10^7\)</span> photons</span><a class="headerlink" href="#fig-cliches" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Clichés pris avec : a) <span class="math notranslate nohighlight">\(10^3\)</span> photons b) <span class="math notranslate nohighlight">\(1,2 \times 10^4\)</span> photons c) <span class="math notranslate nohighlight">\(9,3 \times 10^4\)</span> photons d) <span class="math notranslate nohighlight">\(7,4 \times ^5\)</span> photons e) <span class="math notranslate nohighlight">\(3,6 \times 10^6\)</span> photons f) <span class="math notranslate nohighlight">\(2,8 \times 10^7\)</span> photons</span><a class="headerlink" href="#fig-cliches" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="fig-frangesy">
 <a class="reference internal image-reference" href="_images/image25.png"><img alt="Franges d\'Young à différentes intensités" src="_images/image25.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Franges d’Young à différentes intensités : a) <span class="math notranslate nohighlight">\(28\)</span> photons b) <span class="math notranslate nohighlight">\(1 000\)</span> photons c) <span class="math notranslate nohighlight">\(10 000\)</span> photons**</span><a class="headerlink" href="#fig-frangesy" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Franges d’Young à différentes intensités : a) <span class="math notranslate nohighlight">\(28\)</span> photons b) <span class="math notranslate nohighlight">\(1 000\)</span> photons c) <span class="math notranslate nohighlight">\(10 000\)</span> photons**</span><a class="headerlink" href="#fig-frangesy" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Les franges sombres et les franges brillantes dont l’existence est
@@ -500,12 +521,12 @@ système physique réalisé au moyen d’une expérience. Une telle expérience
 sera décrite par l’état initial du système étudié et par ce même état
 dans un état final.</p>
 <p>Considérons le dispositif de Young mais avec une source produisant des
-corpuscules classiques des balles de fusils (indestructibles) comme le montre la <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig-corpClass</span></code> par
+corpuscules classiques des balles de fusils (indestructibles) comme le montre la <a class="reference internal" href="#fig-corpclass"><span class="std std-numref">Fig. 28</span></a> par
 exemple .</p>
 <figure class="align-default" id="fig-corpclass">
 <a class="reference internal image-reference" href="_images/image22.png"><img alt="Corpuscules classiques" src="_images/image22.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Corpuscules classiques</span><a class="headerlink" href="#fig-corpclass" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Corpuscules classiques</span><a class="headerlink" href="#fig-corpclass" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Un ensemble de détecteurs
@@ -522,11 +543,11 @@ dans l’espace et dans le temps.</p>
 <p>Gardons le même dispositif mais remplaçons la source de particules
 classiques par une source d’ondes classiques. Lorsque seul le trou 1
 est ouvert l’intensité est donnée par <span class="math notranslate nohighlight">\(I_{1}(y)\)</span> et lorsque seul le
-trou 2 est ouvert, elle est donnée par la courbe <span class="math notranslate nohighlight">\(I_{2}(y)\)</span> (<code class="xref std std-numref docutils literal notranslate"><span class="pre">fig-interOndesClass</span></code>).</p>
+trou 2 est ouvert, elle est donnée par la courbe <span class="math notranslate nohighlight">\(I_{2}(y)\)</span> (<a class="reference internal" href="#fig-interondesclass"><span class="std std-numref">Fig. 29</span></a>).</p>
 <figure class="align-default" id="fig-interondesclass">
 <a class="reference internal image-reference" href="_images/image26.jpg"><img alt="Ondes classiques" src="_images/image26.jpg" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Ondes classiques</span><a class="headerlink" href="#fig-interondesclass" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">Ondes classiques</span><a class="headerlink" href="#fig-interondesclass" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Par contre lorsque les deux trous sont ouverts l’intensité mesurée sur
@@ -552,7 +573,7 @@ classiques. Cependant la détection se fait toujours par impacts
 localisés dans l’espace et dans le temps comme pour des corpuscules.</p>
 <p>Les deux aspects, corpusculaire et ondulatoire, se manifestent dans la
 même expérience. On obtient le même type de résultats avec des photons
-(<code class="xref std std-numref docutils literal notranslate"><span class="pre">fig-interOndesClass</span></code>), des neutrons ou même des atomes.</p>
+(<a class="reference internal" href="#fig-interondesclass"><span class="std std-numref">Fig. 29</span></a>), des neutrons ou même des atomes.</p>
 <p>Une conséquence importante de la distribution des électrons observée
 lorsque les deux trous sont ouverts <u>est qu’il est impossible
 d’affirmer que chaque électron est passé soit par un trou soit par
@@ -568,7 +589,7 @@ ouvert</u>]. Il n’y aurait donc pas d’interférence.</p>
 <figure class="align-default" id="fig-eclairfentes">
 <a class="reference internal image-reference" href="_images/eclairFentes.png"><img alt="Eclairage des fentes" src="_images/eclairFentes.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Eclairage des fentes</span><a class="headerlink" href="#fig-eclairfentes" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">Eclairage des fentes</span><a class="headerlink" href="#fig-eclairfentes" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>L’éclairage des trous permet effectivement de savoir par quelle fente
@@ -666,11 +687,11 @@ orientation</u>. <u>De même le module de l’amplitude résultante
 est minimal si leur déphasage est π</u> ; elles sont alors
 représentées par des vecteurs opposés dans le plan complexe. Dans le
 premier cas l’interférence est constructive. Toutes les situations
-intermédiaires sont évidemment possibles (<code class="xref std std-numref docutils literal notranslate"><span class="pre">fig-APPlanComplexes</span></code>).</p>
+intermédiaires sont évidemment possibles (<a class="reference internal" href="#fig-applancomplexes"><span class="std std-numref">Fig. 31</span></a>).</p>
 <figure class="align-default" id="fig-applancomplexes">
 <a class="reference internal image-reference" href="_images/image26.png"><img alt="Représentation des amplitudes dans le plan complexe" src="_images/image26.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Sommation des AP dans le plan complexe</span><a class="headerlink" href="#fig-applancomplexes" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Sommation des AP dans le plan complexe</span><a class="headerlink" href="#fig-applancomplexes" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -749,7 +770,7 @@ appropriée :</p>
 <figure class="align-default" id="fig-rectillumiere">
 <a class="reference internal image-reference" href="_images/image26bis.png"><img alt="Trajet rectiligne de la lumière" src="_images/image26bis.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Trajet rectiligne de la lumière</span><a class="headerlink" href="#fig-rectillumiere" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 32 </span><span class="caption-text">Trajet rectiligne de la lumière</span><a class="headerlink" href="#fig-rectillumiere" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Une source de lumière S émet des photons dont certains passent à travers
@@ -778,7 +799,7 @@ phase est déterminée par le temps de parcours. selon <span id="id3">[<a class=
 \[A = e^{j\theta}\]</div>
 <p>où <span class="math notranslate nohighlight">\(\theta\)</span> est la phase caractéristique d’un chemin quelconque qui joint un point à un autre.</p>
 <div class="math notranslate nohighlight" id="equation-eq-phiaction">
-<span class="eqno">()<a class="headerlink" href="#equation-eq-phiaction" title="Permalink to this equation">#</a></span>\[\theta = \frac{S}{\hbar}\]</div>
+<span class="eqno">(33)<a class="headerlink" href="#equation-eq-phiaction" title="Permalink to this equation">#</a></span>\[\theta = \frac{S}{\hbar}\]</div>
 <p>où <span class="math notranslate nohighlight">\(S\)</span> est l’action associée à un chemin.</p>
 <p>Pour un photon dans un milieu optique, l’action est proportionnelle au chemin optique qui est lui même la longueur du trajet multipliée par l’indice du milieu.</p>
 <div class="math notranslate nohighlight">
@@ -791,7 +812,7 @@ phase est déterminée par le temps de parcours. selon <span id="id3">[<a class=
 <div class="math notranslate nohighlight">
 \[ \Phi = k_0 \Delta\]</div>
 <p>où <span class="math notranslate nohighlight">\(k_0 = 2\pi/\lambda_0\)</span> est le nombre d’onde dans le vide et <span class="math notranslate nohighlight">\(\lambda_0\)</span> la longueur d’onde dans le vide.</p>
-<p>Ainsi d’après la formulation <a class="reference internal" href="#equation-eq-phiaction">()</a> l’action <span class="math notranslate nohighlight">\(S\)</span> est :</p>
+<p>Ainsi d’après la formulation <a class="reference internal" href="#equation-eq-phiaction">(33)</a> l’action <span class="math notranslate nohighlight">\(S\)</span> est :</p>
 <div class="math notranslate nohighlight">
 \[S=\hbar \Phi=\hbar k_0 n L==\hbar k L\]</div>
 <p>Les différents chemins étant indiscernables, il faut
@@ -805,7 +826,7 @@ reçoit aucun photon. Nous allons essayer d’estimer la plus petite
 valeur de θ compatible avec cette condition.</p>
 <p>Remarquons d’abord que si la différence de phase entre les amplitudes
 associées aux chemins extrêmes ne dépasse pas π , la somme des
-amplitudes ne peut pas être nulle <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig-PSAPPhotons</span></code>. Si
+amplitudes ne peut pas être nulle <a class="reference internal" href="#fig-psapphotons"><span class="std std-numref">Fig. 33</span></a>. Si
 d est la largeur de la fente, la différence de marche entre le chemin le
 plus court et le chemin le
 plus long est <span class="math notranslate nohighlight">\(d\;\sin\theta\)</span>. Le déphasage entre les deux phases accumulées est donc :</p>
@@ -814,7 +835,7 @@ plus long est <span class="math notranslate nohighlight">\(d\;\sin\theta\)</span
 <figure class="align-default" id="fig-psapphotons">
 <a class="reference internal image-reference" href="_images/image27.png"><img alt="PSAP de propagation des photons" src="_images/image27.png" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-text">PSAP de propagation des photons</span><a class="headerlink" href="#fig-psapphotons" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">PSAP de propagation des photons</span><a class="headerlink" href="#fig-psapphotons" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>La condition nécessaire pour que <span class="math notranslate nohighlight">\(D_2\)</span> ne reçoive pas de photons est donc que <span class="math notranslate nohighlight">\(\mathrm{\Delta}\phi\)</span> dépasse <span class="math notranslate nohighlight">\(\pi\)</span></p>
@@ -913,6 +934,24 @@ biaxes.</p>
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="chap4-fondements.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Les fondements de la mécanique quantique</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chap6-etats-quantiques.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Etats quantiques</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
