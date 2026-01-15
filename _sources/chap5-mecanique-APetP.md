@@ -2,6 +2,11 @@
 
 ## Introduction
 
+```{contents}
+:local:
+:depth: 3
+```
+
 Nous avons vu que le concept de photon s\'est imposé pour expliquer
 certains phénomènes impliquant des ondes électromagnétiques. Einstein a
 émis en 1905 l\'idée selon laquelle la théorie électromagnétique de
