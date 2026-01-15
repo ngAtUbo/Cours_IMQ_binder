@@ -69,8 +69,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'chap6-etats-quantiques';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Opérateur d’évolution et équation de Schrödinger" href="chap7-evolution-temporelle.html" />
-    <link rel="prev" title="Probabilités et amplitudes quantiques" href="chap5-mecanique-APetP.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -164,26 +162,7 @@ const thebe_selector_output = ".output, .cell_output"
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Présentation</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="index_general.html">Index des mots-clés</a></li>
-<li class="toctree-l1"><a class="reference internal" href="biblioCours.html">Bibliographie</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Cours</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="chap1-introduction.html">Origine de la mécanique quantique</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chap2-ondulatoire-classique.html">Rappel comportement ondulatoire classique</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chap3-lumiere.html">La lumière</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chap4-fondements.html">Les fondements de la mécanique quantique</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chap5-mecanique-APetP.html">Probabilités et amplitudes quantiques</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Etats quantiques</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chap7-evolution-temporelle.html">Opérateur d’évolution et équation de Schrödinger</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Références</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="references.html">Références</a></li>
-</ul>
-
+        
     </div>
 </nav></div>
     </div>
@@ -590,14 +569,14 @@ droite en considérant l’adjoint de l’opérateur :
 <div class="math notranslate nohighlight">
 \[\left| v \right\rangle = \widehat{A} \left| u \right\rangle\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-38">
-<span class="eqno">(34)<a class="headerlink" href="#equation-eq-38" title="Permalink to this equation">#</a></span>\[\left| w \right\rangle = \widehat{B} \left| v \right\rangle\]</div>
+<span class="eqno">()<a class="headerlink" href="#equation-eq-38" title="Permalink to this equation">#</a></span>\[\left| w \right\rangle = \widehat{B} \left| v \right\rangle\]</div>
 <p>On dira que <span class="math notranslate nohighlight">\(\widehat{C} = \widehat{B}\widehat{A}\)</span> si pour tout ket de
 <span class="math notranslate nohighlight">\(\varepsilon\)</span> :</p>
 <p><span class="math notranslate nohighlight">\(\widehat{C}\left| u \right\rangle = \left| w \right\rangle\)</span>.</p>
 <p>L’adjoint de <span class="math notranslate nohighlight">\(\widehat{C}\)</span> est tel que :</p>
 <div class="math notranslate nohighlight">
 \[\left\langle w \right| = \left\langle u \right|{\widehat{C}}^{\dagger}\]</div>
-<p>Or on a d’après <a class="reference internal" href="#equation-eq-38">(34)</a> :</p>
+<p>Or on a d’après <a class="reference internal" href="#equation-eq-38">()</a> :</p>
 <div class="math notranslate nohighlight">
 \[\left\langle w \right| = \left\langle v \right|{\widehat{B}}^{\dagger}\]</div>
 <p>ou encore :</p>
@@ -640,11 +619,11 @@ transformation unitaire.</p>
 <h3>Transformation d’un opérateur<a class="headerlink" href="#transformation-d-un-operateur" title="Permalink to this heading">#</a></h3>
 <p>Soit :</p>
 <div class="math notranslate nohighlight" id="equation-eq-39">
-<span class="eqno">(35)<a class="headerlink" href="#equation-eq-39" title="Permalink to this equation">#</a></span>\[\left| Y \right\rangle = \widehat{A}\left| X \right\rangle\]</div>
+<span class="eqno">()<a class="headerlink" href="#equation-eq-39" title="Permalink to this equation">#</a></span>\[\left| Y \right\rangle = \widehat{A}\left| X \right\rangle\]</div>
 <p>Cherchons <span class="math notranslate nohighlight">\(\widehat{A}'\)</span> tel que :</p>
 <div class="math notranslate nohighlight">
 \[\left| Y' \right\rangle = \widehat{A}'\left| X' \right\rangle\]</div>
-<p>D’après l’égalité <a class="reference internal" href="#equation-eq-39">(35)</a> on a :</p>
+<p>D’après l’égalité <a class="reference internal" href="#equation-eq-39">()</a> on a :</p>
 <div class="math notranslate nohighlight">
 \[\widehat{U}\left| Y \right\rangle = \widehat{U}\widehat{A}\left| X \right\rangle = \widehat{U}\widehat{A}{\widehat{U}}^{\dagger}\widehat{U}\left| X \right\rangle\]</div>
 <p>soit :</p>
@@ -680,17 +659,17 @@ physique quantique.</p>
 <span class="math notranslate nohighlight">\(\widehat{A}\left| x \right\rangle\)</span> est proportionnel à
 <span class="math notranslate nohighlight">\(\left| x \right\rangle\)</span> c’est-à-dire si :</p>
 <div class="math notranslate nohighlight" id="equation-eq-40">
-<span class="eqno">(36)<a class="headerlink" href="#equation-eq-40" title="Permalink to this equation">#</a></span>\[\widehat{A}\left| x \right\rangle = \lambda\left| x \right\rangle\]</div>
+<span class="eqno">()<a class="headerlink" href="#equation-eq-40" title="Permalink to this equation">#</a></span>\[\widehat{A}\left| x \right\rangle = \lambda\left| x \right\rangle\]</div>
 <p><span class="math notranslate nohighlight">\(\lambda\)</span> est la valeur propre de <span class="math notranslate nohighlight">\(\widehat{A}\)</span> associée au vecteur
 propre <span class="math notranslate nohighlight">\(\left| x \right\rangle\)</span>. Si à une valeur propre correspond deux
 ou plusieurs vecteurs propres, on dit qu’elle est dégénérée. Ces
 vecteurs engendrent un sous-espace associé à la valeur propre.</p>
 <p><strong><u>Dans la suite, par soucis de simplification, nous supposerons que les
 valeurs propres sont non dégénérées</u></strong>.</p>
-<p>Ecrivons la relation <a class="reference internal" href="#equation-eq-40">(36)</a> dans l’espace dual :</p>
+<p>Ecrivons la relation <a class="reference internal" href="#equation-eq-40">()</a> dans l’espace dual :</p>
 <div class="math notranslate nohighlight" id="equation-eq-41">
-<span class="eqno">(37)<a class="headerlink" href="#equation-eq-41" title="Permalink to this equation">#</a></span>\[\left\langle x \right|{\widehat{A}}^{+} = \lambda^{*}\left\langle x \right|\]</div>
-<p>Les relations <a class="reference internal" href="#equation-eq-40">(36)</a> et <a class="reference internal" href="#equation-eq-41">(37)</a> donnent :</p>
+<span class="eqno">()<a class="headerlink" href="#equation-eq-41" title="Permalink to this equation">#</a></span>\[\left\langle x \right|{\widehat{A}}^{+} = \lambda^{*}\left\langle x \right|\]</div>
+<p>Les relations <a class="reference internal" href="#equation-eq-40">()</a> et <a class="reference internal" href="#equation-eq-41">()</a> donnent :</p>
 <div class="math notranslate nohighlight">
 \[\left\langle x \right|\widehat{A}\left| x \right\rangle = \lambda\left\langle x \middle| x \right\rangle\]</div>
 <div class="math notranslate nohighlight">
@@ -702,15 +681,15 @@ réelles</u>.</p>
 <p>Considérons deux kets propres <span class="math notranslate nohighlight">\(\left| x_{1} \right\rangle\)</span> et
 <span class="math notranslate nohighlight">\(\left| x_{2} \right\rangle\)</span> du même opérateur hermitique :</p>
 <div class="math notranslate nohighlight" id="equation-eq-42">
-<span class="eqno">(38)<a class="headerlink" href="#equation-eq-42" title="Permalink to this equation">#</a></span>\[\widehat{A}\left| x_{1} \right\rangle = \lambda_{1}\left| x_{1} \right\rangle\]</div>
+<span class="eqno">()<a class="headerlink" href="#equation-eq-42" title="Permalink to this equation">#</a></span>\[\widehat{A}\left| x_{1} \right\rangle = \lambda_{1}\left| x_{1} \right\rangle\]</div>
 <p>(43) <span class="math notranslate nohighlight">\(\widehat{A}\left| x_{2} \right\rangle = \lambda_{2}\left| x_{2} \right\rangle\)</span></p>
 <p>Dans l’espace dual :</p>
 <p><span class="math notranslate nohighlight">\(\widehat{A}\)</span> étant un opérateur hermitique
 (<span class="math notranslate nohighlight">\(\widehat{A} = {\widehat{A}}^{+}\)</span>), sa valeur propre est réelle, on
 peut donc écrire :</p>
 <div class="math notranslate nohighlight" id="equation-eq-44">
-<span class="eqno">(39)<a class="headerlink" href="#equation-eq-44" title="Permalink to this equation">#</a></span>\[\left\langle x_{2} \right|\widehat{A} = \lambda_{2}\left\langle x_{2} \right|\]</div>
-<p>Des relations  <a class="reference internal" href="#equation-eq-42">(38)</a> et <a class="reference internal" href="#equation-eq-44">(39)</a>, on tire :</p>
+<span class="eqno">()<a class="headerlink" href="#equation-eq-44" title="Permalink to this equation">#</a></span>\[\left\langle x_{2} \right|\widehat{A} = \lambda_{2}\left\langle x_{2} \right|\]</div>
+<p>Des relations  <a class="reference internal" href="#equation-eq-42">()</a> et <a class="reference internal" href="#equation-eq-44">()</a>, on tire :</p>
 <div class="math notranslate nohighlight">
 \[\left\langle x_{2} \right|\widehat{A}\left| x_{1} \right\rangle = \lambda_{1}\left\langle x_{2} \middle| x_{1} \right\rangle\]</div>
 <div class="math notranslate nohighlight">
@@ -723,7 +702,7 @@ peut donc écrire :</p>
 vecteurs propres d’un opérateur hermitique associés à des valeurs
 propres différentes sont orthogonaux</u>.</p>
 <p>Lors d’un changement de base réalisé au moyen d’une transformation
-unitaire, l’équation <a class="reference internal" href="#equation-eq-40">(36)</a> devient :</p>
+unitaire, l’équation <a class="reference internal" href="#equation-eq-40">()</a> devient :</p>
 <div class="math notranslate nohighlight">
 \[\widehat{U}\widehat{A}\left| x \right\rangle = \lambda\widehat{U}\left| x \right\rangle\]</div>
 <p>soit :</p>
@@ -755,12 +734,12 @@ forme une base de l’espace des états d’un système. Tout état
 <span class="math notranslate nohighlight">\(\left| \Psi \right\rangle\)</span> de ce système peut donc être développé sur
 cette base, c’est-à-dire qu’on peut l’écrire sous la forme :</p>
 <div class="math notranslate nohighlight" id="equation-eq-45">
-<span class="eqno">(40)<a class="headerlink" href="#equation-eq-45" title="Permalink to this equation">#</a></span>\[\left| \Psi \right\rangle = \sum_{k = 1}^{N}{C_{k}\left| u_{k} \right\rangle}\]</div>
+<span class="eqno">()<a class="headerlink" href="#equation-eq-45" title="Permalink to this equation">#</a></span>\[\left| \Psi \right\rangle = \sum_{k = 1}^{N}{C_{k}\left| u_{k} \right\rangle}\]</div>
 <p>La donnée des coefficients du développement <span class="math notranslate nohighlight">\(c_{k}\)</span> définit complètement
 l’état du système. La dimension de l’espace <span class="math notranslate nohighlight">\(N\)</span> est le nombre maximum
 de vecteurs linéairement indépendants qu’il peut contenir. La dimension
 de l’espace des états dépend du système étudié et elle peut aller de
-deux à l’infini. Le développement <a class="reference internal" href="#equation-eq-45">(40)</a> est une
+deux à l’infini. Le développement <a class="reference internal" href="#equation-eq-45">()</a> est une
 superposition linéaire d’états <span class="target" id="index-6"></span>Superposition linéaire d’états.</p>
 <p>Supposons que les produits scalaires des vecteurs de base vérifient la
 condition.</p>
@@ -772,7 +751,7 @@ indices sont égaux et 0 s’ils sont différents).</p>
 orthogonaux entre eux. On dit alors que la base est orthonormée. Dans la
 suite nous supposerons toujours que la base utilisée est orthonormée.</p>
 <p>On peut trouver les coefficients du développement en projetant
-l’équation <a class="reference internal" href="#equation-eq-45">(40)</a> sur un état de base particulier.</p>
+l’équation <a class="reference internal" href="#equation-eq-45">()</a> sur un état de base particulier.</p>
 <div class="math notranslate nohighlight">
 \[\left\langle u_{l} \middle| \Psi \right\rangle = \sum_{k = 1}^{N}{C_{k}\left\langle u_{l} \middle| u_{k} \right\rangle}\]</div>
 <p>soit :</p>
@@ -927,8 +906,8 @@ A_{N1} &amp; &amp; A_{NN}
 </div>
 <p>Considérons l’équation :</p>
 <div class="math notranslate nohighlight" id="equation-eq-46">
-<span class="eqno">(41)<a class="headerlink" href="#equation-eq-46" title="Permalink to this equation">#</a></span>\[\left| \Phi \right\rangle = \widehat{A}\left| \Psi \right\rangle\]</div>
-<p>On projette <a class="reference internal" href="#equation-eq-46">(41)</a> sur un vecteur de base :</p>
+<span class="eqno">()<a class="headerlink" href="#equation-eq-46" title="Permalink to this equation">#</a></span>\[\left| \Phi \right\rangle = \widehat{A}\left| \Psi \right\rangle\]</div>
+<p>On projette <a class="reference internal" href="#equation-eq-46">()</a> sur un vecteur de base :</p>
 <p><span class="math notranslate nohighlight">\(\left\langle u_{j} \middle| \Phi \right\rangle = \left\langle u_{j} \right|\widehat{A}\left| \Psi \right\rangle\)</span>
 <span class="math notranslate nohighlight">\(j = 1,\; 2,...\; N\)</span>
 <span class="math notranslate nohighlight">\(j = 1,\; 2,...\; N\)</span></p>
@@ -1220,24 +1199,6 @@ préhilbertien séparé.</p>
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="chap5-mecanique-APetP.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Probabilités et amplitudes quantiques</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="chap7-evolution-temporelle.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Opérateur d’évolution et équation de Schrödinger</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
