@@ -593,7 +593,7 @@ uniformément de telle manière que les charges positives et négatives
 étaient en nombres égaux afin d\'assurer la neutralité électrique de
 l\'atome.
 
-En 1908, Rutherford [^32] tente de mesurer la distribution de la charge
+En 1908, Rutherford [^32] {cite}`rutherford1920bakerian` tente de mesurer la distribution de la charge
 positive à l\'intérieur de la sphère de Rutherford sur l\'idée que le
 meilleur moyen de trouver ce qu\'il y a à l\'intérieur du pudding était
 de mettre le doigt dedans. Ainsi il bombarda des feuilles d\'or
