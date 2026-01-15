@@ -465,7 +465,7 @@ En notation matricielle dans la base
 $\left\{ \ \left| u_{1} \right\rangle,\left| u_{2} \right\rangle \right\}$,
 on cherche donc les composantes $x$ et $y$ telles que :
 
-$\begin{pmatrix}
+$$\begin{pmatrix}
 E_{0} & - a \\
  - a & E_{0}
 \end{pmatrix}\begin{pmatrix}
@@ -474,12 +474,13 @@ y
 \end{pmatrix} = \left( E_{0} - a \right)\begin{pmatrix}
 x \\
 y
-\end{pmatrix}$ avec
+\end{pmatrix}$$
+
+avec
 $\left| \varphi_{a} \right\rangle = x\left| u_{1} \right\rangle + y\left| u_{2} \right\rangle$
 
 On obtient $x = y$. En normalisant l'état
 $\left| \varphi_{a} \right\rangle$, on trouve :
-
 
 ```{math}
 :label: eq-47
