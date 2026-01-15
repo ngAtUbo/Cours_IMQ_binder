@@ -499,12 +499,12 @@ Ce trou apparaît noir seulement à basse température pour laquelle la
 plupart de l\'énergie est émise à des longueurs d'onde supérieures à
 celles du visible (infra rouge).
 
-En installant un spectromètre devant le petit trou, on peut étudier le
+En installant un spectromètre devant le petit trou {cite}`guillaume1905radiations`, on peut étudier le
 rayonnement en mesurant son énergie en fonction des différentes
 longueurs d'onde émises.
 
 Les premières mesures d'émittance spectrale [^26] du corps noir furent
-faites par Lummer [^27], Kurlbaum [^28] et Pringsheim [^29] à la fin du
+faites par Lummer [^27] {cite}`paschen1900distribution`, Kurlbaum [^28] et Pringsheim [^29] à la fin du
 19ème siècle.
 
 ```{figure} media/image16.png
