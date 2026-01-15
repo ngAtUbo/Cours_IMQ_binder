@@ -11,6 +11,10 @@ kernelspec:
 
 # Les fondements de la mécanique quantique
 
+```{contents}
+:local:
+:depth: 3
+```
 
 ## Evidence expérimentale de l\'incompatibilité de certaines grandeurs
 
