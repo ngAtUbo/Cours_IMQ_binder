@@ -438,7 +438,8 @@ $$H_{\left\{ \left| u_{1} \right\rangle,\left| u_{2} \right\rangle \right\}} = \
 E_{0} & - a \\
  - a & E_{0}
 \end{pmatrix}$$
- $a > 0$
+ 
+ avec $a > 0$
 
 Recherchons les valeurs propres du Hamiltonien $H$ et les états propres
 (états stationnaires) :
@@ -476,8 +477,7 @@ x \\
 y
 \end{pmatrix}$$
 
-avec
-$\left| \varphi_{a} \right\rangle = x\left| u_{1} \right\rangle + y\left| u_{2} \right\rangle$
+avec $\left| \varphi_{a} \right\rangle = x\left| u_{1} \right\rangle + y\left| u_{2} \right\rangle$
 
 On obtient $x = y$. En normalisant l'état
 $\left| \varphi_{a} \right\rangle$, on trouve :
