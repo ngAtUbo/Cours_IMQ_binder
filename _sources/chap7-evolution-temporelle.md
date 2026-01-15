@@ -93,7 +93,7 @@ On choisit des états de base dont le choix arbitraire nous permet
 d\'appréhender le comportement du système.
 
 Supposons que l'ensemble des vecteurs
-$\left\{\left| u_{k} \right\rangle \right\}$ forme
+$\left\{\left. \ \left\langle \left. \ u_{k}  \right.\ \right\rangle \right\}$ forme
 une base orthonormée de l'espace des états. En projetant l'équation de
 Schrödinger sur un vecteur de base donné il vient :
 
