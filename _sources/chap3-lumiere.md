@@ -572,8 +572,8 @@ constituée de quanta (ou atome de lumière), les photons, d\'énergie
 $E = h\nu = h\frac{c}{\lambda}$, de vitesse dans le vide
 $c = 310^{8}\; ms^{- 1}$ et de masse nulle au repos.
 
-L'expérience de l'effet Compton (étudiée en TD) confirme l'hypothèse des
-quanta de lumière.
+# La lumière
+L'expérience de l'effet Compton {cite}`compton1923quantum` (étudiée en TD) confirme l'hypothèse des quanta de lumière.
 
 ## La matière comme source de lumière
 
