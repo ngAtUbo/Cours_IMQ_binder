@@ -434,10 +434,11 @@ cette base.
 
 Nous posons $H_{12} = H_{21} = - a$. Ainsi :
 
-$H_{\left\{ \left| u_{1} \right\rangle,\left| u_{2} \right\rangle \right\}} = \begin{pmatrix}
+$$H_{\left\{ \left| u_{1} \right\rangle,\left| u_{2} \right\rangle \right\}} = \begin{pmatrix}
 E_{0} & - a \\
  - a & E_{0}
-\end{pmatrix}$ avec $a > 0$
+\end{pmatrix}$$
+ $a > 0$
 
 Recherchons les valeurs propres du Hamiltonien $H$ et les états propres
 (états stationnaires) :
