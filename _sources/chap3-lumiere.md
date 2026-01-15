@@ -1,5 +1,10 @@
 # La lumière
 
+```{contents}
+:local:
+:depth: 3
+```
+
 La lumière est l\'ensemble des rayonnements électromagnétiques visibles
 (ou proches du visible) c\'est à dire susceptible d\'être perçus par
 l\'œil. Elle correspond à des phénomènes ondulatoires dont la longueur
