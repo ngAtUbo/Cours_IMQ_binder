@@ -8,7 +8,7 @@
 La lumière est l\'ensemble des rayonnements électromagnétiques visibles
 (ou proches du visible) c\'est à dire susceptible d\'être perçus par
 l\'œil. Elle correspond à des phénomènes ondulatoires dont la longueur
-d\'onde est comprise entre 380 et 780 nm (10^-9^ mètre). Elle joue un
+d\'onde est comprise entre 380 et 780 nm ($10^{-9}$ mètre). Elle joue un
 rôle tout particulier en physique quantique. En effet, la description
 classique de la lumière (géométrSprique, théorie électromagnétique) fut
 profondément mise à mal pour des faits expérimentaux tels que le
