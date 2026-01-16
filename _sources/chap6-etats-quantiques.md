@@ -72,8 +72,9 @@ $\left| \Psi \right\rangle$.
 A tout couple de kets $\left| \Phi \right\rangle$ et
 $\left| \Psi \right\rangle$ de $\varepsilon$ <u>pris dans cet
 ordre</u>, on associe un nombre [complexe</u> qui est
-leur produit scalaire
-$\left( \left| \Phi \right\rangle,\left| \Psi \right\rangle \right)$.
+leur produit scalaire :
+
+$$\left( \left| \Phi \right\rangle,\left| \Psi \right\rangle \right)$$
 
 Les propriétés de ce produit scalaire sont :
 
