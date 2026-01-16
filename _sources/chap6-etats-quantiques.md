@@ -644,12 +644,11 @@ théorie quantique.
 En adoptant certaines conventions, tous les calculs de la théorie
 quantique se ramènent aux opérations familières de l\'algèbre linéaire.
 
-```{important}
-Dans une base **<u>donnée</u>**
+>Dans une base **<u>donnée</u>**
 $\left\{ \left| u_{i} \right\rangle\; i = 1,...N \right\}$, on
 représente un ket par la matrice colonne :
 
-$$\left| \Psi \right\rangle_{\left\{ \left| u_{i} \right\rangle \right\}} = \left( \begin{array}{r}
+>$$\left| \Psi \right\rangle_{\left\{ \left| u_{i} \right\rangle \right\}} = \left( \begin{array}{r}
 \begin{matrix}
 \left\langle u_{1} \middle| \Psi \right\rangle \\
 \left\langle u_{2} \middle| \Psi \right\rangle
@@ -664,15 +663,14 @@ c_{2}
 \ldots \\
 c_{N}
 \end{array} \right)$$
-```
 
-```{important}
-Par application de la relation de fermeture, on représente le bra $\left\langle \Psi \right|$ sous la forme d'une matrice ligne :
 
-$$\left\langle \Psi \right|_{\left\{ \left\langle u_{i} \right| \right\}} = \begin{pmatrix}
+
+>Par application de la relation de fermeture, on représente le bra $\left\langle \Psi \right|$ sous la forme d'une matrice ligne :
+
+>$$\left\langle \Psi \right|_{\left\{ \left\langle u_{i} \right| \right\}} = \begin{pmatrix}
 {c_{1}}^{*} & {c_{2}}^{*} & ... & & {c_{N}}^{*}
 \end{pmatrix}$$
-```
 
 En appliquant les règles du produit matriciel, on retrouve l'expression
 du produit scalaire dans une base donnée.
