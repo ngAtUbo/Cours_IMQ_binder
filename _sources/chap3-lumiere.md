@@ -562,8 +562,7 @@ nature de l\'énergie électromagnétique mais uniquement sur son
 comportement lors de l\'émission ou de l\'absorption par la matière sous
 forme de quanta d\'énergie électromagnétique.
 
-L'étude de l'effet photoélectrique (faite en TD) a conduit Einstein (en
-1905) à faire l'hypothèse que les propriétés de quantification énoncée
+L'étude de l'effet photoélectrique (faite en TD) a conduit Einstein {cite}`einstein1989uber` à faire l'hypothèse que les propriétés de quantification énoncée
 par Planck sont inhérentes à la nature même du rayonnement
 électromagnétique. **<u>Ainsi l'énergie lumineuse est émise, se propage et
 est absorbée sous forme de « grains » d'énergie appelés
