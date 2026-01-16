@@ -835,6 +835,7 @@ une région finie de l'espace. Elle se trouve dans un état
 lié {index}`Etat lié`. Nous verrons que son énergie ne peut
 prendre que des valeurs discrètes.
 
+```{note}
 Il existe des situations dans lesquelles la fonction d'onde n'est pas de
 carré sommable. Tout l'espace est alors accessible à la particule. Les
 énergies possibles remplissent un continuum.
@@ -848,6 +849,7 @@ est telle que :
 $$\int_{- \infty}^{+ \infty}{\left| \Psi(x) \right|^{2}dx} \,=\,\int_{- \infty}^{+ \infty}{dx}\,=\,\infty $$
 
 Une telle amplitude de localisation n'est pas normalisable selon la relation {eq}`eq-norma`.
+```
 
 ## Postulats de la théorie quantiques
 
