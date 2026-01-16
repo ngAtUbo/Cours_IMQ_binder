@@ -484,7 +484,7 @@ mesure d\'une grandeur physique.
 
 ## Bases de l\'espace des états
 
-Supposons que l\'ensemble $\left\{ \left| u_{k} \right\rangle \right\}$
+Supposons que l\'ensemble $\left\{ ket{u_{k}} \right\}$
 forme une base de l\'espace des états d\'un système. Tout état
 $\left| \Psi \right\rangle$ de ce système peut donc être développé sur
 cette base, c\'est-à-dire qu\'on peut l\'écrire sous la forme :
