@@ -647,7 +647,7 @@ quantique se ramènent aux opérations familières de l\'algèbre linéaire.
 >Dans une base **<u>donnée</u>**
 $\left\{ \left| u_{i} \right\rangle\; i = 1,...N \right\}$, on
 représente un ket par la matrice colonne :
-
+>
 >$$\left| \Psi \right\rangle_{\left\{ \left| u_{i} \right\rangle \right\}} = \left( \begin{array}{r}
 \begin{matrix}
 \left\langle u_{1} \middle| \Psi \right\rangle \\
@@ -667,7 +667,7 @@ c_{N}
 
 
 >Par application de la relation de fermeture, on représente le bra $\left\langle \Psi \right|$ sous la forme d'une matrice ligne :
-
+>
 >$$\left\langle \Psi \right|_{\left\{ \left\langle u_{i} \right| \right\}} = \begin{pmatrix}
 {c_{1}}^{*} & {c_{2}}^{*} & ... & & {c_{N}}^{*}
 \end{pmatrix}$$
@@ -682,15 +682,13 @@ matrice :
 
 $$\left\langle u_{j} \right|\widehat{A}\left| u_{k} \right\rangle = A_{j,k}$$
 
-et
+et la représentation matricielle de $\widehat{A}$ dans la base $\left\{ \left| u_{i} \right\rangle \right\}$ est :
 
-```{important}
-$${\widehat{A}}_{\left\{ \left| u_{i} \right\rangle \right\}} = \begin{pmatrix}
+>$${\widehat{A}}_{\left\{ \left| u_{i} \right\rangle \right\}} = \begin{pmatrix}
 A_{11} & ... & A_{1N} \\
 ... & & \\
 A_{N1} & & A_{NN}
 \end{pmatrix}$$
-```
 
 Considérons l'équation :
 
