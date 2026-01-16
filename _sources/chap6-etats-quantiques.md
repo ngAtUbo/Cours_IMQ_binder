@@ -390,8 +390,10 @@ propre $\left| x \right\rangle$. Si à une valeur propre correspond deux
 ou plusieurs vecteurs propres, on dit qu\'elle est dégénérée. Ces
 vecteurs engendrent un sous-espace associé à la valeur propre.
 
-**<u>Dans la suite, par soucis de simplification, nous supposerons que les
-valeurs propres sont non dégénérées</u>**.
+```{important}
+Dans la suite, par soucis de simplification, nous supposerons que les
+valeurs propres sont non dégénérées</u>.
+```
 
 Ecrivons la relation {eq}`eq-40` dans l\'espace dual :
 
