@@ -736,24 +736,30 @@ La polarisation du photon est un degré de liberté interne. L'espace des
 base les états de polarisations rectilignes $\left| X \right\rangle$ et
 $\left| Y \right\rangle$.
 
-$\left| \Psi \right\rangle_{\left\{ \left| X \right\rangle,\left| Y \right\rangle \right\}} = \begin{pmatrix}
+$$\left| \Psi \right\rangle_{\left\{ \left| X \right\rangle,\left| Y \right\rangle \right\}} = \begin{pmatrix}
 \left\langle X \middle| \Psi \right\rangle \\
 \left\langle Y \middle| \Psi \right\rangle
-\end{pmatrix}$ avec
-$\left| X \right\rangle_{\left\{ \left| X \right\rangle,\left| Y \right\rangle \right\}} = \begin{pmatrix}
+\end{pmatrix}$$
+
+avec :
+
+$$\left| X \right\rangle_{\left\{ \left| X \right\rangle,\left| Y \right\rangle \right\}} = \begin{pmatrix}
 \left\langle X \middle| X \right\rangle \\
 \left\langle Y \middle| X \right\rangle
 \end{pmatrix} = \begin{pmatrix}
 1 \\
 0
-\end{pmatrix}$ et
-$\left| Y \right\rangle_{\left\{ \left| X \right\rangle,\left| Y \right\rangle \right\}} = \begin{pmatrix}
+\end{pmatrix}$$
+
+et :
+
+$$\left| Y \right\rangle_{\left\{ \left| X \right\rangle,\left| Y \right\rangle \right\}} = \begin{pmatrix}
 \left\langle X \middle| Y \right\rangle \\
 \left\langle Y \middle| Y \right\rangle
 \end{pmatrix} = \begin{pmatrix}
 1 \\
 0
-\end{pmatrix}$
+\end{pmatrix}$$
 
 ## Amplitudes de localisation
 
