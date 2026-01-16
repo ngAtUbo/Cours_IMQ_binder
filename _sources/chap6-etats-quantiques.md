@@ -84,7 +84,7 @@ $$\left( \left| \Phi \right\rangle,\lambda_{1}\left| \Psi_{1} \right\rangle + \l
 
 - antilinéarité par rapport au premier ket :
 
-$$\left( \lambda_{1}\left| \Phi_{1} \right\rangle + \lambda_{2}\left| \Phi_{2} \right\rangle,\left| \Psi \right\rangle \right) = \lambda_{1}^{*}\left( \left| \Phi_{1} \right\rangle,\left| \Psi \right\rangle \right) + \lambda_{2}^{*}\left( \left| \Phi_{2} \right\rangle,\left| \Psi \right\rangle \right)$$
+$$\left( \lambda_{1}\left| \Phi_{1} \right\rangle + \lambda_{2}\left| \Phi_{2} \right\rangle,\left| \Psi \right\rangle \right) = (\lambda_{1})^{*}\left( \left| \Phi_{1} \right\rangle,\left| \Psi \right\rangle \right) + (\lambda_{2})^{*}\left( \left| \Phi_{2} \right\rangle,\left| \Psi \right\rangle \right)$$
 
 - $\forall\left| \Psi \right\rangle \in \varepsilon$,$\left( \left| \Psi \right\rangle,\left| \Psi \right\rangle \right)$
   est réel et positif. En outre
