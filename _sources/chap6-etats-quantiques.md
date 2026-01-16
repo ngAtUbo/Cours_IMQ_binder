@@ -841,11 +841,11 @@ carré sommable. Tout l'espace est alors accessible à la particule. Les
 
 En effet une amplitude de localisation de la forme :
 
-$$\Psi(x,t)=\exp{jkx}$$
+$$\Psi(x)=\exp{(jkx)}$$
 
 est telle que :
 
-$$\int_{- \infty}^{+ \infty}{{\left| \Psi(x) \right|^{2}dx}\,=\,\int_{- \infty}^{+ \infty}{dx}\,=\,\infty$$
+$$\int_{- \infty}^{+ \infty}{\left| \Psi(x) \right|^{2}dx} \,=\,\int_{- \infty}^{+ \infty}{dx}\,=\,\infty $$
 
 Une telle amplitude de localisation n'est pas normalisable selon la relation {eq}`eq-norma`.
 
