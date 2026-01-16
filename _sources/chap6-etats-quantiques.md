@@ -820,7 +820,11 @@ l'unité.
 
 Si :
 
-$$\int_{- \infty}^{+ \infty}{\left| \left\langle x \middle| \Psi(t) \right\rangle \right|^{2}\; dx} = C$$
+```{math}
+:label: eq-norma
+
+\int_{- \infty}^{+ \infty}{\left| \left\langle x \middle| \Psi(t) \right\rangle \right|^{2}\; dx} = C
+```
 
 Lorsque $C$ est finie, $\Psi(x,t)$ est dite de carré
 sommable {index}`Fonction d'onde de carré sommable`. On peut
@@ -834,6 +838,16 @@ prendre que des valeurs discrètes.
 Il existe des situations dans lesquelles la fonction d'onde n'est pas de
 carré sommable. Tout l'espace est alors accessible à la particule. Les
 énergies possibles remplissent un continuum.
+
+En effet une amplitude de localisation de la forme :
+
+$$\Psi(x,t)=\exp{jkx}$$
+
+est telle que :
+
+$$\int_{- \infty}^{+ \infty}{{\left| \Psi(x) \right|^{2}dx}\,=\,\int_{- \infty}^{+ \infty}{dx}\,=\,\infty$$
+
+Une telle amplitude de localisation n'est pas normalisable selon la relation {eq}`eq-norma`.
 
 ## Postulats de la théorie quantiques
 
