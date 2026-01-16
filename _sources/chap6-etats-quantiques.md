@@ -54,69 +54,69 @@ chaque partie de cette formulation possède une signification.
 
 Un vecteur quelconque de l\'espace des états noté $\varepsilon$ est
 appelé **vecteur ket** {index}`Vecteur ket` ou ket. On le
-note $\lvert \right\rangle$ en faisant figurer à l\'intérieur un
+note $\left| \right\rangle$ en faisant figurer à l\'intérieur un
 caractère distinctif permettant de différencier cet état des autres :
 
-$\lvert \Psi \right\rangle$ ket de l\'espace des états $\varepsilon$
+$\left| \Psi \right\rangle$ ket de l\'espace des états $\varepsilon$
 
 Remarque
 
-Insistons sur le fait qu\'il n\'existe dans $\lvert \Psi \right\rangle$
+Insistons sur le fait qu\'il n\'existe dans $\left| \Psi \right\rangle$
 aucune dépendance à une grandeur telle que $\overrightarrow{r}$ ou
 $\overrightarrow{p}$ (ou leurs composantes) caractéristiques du système
 physique dont l\'état quantique est représenté par
-$\lvert \Psi \right\rangle$.
+$\left| \Psi \right\rangle$.
 
 ### Produit scalaire hermitien
 
-A tout couple de kets $\lvert \Phi \right\rangle$ et
-$\lvert \Psi \right\rangle$ de $\varepsilon$ <u>pris dans cet
+A tout couple de kets $\left| \Phi \right\rangle$ et
+$\left| \Psi \right\rangle$ de $\varepsilon$ <u>pris dans cet
 ordre</u>, on associe un nombre [complexe</u> qui est
 leur produit scalaire :
 
-$$\left( \lvert \Phi \right\rangle,\lvert \Psi \right\rangle \right)$$
+$$\left( \left| \Phi \right\rangle,\left| \Psi \right\rangle \right)$$
 
 Les propriétés de ce produit scalaire sont :
 
 - linéarité par rapport au second ket :
 
-$$\left( \lvert \Phi \right\rangle,\lambda_{1}\lvert \Psi_{1} \right\rangle + \lambda_{2}\lvert \Psi_{2} \right\rangle \right) = \lambda_{1}\left( \lvert \Phi \right\rangle,\lvert \Psi_{1} \right\rangle \right) + \lambda_{2}\left( \lvert \Phi \right\rangle,\lvert \Psi_{2} \right\rangle \right)$$
+$$\left( \left| \Phi \right\rangle,\lambda_{1}\left| \Psi_{1} \right\rangle + \lambda_{2}\left| \Psi_{2} \right\rangle \right) = \lambda_{1}\left( \left| \Phi \right\rangle,\left| \Psi_{1} \right\rangle \right) + \lambda_{2}\left( \left| \Phi \right\rangle,\left| \Psi_{2} \right\rangle \right)$$
 
 - antilinéarité par rapport au premier ket :
 
-$$\left( \lambda_{1}\lvert \Phi_{1} \right\rangle + \lambda_{2}\lvert \Phi_{2} \right\rangle \,,\, \lvert \Psi \right\rangle \right) = (\lambda_{1})^{*} \left( \lvert \Phi_{1} \right\rangle \,,\, \lvert \Psi \right\rangle \right) + (\lambda_{2})^{*}\left( \lvert \Phi_{2} \right\rangle \,,\, \lvert \Psi \right\rangle \right)$$
+$$\left( \lambda_{1}\left| \Phi_{1} \right\rangle + \lambda_{2}\left| \Phi_{2} \right\rangle \,,\, \left| \Psi \right\rangle \right) = (\lambda_{1})^{*} \left( \left| \Phi_{1} \right\rangle \,,\, \left| \Psi \right\rangle \right) + (\lambda_{2})^{*}\left( \left| \Phi_{2} \right\rangle \,,\, \left| \Psi \right\rangle \right)$$
 
-- $\forall\lvert \Psi \right\rangle \in \varepsilon$,$\left( \lvert \Psi \right\rangle,\lvert \Psi \right\rangle \right)$
+- $\forall\left| \Psi \right\rangle \in \varepsilon$,$\left( \left| \Psi \right\rangle,\left| \Psi \right\rangle \right)$
   est réel et positif. En outre
-  $\left( \lvert \Psi \right\rangle,\lvert \Psi \right\rangle \right) = 0$
-  si et seulement si $\lvert \Psi \right\rangle = 0$ (cas non physique)
+  $\left( \left| \Psi \right\rangle,\left| \Psi \right\rangle \right) = 0$
+  si et seulement si $\left| \Psi \right\rangle = 0$ (cas non physique)
 
 - symétrie hermitienne
 
-$$\left( \lvert \Phi \right\rangle,\lvert \Psi \right\rangle \right) = \left( \lvert \Psi \right\rangle,\lvert \Phi \right\rangle \right)^{*}$$
+$$\left( \left| \Phi \right\rangle,\left| \Psi \right\rangle \right) = \left( \left| \Psi \right\rangle,\left| \Phi \right\rangle \right)^{*}$$
 
-La norme d'un vecteur $\lvert \Psi \right\rangle$ de $\varepsilon$ est
+La norme d'un vecteur $\left| \Psi \right\rangle$ de $\varepsilon$ est
 définie :
 
-$$\left\| \left. \ \lvert \Psi \right.\  \right\rangle \right\|^{2} = \left( \left. \ \lvert \Psi \right.\  \right\rangle,\left. \ \lvert \Psi \right.\  \right\rangle \right)$$
+$$\left\| \left. \ \left| \Psi \right.\  \right\rangle \right\|^{2} = \left( \left. \ \left| \Psi \right.\  \right\rangle,\left. \ \left| \Psi \right.\  \right\rangle \right)$$
 
 ## Espace dual
 
 ### Définition
 
 Une fonctionnelle linéaire $\chi$ est opération linéaire qui à tout ket
-$\lvert \Psi \right\rangle$ associe un nombre complexe :
+$\left| \Psi \right\rangle$ associe un nombre complexe :
 
-$\lvert \Psi \right\rangle$ $\in$ $\varepsilon$
+$\left| \Psi \right\rangle$ $\in$ $\varepsilon$
 $\overset{\chi}{\rightarrow}$ nombre noté :
-$\chi\lvert \Psi \right\rangle$
+$\chi\left| \Psi \right\rangle$
 
 La linéarité est définie par :
 
-$$\chi\left( \lambda_{1}\lvert \Psi_{1} \right\rangle + \lambda_{2}\lvert \Psi_{2} \right\rangle \right) = \lambda_{1}\chi\left( \lvert \Psi_{1} \right\rangle \right) + \lambda_{2}\chi\left( \lvert \Psi_{2} \right\rangle \right)$$
+$$\chi\left( \lambda_{1}\left| \Psi_{1} \right\rangle + \lambda_{2}\left| \Psi_{2} \right\rangle \right) = \lambda_{1}\chi\left( \left| \Psi_{1} \right\rangle \right) + \lambda_{2}\chi\left( \left| \Psi_{2} \right\rangle \right)$$
 
 L\'ensemble des fonctionnelles linéaires définies sur
-$\lvert \Psi \right\rangle$ $\in$ $\varepsilon$ constitue un espace
+$\left| \Psi \right\rangle$ $\in$ $\varepsilon$ constitue un espace
 vectoriel que l\'on appelle **espace dual** {index}`Espace dual` de $\varepsilon$ noté $\varepsilon$ ^\*^.
 
 ### Notation bra
@@ -129,47 +129,47 @@ $\left\langle \chi \right|$ désigne la fonctionnelle linéaire $\chi$ et
 on utilisera la notation $\left\langle \chi \middle| \Psi \right\rangle$
 pour désigner le nombre obtenu en faisant agir
 $\left\langle \chi \right|$ de $\varepsilon{*}$ sur
-$\lvert \Psi \right\rangle$ $\in$ $\varepsilon$ :
+$\left| \Psi \right\rangle$ $\in$ $\varepsilon$ :
 
-$$\left\langle \chi \middle| \Psi \right\rangle = \chi\lvert \Psi \right\rangle$$
+$$\left\langle \chi \middle| \Psi \right\rangle = \chi\left| \Psi \right\rangle$$
 
 Remarque
 
 En anglais le terme $\left\langle \middle| \right\rangle$ s\'appelle
 bracket (crochet) d\'où l\'origine de l\'appellation bra pour la partie
 gauche $\left\langle \right|$ et ket pour la partie droite
-$\lvert \right\rangle$.
+$\left| \right\rangle$.
 
 ### Correspondance entre kets et bras
 
 L\'existence d\'un produit scalaire dans $\varepsilon$ nous permet de
-montrer qu\'à tout ket $\lvert \Phi \right\rangle$ $\in$ $\varepsilon$,
+montrer qu\'à tout ket $\left| \Phi \right\rangle$ $\in$ $\varepsilon$,
 on peut associer un élément de $\varepsilon^{*}$ c\'est-à-dire un bra
 noté $\left\langle \Phi \right|$.
 
-En effet le ket $\lvert \Phi \right\rangle$ nous permet de définir une
+En effet le ket $\left| \Phi \right\rangle$ nous permet de définir une
 fonctionnelle linéaire :
 
-Celle qui a tout ket $\lvert \Psi \right\rangle$ $\in$ $\varepsilon$
+Celle qui a tout ket $\left| \Psi \right\rangle$ $\in$ $\varepsilon$
 fait correspondre le nombre complexe égal au produit scalaire
-$\left( \lvert \Phi \right\rangle,\lvert \Psi \right\rangle \right)$ de
-$\lvert \Psi \right\rangle$ par $\lvert \Phi \right\rangle$. Soit
+$\left( \left| \Phi \right\rangle,\left| \Psi \right\rangle \right)$ de
+$\left| \Psi \right\rangle$ par $\left| \Phi \right\rangle$. Soit
 $\left\langle \Phi \right|$ cette fonctionnelle linéaire.
 
 On a donc :
 
-$$\left( \lvert \Phi \right\rangle,\lvert \Psi \right\rangle \right) = \left\langle \Phi \middle| \Psi \right\rangle$$
+$$\left( \left| \Phi \right\rangle,\left| \Psi \right\rangle \right) = \left\langle \Phi \middle| \Psi \right\rangle$$
 
 Ainsi les propriétés du produit scalaire énoncées précédemment sont re
 écrites :
 
 - linéarité par rapport au second ket :
 
-$$\left( \lvert \left. \ \Phi \right\rangle,\lambda_{1}\left. \ \lvert \Psi_{1} \right.\  \right\rangle + \lambda_{2}\left. \ \lvert \Psi_{2} \right.\  \right\rangle \right.\  \right) = \lambda_{1}\left( \lvert \left. \ \Phi \right\rangle,\left. \ \lvert \Psi_{1} \right.\  \right\rangle \right.\  \right) + \lambda_{2}\left( \lvert \left. \ \Phi \right\rangle,\left. \ \lvert \Psi_{2} \right.\  \right\rangle \right.\  \right) = \lambda_{1}\left\langle \Phi \middle| \Psi_{1} \right\rangle + \lambda_{2}\left\langle \Phi \middle| \Psi_{2} \right\rangle$$
+$$\left( \left| \left. \ \Phi \right\rangle,\lambda_{1}\left. \ \left| \Psi_{1} \right.\  \right\rangle + \lambda_{2}\left. \ \left| \Psi_{2} \right.\  \right\rangle \right.\  \right) = \lambda_{1}\left( \left| \left. \ \Phi \right\rangle,\left. \ \left| \Psi_{1} \right.\  \right\rangle \right.\  \right) + \lambda_{2}\left( \left| \left. \ \Phi \right\rangle,\left. \ \left| \Psi_{2} \right.\  \right\rangle \right.\  \right) = \lambda_{1}\left\langle \Phi \middle| \Psi_{1} \right\rangle + \lambda_{2}\left\langle \Phi \middle| \Psi_{2} \right\rangle$$
 
 - anti-linéarité par rapport au premier ket :
 
-$$\left( \lambda_{1}\lvert \Phi_{1} \right\rangle + \lambda_{2}\lvert \Phi_{2} \right\rangle,\lvert \Psi \right\rangle \right) = {\lambda_{1}}^{*}\left( \lvert \Phi_{1} \right\rangle,\lvert \Psi \right\rangle \right) + {\lambda_{2}}^{*}\left( \lvert \Phi_{2} \right\rangle,\lvert \Psi \right\rangle \right) = {\lambda_{1}}^{*}\left\langle \Phi_{1} \middle| \Psi \right\rangle + {\lambda_{2}}^{*}\left\langle \Phi_{2} \middle| \Psi \right\rangle = \left( {\lambda_{1}}^{*}\left\langle \Phi_{1} \right| + {\lambda_{2}}^{*}\left\langle \Phi_{2} \right| \right)\lvert \Psi \right\rangle$$
+$$\left( \lambda_{1}\left| \Phi_{1} \right\rangle + \lambda_{2}\left| \Phi_{2} \right\rangle,\left| \Psi \right\rangle \right) = {\lambda_{1}}^{*}\left( \left| \Phi_{1} \right\rangle,\left| \Psi \right\rangle \right) + {\lambda_{2}}^{*}\left( \left| \Phi_{2} \right\rangle,\left| \Psi \right\rangle \right) = {\lambda_{1}}^{*}\left\langle \Phi_{1} \middle| \Psi \right\rangle + {\lambda_{2}}^{*}\left\langle \Phi_{2} \middle| \Psi \right\rangle = \left( {\lambda_{1}}^{*}\left\langle \Phi_{1} \right| + {\lambda_{2}}^{*}\left\langle \Phi_{2} \right| \right)\left| \Psi \right\rangle$$
 
 - symétrie hermitienne :
 
@@ -178,11 +178,11 @@ $$\left\langle \Phi \middle| \Psi \right\rangle = \left\langle \Psi \middle| \Ph
 - $\left\langle \Psi \middle| \Psi \right\rangle\ $réel positif.
 
 L'anti-linéarité du produit scalaire entraîne que le bra associé au ket
-$\lambda_{1}\lvert \Phi_{1} \right\rangle + \lambda_{2}\lvert \Phi_{2} \right\rangle$
+$\lambda_{1}\left| \Phi_{1} \right\rangle + \lambda_{2}\left| \Phi_{2} \right\rangle$
 est
 ${\lambda_{1}}^{*}\left\langle \Phi_{1} \right| + {\lambda_{2}}^{*}\left\langle \Phi_{2} \right|$
 puisque la relation donnée ci-dessus est vérifiée pour tout ket
-$\lvert \Psi \right\rangle$ $\in$ $\varepsilon$. La correspondance ket →
+$\left| \Psi \right\rangle$ $\in$ $\varepsilon$. La correspondance ket →
 bra appelée **conjugaison hermitique** est anti-linéaire.
 
 ## Opérateurs linéaires
@@ -193,37 +193,37 @@ espace. C\'est donc une application de $\varepsilon$ sur $\varepsilon$.
 Par définition, à tout ket un opérateur fait correspondre un autre ket
 et à tout bra il fait correspondre un autre bra :
 
-$\widehat{A}\lvert \left. \ v \right\rangle \right.\  = \lvert \left. \ w \right\rangle \right.\ $
-où $\lvert \left. \ v \right\rangle \right.\ $ et
-$\lvert \left. \ w \right\rangle \right.\ $ $\in$ $\varepsilon$
+$\widehat{A}\left| \left. \ v \right\rangle \right.\  = \left| \left. \ w \right\rangle \right.\ $
+où $\left| \left. \ v \right\rangle \right.\ $ et
+$\left| \left. \ w \right\rangle \right.\ $ $\in$ $\varepsilon$
 
 Remarque
 
-La notation $\lvert \widehat{A}\left. \ v \right\rangle \right.\ $ (bien
+La notation $\left| \widehat{A}\left. \ v \right\rangle \right.\ $ (bien
 que peu usitée) existe provenant de la notation mathématique du produit
 scalaire de deux vecteurs $v$ et $w$ $\in$ $\varepsilon$ espace
 vectoriel complexe : $\left( w \middle| A(v) \right)$. Elle est liée à
 la notation habituelle :
-$\lvert \widehat{A}\left. \ v \right\rangle \right.\  = \widehat{A}\lvert \left. \ v \right\rangle \right.\ $
+$\left| \widehat{A}\left. \ v \right\rangle \right.\  = \widehat{A}\left| \left. \ v \right\rangle \right.\ $
 
 ### Linéarité
 
 Soit $\widehat{A}$ un opérateur tel que :
 
-$\widehat{A}\lvert u_{1} \right\rangle = \lvert v_{1} \right\rangle$ et
-$\widehat{A}\lvert u_{2} \right\rangle = \lvert v_{2} \right\rangle$.
+$\widehat{A}\left| u_{1} \right\rangle = \left| v_{1} \right\rangle$ et
+$\widehat{A}\left| u_{2} \right\rangle = \left| v_{2} \right\rangle$.
 
 On dit que $\widehat{A}$ est linéaire si :
 
-$$\widehat{A}\left( \lambda_{1}\lvert u_{1} \right\rangle + \lambda_{2}\lvert u_{2} \right\rangle \right) = \lambda_{1}\widehat{A}\lvert u_{1} \right\rangle + \lambda_{2}\widehat{A}\lvert u_{2} \right\rangle = \lambda_{1}\lvert v_{1} \right\rangle + \lambda_{2}\lvert v_{2} \right\rangle$$
+$$\widehat{A}\left( \lambda_{1}\left| u_{1} \right\rangle + \lambda_{2}\left| u_{2} \right\rangle \right) = \lambda_{1}\widehat{A}\left| u_{1} \right\rangle + \lambda_{2}\widehat{A}\left| u_{2} \right\rangle = \lambda_{1}\left| v_{1} \right\rangle + \lambda_{2}\left| v_{2} \right\rangle$$
 
 Le produit de deux opérateurs est l\'opérateur unique qui les remplace.
 
 Ainsi $\widehat{C}$ est le produit des opérateurs $\widehat{A}$ et
 $\widehat{B}$ pris dans cet ordre si pour tout
-$\lvert \left. \ \varphi \right\rangle \right.\ $ $\in$ $\varepsilon$ :
+$\left| \left. \ \varphi \right\rangle \right.\ $ $\in$ $\varepsilon$ :
 
-$\widehat{A}\widehat{B}\ \lvert \left. \ \varphi \right\rangle \right.\  = \widehat{C}\ \lvert \left. \ \varphi \right\rangle \right.\ $
+$\widehat{A}\widehat{B}\ \left| \left. \ \varphi \right\rangle \right.\  = \widehat{C}\ \left| \left. \ \varphi \right\rangle \right.\ $
 
 ### Adjoint d\'un opérateur
 
@@ -232,7 +232,7 @@ ${\widehat{A}}^{\dagger}$ qui, dans l\'espace dual, établit les mêmes
 correspondances que $\widehat{A}$ dans l\'espace des états.
 
 Ainsi l\'expression
-$\widehat{A}\lvert u_{1} \right\rangle = \lvert v_{1} \right\rangle$
+$\widehat{A}\left| u_{1} \right\rangle = \left| v_{1} \right\rangle$
 implique
 $\left\langle u_{1} \right|{\widehat{A}}^{\dagger} = \left\langle v_{1} \right|$.
 
@@ -249,23 +249,23 @@ Recherchons qu\'elle est l\'adjoint d\'un produit d\'opérateurs.
 
 Posons :
 
-$$\widehat{B}\widehat{A}\lvert u \right\rangle = \widehat{B}\lvert v \right\rangle = \lvert w \right\rangle$$
+$$\widehat{B}\widehat{A}\left| u \right\rangle = \widehat{B}\left| v \right\rangle = \left| w \right\rangle$$
 
 soit :
 
-$$\lvert v \right\rangle = \widehat{A} \lvert u \right\rangle$$
+$$\left| v \right\rangle = \widehat{A} \left| u \right\rangle$$
 
 ```{math}
 :label: eq-38
 
-\lvert w \right\rangle = \widehat{B} \lvert v \right\rangle
+\left| w \right\rangle = \widehat{B} \left| v \right\rangle
 ```
 
 
 On dira que $\widehat{C} = \widehat{B}\widehat{A}$ si pour tout ket de
 $\varepsilon$ :
 
-$\widehat{C}\lvert u \right\rangle = \lvert w \right\rangle$.
+$\widehat{C}\left| u \right\rangle = \left| w \right\rangle$.
 
 L\'adjoint de $\widehat{C}$ est tel que :
 
@@ -309,12 +309,12 @@ Une transformation réalisée à l\'aide d\'un tel opérateur est dite
 unitaire. [Elle possède la propriété remarquable de laisser invariant le
 produit scalaire]. En effet, si on a :
 
-$\lvert X' \right\rangle = \widehat{U}\lvert X \right\rangle$ et
-$\lvert Y' \right\rangle = \widehat{U}\lvert Y \right\rangle$
+$\left| X' \right\rangle = \widehat{U}\left| X \right\rangle$ et
+$\left| Y' \right\rangle = \widehat{U}\left| Y \right\rangle$
 
 alors :
 
-$$\left\langle Y' \middle| X' \right\rangle = \left\langle Y \right|\widehat{U}{\widehat{U}}^{\dagger}\lvert X \right\rangle = \left\langle Y \middle| X \right\rangle$$
+$$\left\langle Y' \middle| X' \right\rangle = \left\langle Y \right|\widehat{U}{\widehat{U}}^{\dagger}\left| X \right\rangle = \left\langle Y \middle| X \right\rangle$$
 
 En particulier, la norme d\'un vecteur ket (racine carrée du produit
 scalaire du vecteur avec lui-même) est invariante lors d\'une
@@ -327,45 +327,45 @@ Soit :
 ```{math}
 :label: eq-39
 
-\lvert Y \right\rangle = \widehat{A}\lvert X \right\rangle
+\left| Y \right\rangle = \widehat{A}\left| X \right\rangle
 ```
 
 
 Cherchons $\widehat{A}'$ tel que :
 
-$$\lvert Y' \right\rangle = \widehat{A}'\lvert X' \right\rangle$$
+$$\left| Y' \right\rangle = \widehat{A}'\left| X' \right\rangle$$
 
 D\'après l\'égalité {eq}`eq-39` on a :
 
-$$\widehat{U}\lvert Y \right\rangle = \widehat{U}\widehat{A}\lvert X \right\rangle = \widehat{U}\widehat{A}{\widehat{U}}^{\dagger}\widehat{U}\lvert X \right\rangle$$
+$$\widehat{U}\left| Y \right\rangle = \widehat{U}\widehat{A}\left| X \right\rangle = \widehat{U}\widehat{A}{\widehat{U}}^{\dagger}\widehat{U}\left| X \right\rangle$$
 
 soit :
 
-$$\lvert Y' \right\rangle = \widehat{U}\widehat{A}{\widehat{U}}^{\dagger}\lvert X' \right\rangle$$
+$$\left| Y' \right\rangle = \widehat{U}\widehat{A}{\widehat{U}}^{\dagger}\left| X' \right\rangle$$
 
 ⇒ $\widehat{A}' = \widehat{U}\widehat{A}{\widehat{U}}^{\dagger}$
 
 ### Elément de matrice d\'un opérateur
 
-$\left\langle Y \right|\widehat{A}\lvert X \right\rangle$ est un nombre
+$\left\langle Y \right|\widehat{A}\left| X \right\rangle$ est un nombre
 appelé élément de matrice de l\'opérateur $\widehat{A}$.
 
 Dans le cas général on a :
 
-$$\left\langle Y \right|\widehat{A}\lvert X \right\rangle = \left\langle Y \middle| X' \right\rangle = \left\langle X' \middle| Y \right\rangle^{*}$$
+$$\left\langle Y \right|\widehat{A}\left| X \right\rangle = \left\langle Y \middle| X' \right\rangle = \left\langle X' \middle| Y \right\rangle^{*}$$
 
 soit :
 
-$\left\langle Y \right|\widehat{A}\lvert X \right\rangle =$
-($\left\langle X \right|\widehat{A}$^†$\lvert Y \right\rangle$)^\*^
+$\left\langle Y \right|\widehat{A}\left| X \right\rangle =$
+($\left\langle X \right|\widehat{A}$^†$\left| Y \right\rangle$)^\*^
 
 Si $\widehat{A}$ est hermitique on a :
 
-$$\left\langle Y \right|\widehat{A}\lvert X \right\rangle = \left( \left\langle X \right|\widehat{A}\lvert Y \right\rangle \right)^{*}$$
+$$\left\langle Y \right|\widehat{A}\left| X \right\rangle = \left( \left\langle X \right|\widehat{A}\left| Y \right\rangle \right)^{*}$$
 
 Tout élément de matrice d\'un opérateur hermitique est le conjugué
 complexe de son transposé. En particulier le nombre
-$\left\langle X \right|\widehat{A}\lvert X \right\rangle$ est réel si
+$\left\langle X \right|\widehat{A}\left| X \right\rangle$ est réel si
 $\widehat{A}$ est hermitique.
 
 Nous verrons plus loin l\'importance des opérateurs hermitiques en
@@ -374,19 +374,19 @@ physique quantique.
 ## Vecteurs propres et valeurs propres
 
 Soit $\widehat{A}$ un opérateur linéaire. Le ket
-$\lvert x \right\rangle$ est ket propre de $\widehat{A}$ si le vecteur
-$\widehat{A}\lvert x \right\rangle$ est proportionnel à
-$\lvert x \right\rangle$ c\'est-à-dire si :
+$\left| x \right\rangle$ est ket propre de $\widehat{A}$ si le vecteur
+$\widehat{A}\left| x \right\rangle$ est proportionnel à
+$\left| x \right\rangle$ c\'est-à-dire si :
 
 
 ```{math}
 :label: eq-40
 
-\widehat{A}\lvert x \right\rangle = \lambda\lvert x \right\rangle
+\widehat{A}\left| x \right\rangle = \lambda\left| x \right\rangle
 ```
 
 $\lambda$ est la valeur propre de $\widehat{A}$ associée au vecteur
-propre $\lvert x \right\rangle$. Si à une valeur propre correspond deux
+propre $\left| x \right\rangle$. Si à une valeur propre correspond deux
 ou plusieurs vecteurs propres, on dit qu\'elle est dégénérée. Ces
 vecteurs engendrent un sous-espace associé à la valeur propre.
 
@@ -405,26 +405,26 @@ Ecrivons la relation {eq}`eq-40` dans l\'espace dual :
 ```
 Les relations {eq}`eq-40` et {eq}`eq-41` donnent :
 
-$$\left\langle x \right|\widehat{A}\lvert x \right\rangle = \lambda\left\langle x \middle| x \right\rangle$$
+$$\left\langle x \right|\widehat{A}\left| x \right\rangle = \lambda\left\langle x \middle| x \right\rangle$$
 
-$$\left\langle x \right|{\widehat{A}}^{+}\lvert x \right\rangle = \lambda^{*}\left\langle x \middle| x \right\rangle$$
+$$\left\langle x \right|{\widehat{A}}^{+}\left| x \right\rangle = \lambda^{*}\left\langle x \middle| x \right\rangle$$
 
 Si $\widehat{A}$ est un opérateur hermitique
 ($\widehat{A} = {\widehat{A}}^{+}$), on a $\lambda = \lambda^{*}$. <u>Les
 valeurs propres d\'un opérateur hermitique sont donc
 réelles</u>.
 
-Considérons deux kets propres $\lvert x_{1} \right\rangle$ et
-$\lvert x_{2} \right\rangle$ du même opérateur hermitique :
+Considérons deux kets propres $\left| x_{1} \right\rangle$ et
+$\left| x_{2} \right\rangle$ du même opérateur hermitique :
 
 
 ```{math}
 :label: eq-42
 
-\widehat{A}\lvert x_{1} \right\rangle = \lambda_{1}\lvert x_{1} \right\rangle
+\widehat{A}\left| x_{1} \right\rangle = \lambda_{1}\left| x_{1} \right\rangle
 ```
 
-(43) $\widehat{A}\lvert x_{2} \right\rangle = \lambda_{2}\lvert x_{2} \right\rangle$
+(43) $\widehat{A}\left| x_{2} \right\rangle = \lambda_{2}\left| x_{2} \right\rangle$
 
 Dans l\'espace dual :
 
@@ -440,9 +440,9 @@ peut donc écrire :
 ```
 Des relations  {eq}`eq-42` et {eq}`eq-44`, on tire :
 
-$$\left\langle x_{2} \right|\widehat{A}\lvert x_{1} \right\rangle = \lambda_{1}\left\langle x_{2} \middle| x_{1} \right\rangle$$
+$$\left\langle x_{2} \right|\widehat{A}\left| x_{1} \right\rangle = \lambda_{1}\left\langle x_{2} \middle| x_{1} \right\rangle$$
 
-$$\left\langle x_{2} \right|\widehat{A}\lvert x_{1} \right\rangle = \lambda_{2}\left\langle x_{2} \middle| x_{1} \right\rangle$$
+$$\left\langle x_{2} \right|\widehat{A}\left| x_{1} \right\rangle = \lambda_{2}\left\langle x_{2} \middle| x_{1} \right\rangle$$
 
 En soustrayant ces deux équations, on obtient :
 
@@ -456,20 +456,20 @@ propres différentes sont orthogonaux</u>.
 Lors d\'un changement de base réalisé au moyen d\'une transformation
 unitaire, l\'équation {eq}`eq-40` devient :
 
-$$\widehat{U}\widehat{A}\lvert x \right\rangle = \lambda\widehat{U}\lvert x \right\rangle$$
+$$\widehat{U}\widehat{A}\left| x \right\rangle = \lambda\widehat{U}\left| x \right\rangle$$
 
 soit :
 
-$$\widehat{U}\widehat{A}{\widehat{U}}^{+}\widehat{U}\lvert x \right\rangle = \lambda\widehat{U}\lvert x \right\rangle$$
+$$\widehat{U}\widehat{A}{\widehat{U}}^{+}\widehat{U}\left| x \right\rangle = \lambda\widehat{U}\left| x \right\rangle$$
 
 Or :
 
-$\lvert x' \right\rangle = \widehat{U}\lvert x \right\rangle$ et
+$\left| x' \right\rangle = \widehat{U}\left| x \right\rangle$ et
 $\widehat{A}' = \widehat{U}\widehat{A}{\widehat{U}}^{+}$
 
 Ainsi, l\'équation aux valeurs propres prend la forme :
 
-$$\widehat{A}'\lvert x' \right\rangle = \lambda\lvert x' \right\rangle$$
+$$\widehat{A}'\left| x' \right\rangle = \lambda\left| x' \right\rangle$$
 
 En conséquence, <u>lors d\'une transformation unitaire, les opérateurs et
 les vecteurs propres sont modifiés mais leurs valeurs propres sont
@@ -489,13 +489,13 @@ mesure d\'une grandeur physique.
 
 Supposons que l\'ensemble $\left\{ ket{u_{k}} \right\}$
 forme une base de l\'espace des états d\'un système. Tout état
-$\lvert \Psi \right\rangle$ de ce système peut donc être développé sur
+$\left| \Psi \right\rangle$ de ce système peut donc être développé sur
 cette base, c\'est-à-dire qu\'on peut l\'écrire sous la forme :
 
 ```{math}
 :label: eq-45
 
-\lvert \Psi \right\rangle = \sum_{k = 1}^{N}{C_{k}\lvert u_{k} \right\rangle}
+\left| \Psi \right\rangle = \sum_{k = 1}^{N}{C_{k}\left| u_{k} \right\rangle}
 ```
 
 La donnée des coefficients du développement $c_{k}$ définit complètement
@@ -535,7 +535,7 @@ probabilité de transition de l\'état initial à l\'un des états de la
 base]. C\'est pourquoi ces coefficients sont appelés <u>amplitudes
 d\'états</u> {index}`Amplitude d'états`. La
 probabilité pour trouver le système dans l'état
-$\lvert u_{l} \right\rangle$ est donc :
+$\left| u_{l} \right\rangle$ est donc :
 
 $${C_{l}}^{*}C_{l} = \left\langle \Psi \middle| u_{l} \right\rangle\left\langle u_{l} \middle| \Psi \right\rangle$$
 
@@ -585,28 +585,28 @@ manière générale, chaque fois que des vecteurs forment une base
 orthonormée ils vérifient la relation de fermeture et réciproquement.
 
 Dans le cas de l\'espace des états d\'un système physique la projection
-du vecteur d\'état $\lvert \Psi \right\rangle$ sur un vecteur de base
-$\lvert u_{j} \right\rangle$ est :
+du vecteur d\'état $\left| \Psi \right\rangle$ sur un vecteur de base
+$\left| u_{j} \right\rangle$ est :
 
-$${\widehat{P}}_{j}\lvert \Psi \right\rangle = c_{j}\lvert u_{j} \right\rangle$$
+$${\widehat{P}}_{j}\left| \Psi \right\rangle = c_{j}\left| u_{j} \right\rangle$$
 
 avec $c_{j} = \left\langle u_{j} \middle| \Psi \right\rangle$.
 
 On a donc :
 
-${\widehat{P}}_{j}\lvert \Psi \right\rangle = \lvert u_{j} \right\rangle\left\langle u_{j} \middle| \Psi \right\rangle$
-$\forall\;\lvert \Psi \right\rangle$
+${\widehat{P}}_{j}\left| \Psi \right\rangle = \left| u_{j} \right\rangle\left\langle u_{j} \middle| \Psi \right\rangle$
+$\forall\;\left| \Psi \right\rangle$
 
 soit :
 
-$${\widehat{P}}_{j} = \lvert u_{j} \right\rangle\left\langle u_{j} \right|$$
+$${\widehat{P}}_{j} = \left| u_{j} \right\rangle\left\langle u_{j} \right|$$
 
 Une somme de tels projecteurs peut être considérée comme un projecteur
 sur le sous-espace engendré par les vecteurs inclus dans la somme. Si
 tous les vecteurs de la base sont inclus on obtient l\'opérateur
 identité :
 
-$$\sum_{k = 1}^{N}{\lvert u_{k} \right\rangle\left\langle u_{k} \right|} = 1$$
+$$\sum_{k = 1}^{N}{\left| u_{k} \right\rangle\left\langle u_{k} \right|} = 1$$
 
 Ainsi les vecteurs d'une base orthonormée vérifient la relation de
 fermeture.
@@ -616,22 +616,22 @@ relation de fermeture forment une base pour l\'espace des états
 
 Considérons le produit scalaire du vecteur d\'état par lui-même dans le
 cas où il serait normé à l'unité
-($\left\| \lvert \left. \ \Psi \right\rangle \right.\  \right\|^{2} = \left\langle \Psi \middle| \Psi \right\rangle = 1$).
+($\left\| \left| \left. \ \Psi \right\rangle \right.\  \right\|^{2} = \left\langle \Psi \middle| \Psi \right\rangle = 1$).
 On a alors :
 
 $$\left\langle \Psi \middle| \Psi \right\rangle = 1$$
 
 En appliquant la relation de fermeture on obtient :
 
-$$\left\langle \Psi \right|1\lvert \Psi \right\rangle = \sum_{k = 1}^{N}{\left\langle \Psi \middle| u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle}$$
+$$\left\langle \Psi \right|1\left| \Psi \right\rangle = \sum_{k = 1}^{N}{\left\langle \Psi \middle| u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle}$$
 
 Soit :
 
 $$\left\langle \Psi \middle| \Psi \right\rangle = \sum_{k = 1}^{N}{c_{k}{c_{k}}^{*}}$$
 
 Or le nombre réel $c_{k}^{*}c_{k}$ représente la probabilité de
-transition du système de l\'état $\lvert \Psi \right\rangle$ vers
-l\'état $\lvert u_{k} \right\rangle$. Il est donc nécessaire d\'utiliser
+transition du système de l\'état $\left| \Psi \right\rangle$ vers
+l\'état $\left| u_{k} \right\rangle$. Il est donc nécessaire d\'utiliser
 un vecteur d\'état de norme 1 pour que la condition de normalisation des
 probabilités soit satisfaite.
 
@@ -648,10 +648,10 @@ En adoptant certaines conventions, tous les calculs de la théorie
 quantique se ramènent aux opérations familières de l\'algèbre linéaire.
 
 >Dans une base **<u>donnée</u>**
-$\left\{ \lvert u_{i} \right\rangle\; i = 1,...N \right\}$, on
+$\left\{ \left| u_{i} \right\rangle\; i = 1,...N \right\}$, on
 représente un ket par la matrice colonne :
 >
->$$\lvert \Psi \right\rangle_{\left\{ \lvert u_{i} \right\rangle \right\}} = \left( \begin{array}{r}
+>$$\left| \Psi \right\rangle_{\left\{ \left| u_{i} \right\rangle \right\}} = \left( \begin{array}{r}
 \begin{matrix}
 \left\langle u_{1} \middle| \Psi \right\rangle \\
 \left\langle u_{2} \middle| \Psi \right\rangle
@@ -679,15 +679,15 @@ En appliquant les règles du produit matriciel, on retrouve l'expression
 du produit scalaire dans une base donnée.
 
 Si $\widehat{A}$ est un opérateur
-$\left\langle u_{j} \right|\widehat{A}\lvert u_{k} \right\rangle$ est un
+$\left\langle u_{j} \right|\widehat{A}\left| u_{k} \right\rangle$ est un
 nombre qui dépend de deux indices. On dit que c'est un élément de
 matrice :
 
-$$\left\langle u_{j} \right|\widehat{A}\lvert u_{k} \right\rangle = A_{j,k}$$
+$$\left\langle u_{j} \right|\widehat{A}\left| u_{k} \right\rangle = A_{j,k}$$
 
-et la représentation matricielle de $\widehat{A}$ dans la base $\left\{ \lvert u_{i} \right\rangle \right\}$ est :
+et la représentation matricielle de $\widehat{A}$ dans la base $\left\{ \left| u_{i} \right\rangle \right\}$ est :
 
->$${\widehat{A}}_{\left\{ \lvert u_{i} \right\rangle \right\}} = \begin{pmatrix}
+>$${\widehat{A}}_{\left\{ \left| u_{i} \right\rangle \right\}} = \begin{pmatrix}
 A_{11} & ... & A_{1N} \\
 ... & & \\
 A_{N1} & & A_{NN}
@@ -698,54 +698,54 @@ Considérons l'équation :
 ```{math}
 :label: eq-46
 
-\lvert \Phi \right\rangle = \widehat{A}\lvert \Psi \right\rangle
+\left| \Phi \right\rangle = \widehat{A}\left| \Psi \right\rangle
 ```
 
 On projette {eq}`eq-46` sur un vecteur de base :
 
-$\left\langle u_{j} \middle| \Phi \right\rangle = \left\langle u_{j} \right|\widehat{A}\lvert \Psi \right\rangle$
+$\left\langle u_{j} \middle| \Phi \right\rangle = \left\langle u_{j} \right|\widehat{A}\left| \Psi \right\rangle$
 $j = 1,\; 2,...\; N$
 $j = 1,\; 2,...\; N$
 
 En appliquant la relation de fermeture :
 
-$$\left\langle u_{j} \middle| \Phi \right\rangle = \sum_{k = 1}^{N}{\left\langle u_{j} \right|\widehat{A}\lvert u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle}$$
+$$\left\langle u_{j} \middle| \Phi \right\rangle = \sum_{k = 1}^{N}{\left\langle u_{j} \right|\widehat{A}\left| u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle}$$
 
-Si le développement de $\lvert \Phi \right\rangle$ sur
-$\left\{ \lvert u_{i} \right\rangle,i = 1...\; N \right\}$
+Si le développement de $\left| \Phi \right\rangle$ sur
+$\left\{ \left| u_{i} \right\rangle,i = 1...\; N \right\}$
 est :
 
-$$\lvert \Phi \right\rangle = \sum_{k = 1}^{N}{b_{k}\lvert u_{k} \right\rangle}$$
+$$\left| \Phi \right\rangle = \sum_{k = 1}^{N}{b_{k}\left| u_{k} \right\rangle}$$
 
 On a :
 
 $$b_{j} = \sum_{k = 1}^{N}{A_{jk}c_{k}}$$
 
 Cela signifie que la matrice colonne représentant
-$\lvert \Phi \right\rangle$ est obtenue en multipliant la matrice carrée
+$\left| \Phi \right\rangle$ est obtenue en multipliant la matrice carrée
 représentant $\widehat{A}$ par la matrice colonne représentant
-$\lvert \Psi \right\rangle$.
+$\left| \Psi \right\rangle$.
 
 L'élément de matrice d'un produit de deux opérateurs est :
 
-$$\left\langle u_{j} \right|\widehat{A}\widehat{B}\lvert u_{k} \right\rangle = \sum_{i = 1}^{N}{\left\langle u_{j} \right|\widehat{A}\lvert u_{i} \right\rangle\left\langle u_{i} \right|\widehat{B}\lvert u_{k} \right\rangle}$$
+$$\left\langle u_{j} \right|\widehat{A}\widehat{B}\left| u_{k} \right\rangle = \sum_{i = 1}^{N}{\left\langle u_{j} \right|\widehat{A}\left| u_{i} \right\rangle\left\langle u_{i} \right|\widehat{B}\left| u_{k} \right\rangle}$$
 
 La matrice représentant un produit d'opérateurs est donc le produit des
 matrices qui représentent chacun d'eux.
 
 La polarisation du photon est un degré de liberté interne. L'espace des
 états de polarisation est de dimension 2. On peut choisir comme états de
-base les états de polarisations rectilignes $\lvert X \right\rangle$ et
-$\lvert Y \right\rangle$.
+base les états de polarisations rectilignes $\left| X \right\rangle$ et
+$\left| Y \right\rangle$.
 
-$$\lvert \Psi \right\rangle_{\left\{ \lvert X \right\rangle,\lvert Y \right\rangle \right\}} = \begin{pmatrix}
+$$\left| \Psi \right\rangle_{\left\{ \left| X \right\rangle,\left| Y \right\rangle \right\}} = \begin{pmatrix}
 \left\langle X \middle| \Psi \right\rangle \\
 \left\langle Y \middle| \Psi \right\rangle
 \end{pmatrix}$$
 
 avec :
 
-$$\lvert X \right\rangle_{\left\{ \lvert X \right\rangle,\lvert Y \right\rangle \right\}} = \begin{pmatrix}
+$$\left| X \right\rangle_{\left\{ \left| X \right\rangle,\left| Y \right\rangle \right\}} = \begin{pmatrix}
 \left\langle X \middle| X \right\rangle \\
 \left\langle Y \middle| X \right\rangle
 \end{pmatrix} = \begin{pmatrix}
@@ -755,7 +755,7 @@ $$\lvert X \right\rangle_{\left\{ \lvert X \right\rangle,\lvert Y \right\rangle 
 
 et :
 
-$$\lvert Y \right\rangle_{\left\{ \lvert X \right\rangle,\lvert Y \right\rangle \right\}} = \begin{pmatrix}
+$$\left| Y \right\rangle_{\left\{ \left| X \right\rangle,\left| Y \right\rangle \right\}} = \begin{pmatrix}
 \left\langle X \middle| Y \right\rangle \\
 \left\langle Y \middle| Y \right\rangle
 \end{pmatrix} = \begin{pmatrix}
@@ -766,8 +766,8 @@ $$\lvert Y \right\rangle_{\left\{ \lvert X \right\rangle,\lvert Y \right\rangle 
 ## Amplitudes de localisation
 
 Si à $t$ une particule est « dans l'état
-$\lvert \Psi(t) \right\rangle$ » (décrit par l'état
-$\lvert \Psi(t) \right\rangle$) son amplitude de
+$\left| \Psi(t) \right\rangle$ » (décrit par l'état
+$\left| \Psi(t) \right\rangle$) son amplitude de
 localisation {index}`Amplitude de localisation` à l'abscisse
 est :
 
@@ -802,7 +802,7 @@ probabilité a la dimension inverse de la variable $x$.
 
 La densité de probabilité est liée à l'amplitude de localisation :
 
-$$g(x,t) = \lvert \left\langle x \middle| \Psi(t) \right\rangle \right|^{2} = \Psi^{*}(x,t)\Psi(x,t)$$
+$$g(x,t) = \left| \left\langle x \middle| \Psi(t) \right\rangle \right|^{2} = \Psi^{*}(x,t)\Psi(x,t)$$
 
 La densité de probabilité de présence est donc le module au carré de la
 fonction d\'onde.
@@ -820,7 +820,7 @@ l'unité.
 
 Si :
 
-$$\int_{- \infty}^{+ \infty}{\lvert \left\langle x \middle| \Psi(t) \right\rangle \right|^{2}\; dx} = C$$
+$$\int_{- \infty}^{+ \infty}{\left| \left\langle x \middle| \Psi(t) \right\rangle \right|^{2}\; dx} = C$$
 
 Lorsque $C$ est finie, $\Psi(x,t)$ est dite de carré
 sommable {index}`Fonction d'onde de carré sommable`. On peut
@@ -842,7 +842,7 @@ physique quantique.
 
 > 1°) L'état du système physique à un instant $t$ est complètement
 > défini par la donnée de son vecteur d'état
-> $\lvert \Psi(t) \right\rangle$
+> $\left| \Psi(t) \right\rangle$
 
 > 2°) A toute grandeur physique mesurable A, on associe une observable
 > $\widehat{A}$
@@ -850,19 +850,19 @@ physique quantique.
 >3°) La mesure d'une grandeur physique A ne peut donner comme résultats que l'une des valeurs propres de l'observable associé >$\widehat{A}$.
 
 > 4°) Lors de la mesure d\'une grandeur physique A d\'un système dans un
-> état $\lvert \Psi(t) \right\rangle$ normé à l'unité, la probabilité
+> état $\left| \Psi(t) \right\rangle$ normé à l'unité, la probabilité
 > d\'obtenir comme résultat une valeur propre a~n~ donnée **<u>non
 > dégénérée</u>** est égale à la probabilité de transition de
-> l\'état $\lvert \Psi(t) \right\rangle$ vers l\'état propre associé
-> $\lvert \phi_{n} \right\rangle$ :
-> $\lvert \left\langle \phi_{n} \middle| \Psi(t) \right\rangle \right|^{2}$.
+> l\'état $\left| \Psi(t) \right\rangle$ vers l\'état propre associé
+> $\left| \phi_{n} \right\rangle$ :
+> $\left| \left\langle \phi_{n} \middle| \Psi(t) \right\rangle \right|^{2}$.
 
 > 5°) <u>Si la valeur propre est non dégénérée</u>, l'état du
 > immédiatement après la mesure ayant donné la valeur propre est l'état
 > propre lui correspondant.
 
 Ainsi le postulat 1°) signifie que la donnée de
-$\lvert \Psi(t) \right\rangle$ permet de fournir une réponse à toute
+$\left| \Psi(t) \right\rangle$ permet de fournir une réponse à toute
 question posée expérimentalement.
 
 2°) Une observable est un opérateur hermitique dont les vecteurs propres
@@ -873,21 +873,21 @@ confond avec la probabilité pour trouver le système dans l'état propre
 correspondant.
 
 Supposons que les kets
-$\left\{ \lvert u_{k} \right\rangle\; k = 1,...N \right\}$
+$\left\{ \left| u_{k} \right\rangle\; k = 1,...N \right\}$
 soient kets propres de $\widehat{A}$ avec les valeurs propres de
 $a_{k}$ :
 
-$$\left\langle \Psi \right|\widehat{A}\lvert \Psi \right\rangle = \sum_{i = 1}^{N}{\left\langle \Psi \right|\widehat{A}\lvert u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle} = \sum_{i = 1}^{N}{a_{k}\left\langle \Psi \middle| u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle}$$
+$$\left\langle \Psi \right|\widehat{A}\left| \Psi \right\rangle = \sum_{i = 1}^{N}{\left\langle \Psi \right|\widehat{A}\left| u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle} = \sum_{i = 1}^{N}{a_{k}\left\langle \Psi \middle| u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle}$$
 
 d\'où :
-$\left\langle \Psi \right|\widehat{A}\lvert \Psi \right\rangle = \sum_{i = 1}^{N}{a_{k}P\left( a_{k} \right)}$
+$\left\langle \Psi \right|\widehat{A}\left| \Psi \right\rangle = \sum_{i = 1}^{N}{a_{k}P\left( a_{k} \right)}$
 
 où $P\left( a_{k} \right)$ est la probabilité de trouver la valeur
 propre $a_{k}$. Le nombre correspondant est donc la valeur moyenne de la
 grandeur physique représentée par l'observable $\widehat{A}$ dans
-l\'état $\lvert \Psi \right\rangle$.
+l\'état $\left| \Psi \right\rangle$.
 
-$$\left\langle \widehat{A} \right\rangle_{\Psi} = \left\langle \Psi \right|\widehat{A}\lvert \Psi \right\rangle$$
+$$\left\langle \widehat{A} \right\rangle_{\Psi} = \left\langle \Psi \right|\widehat{A}\left| \Psi \right\rangle$$
 
 ## Mesure de deux grandeurs physiques
 
@@ -897,15 +897,15 @@ lequel le résultat peut être prédit avec certitude est celui pour lequel
 le système est déjà dans un état propre de l'observable correspondant à
 la grandeur physique mesurée. En effet si :
 
-$$\left. \ \lvert \Psi \right.\  \right\rangle = \left. \ \lvert u_{k} \right.\  \right\rangle$$
+$$\left. \ \left| \Psi \right.\  \right\rangle = \left. \ \left| u_{k} \right.\  \right\rangle$$
 
 tous les autres coefficients de développement sur les états
-$\left. \ \lvert u_{l} \right.\  \right\rangle$ ($l \neq k$) sont nuls.
+$\left. \ \left| u_{l} \right.\  \right\rangle$ ($l \neq k$) sont nuls.
 En conséquence une répétition de la mesure immédiatement après la
 première mesure donnera avec certitude le même résultat. L'immédiateté a
 une importance car le système pourrait évoluer (s'il n'était pas
 parfaitement isolé) et ne pas rester dans l'état
-$\left. \ \lvert u_{k} \right.\  \right\rangle$.
+$\left. \ \left| u_{k} \right.\  \right\rangle$.
 
 Soient $\widehat{A}$ et $\widehat{B}$ deux observables associées à des
 grandeurs à mesurer. Par définition leur commutateur {index}`Commutateur` est :
@@ -915,26 +915,26 @@ $$\left\lbrack \widehat{A},\widehat{B} \right\rbrack = \widehat{A}\widehat{B} - 
 S'il est nul on a $\widehat{A}\widehat{B} = \widehat{B}\widehat{A}$ et
 on dit que les observables commutent.
 
-Soit $\left. \ \lvert \Phi \right.\  \right\rangle$ un ket propre de
+Soit $\left. \ \left| \Phi \right.\  \right\rangle$ un ket propre de
 $\widehat{A}$ associé à la valeur propre $a$ :
 
-$$\widehat{A}\lvert \Phi \right\rangle = a\lvert \Phi \right\rangle$$
+$$\widehat{A}\left| \Phi \right\rangle = a\left| \Phi \right\rangle$$
 
 et :
 
-$$\widehat{B}\widehat{A}\lvert \Phi \right\rangle = a\widehat{B}\lvert \Phi \right\rangle$$
+$$\widehat{B}\widehat{A}\left| \Phi \right\rangle = a\widehat{B}\left| \Phi \right\rangle$$
 
 Si $\widehat{A}$ et $\widehat{B}$ commutent on peut donc écrire :
 
-$$\widehat{A}\widehat{B}\lvert \Phi \right\rangle = a\widehat{B}\lvert \Phi \right\rangle$$
+$$\widehat{A}\widehat{B}\left| \Phi \right\rangle = a\widehat{B}\left| \Phi \right\rangle$$
 
-$\widehat{B}\lvert \Phi \right\rangle$ est ket propre de $\widehat{A}$
+$\widehat{B}\left| \Phi \right\rangle$ est ket propre de $\widehat{A}$
 associé à la valeur propre $a$. Or par hypothèse, il y a un seul ket
 propre de $\widehat{A}$ correspondant à cette valeur propre.
-$\lvert \Phi \right\rangle$ et $\widehat{B}\lvert \Phi \right\rangle$
+$\left| \Phi \right\rangle$ et $\widehat{B}\left| \Phi \right\rangle$
 sont proportionnels c'est-à-dire :
 
-$$\widehat{B}\lvert \Phi \right\rangle = b\lvert \Phi \right\rangle$$
+$$\widehat{B}\left| \Phi \right\rangle = b\left| \Phi \right\rangle$$
 
 Ainsi le ket propre de $\widehat{A}$ est aussi ket propre de
 $\widehat{B}$. La même conclusion s'applique à chacun des kets propres
@@ -947,30 +947,30 @@ Il est facile de montrer que réciproquement si $\widehat{A}$ et
 $\widehat{B}$ ont une base de vecteurs propres communs, ils commutent.
 On a alors :
 
-$$\widehat{A}\lvert u_{k} \right\rangle = a_{k}\lvert u_{k} \right\rangle$$
+$$\widehat{A}\left| u_{k} \right\rangle = a_{k}\left| u_{k} \right\rangle$$
 
-$$\widehat{B}\lvert u_{k} \right\rangle = b_{k}\lvert u_{k} \right\rangle$$
+$$\widehat{B}\left| u_{k} \right\rangle = b_{k}\left| u_{k} \right\rangle$$
 
-Soit $\lvert \Psi \right\rangle$ un ket quelconque de $\varepsilon$. On
+Soit $\left| \Psi \right\rangle$ un ket quelconque de $\varepsilon$. On
 peut dire que $\widehat{A}$ et $\widehat{B}$ commutent si la relation
 
-$$\widehat{A}\widehat{B}\lvert \Psi \right\rangle = \widehat{B}\widehat{A}\lvert \Psi \right\rangle$$
+$$\widehat{A}\widehat{B}\left| \Psi \right\rangle = \widehat{B}\widehat{A}\left| \Psi \right\rangle$$
 
 est toujours vérifiée.
 
 Or par hypothèse :
 
-$$\widehat{A}\widehat{B}\lvert u_{k} \right\rangle = \widehat{A}\left( b_{k}\lvert u_{k} \right\rangle \right) = a_{k}b_{k}\lvert u_{k} \right\rangle$$
+$$\widehat{A}\widehat{B}\left| u_{k} \right\rangle = \widehat{A}\left( b_{k}\left| u_{k} \right\rangle \right) = a_{k}b_{k}\left| u_{k} \right\rangle$$
 
-$$\widehat{B}\widehat{A}\lvert u_{k} \right\rangle = \widehat{B}\left( a_{k}\lvert u_{k} \right\rangle \right) = a_{k}b_{k}\lvert u_{k} \right\rangle$$
+$$\widehat{B}\widehat{A}\left| u_{k} \right\rangle = \widehat{B}\left( a_{k}\left| u_{k} \right\rangle \right) = a_{k}b_{k}\left| u_{k} \right\rangle$$
 
 La relation de fermeture permet d\'écrire :
 
-$$\widehat{A}\widehat{B}\lvert \Psi \right\rangle = \sum_{k = 1}^{N}{\widehat{A}\widehat{B}\lvert u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle} = \sum_{k = 1}^{N}{a_{k}b_{k}\lvert u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle}$$
+$$\widehat{A}\widehat{B}\left| \Psi \right\rangle = \sum_{k = 1}^{N}{\widehat{A}\widehat{B}\left| u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle} = \sum_{k = 1}^{N}{a_{k}b_{k}\left| u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle}$$
 
 et
 
-$$\widehat{B}\widehat{A}\lvert \Psi \right\rangle = \sum_{k = 1}^{N}{\widehat{B}\widehat{A}\lvert u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle} = \sum_{k = 1}^{N}{b_{k}a_{k}\lvert u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle}$$
+$$\widehat{B}\widehat{A}\left| \Psi \right\rangle = \sum_{k = 1}^{N}{\widehat{B}\widehat{A}\left| u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle} = \sum_{k = 1}^{N}{b_{k}a_{k}\left| u_{k} \right\rangle\left\langle u_{k} \middle| \Psi \right\rangle}$$
 
 On peut donc conclure que <u>si les observables</u> $\widehat{A}$
 [et</u> $\widehat{B}$ <u>ont une base de vecteurs propres communs
@@ -979,12 +979,12 @@ ils commutent</u>.
 Soient $\widehat{A}$ et $\widehat{B}$ deux observables qui commutent.
 Supposons que la mesure de la grandeur physique représentée par
 $\widehat{A}$ donne le résultat $a_{k}$. L'état du système immédiatement
-après la mesure est $\lvert u_{k} \right\rangle$. Or cet état est ket
+après la mesure est $\left| u_{k} \right\rangle$. Or cet état est ket
 propre de l'observable $\widehat{B}$ avec comme valeur propre $b_{k}$.
 La mesure de la grandeur physique correspondante effectuée immédiatement
 après celle qui est représentée par $\widehat{A}$ donne avec certitude
 le résultat $b_{k}$ et l'état du système reste
-$\lvert u_{k} \right\rangle$.
+$\left| u_{k} \right\rangle$.
 
 Des nouvelles mesures de ces grandeurs donneront les mêmes résultats. On
 dit alors que ces grandeurs physiques sont compatibles {index}`Grandeurs physiques compatibles`.
@@ -995,8 +995,8 @@ obtenus [en mesurant successivement ces deux grandeurs dépendent de
 l\'ordre dans lequel on fait la mesure]. Si la grandeur associée
 à $\widehat{A}$ est mesurée d\'abord et le résultat obtenu est $a_{k}$,
 l\'état du système immédiatement après cette mesure est
-$\lvert u_{k} \right\rangle$. En général il n\'est pas un état propre de
-$\widehat{B}$. Si $\lvert v_{j} \right\rangle$ l\'est, il n\'est pas en
+$\left| u_{k} \right\rangle$. En général il n\'est pas un état propre de
+$\widehat{B}$. Si $\left| v_{j} \right\rangle$ l\'est, il n\'est pas en
 général un état propre de $\widehat{A}$. Une nouvelle mesure de cette
 grandeur ne donne donc pas nécessairement le même résultat que la
 première. <u>Ainsi l\'information obtenue dans une mesure peut être
