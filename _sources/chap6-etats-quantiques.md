@@ -838,12 +838,11 @@ physique quantique.
 > 1°) L'état du système physique à un instant $t$ est complètement
 > défini par la donnée de son vecteur d'état
 > $\left| \Psi(t) \right\rangle$
->
+
 > 2°) A toute grandeur physique mesurable A, on associe une observable
 > $\widehat{A}$
 
-3°) La mesure d'une grandeur physique A ne peut donner comme résultats
-que l'une des valeurs propres de l'observable associé $\widehat{A}$.
+>3°) La mesure d'une grandeur physique A ne peut donner comme résultats que l'une des valeurs propres de l'observable associé >$\widehat{A}$.
 
 > 4°) Lors de la mesure d\'une grandeur physique A d\'un système dans un
 > état $\left| \Psi(t) \right\rangle$ normé à l'unité, la probabilité
@@ -852,7 +851,7 @@ que l'une des valeurs propres de l'observable associé $\widehat{A}$.
 > l\'état $\left| \Psi(t) \right\rangle$ vers l\'état propre associé
 > $\left| \phi_{n} \right\rangle$ :
 > $\left| \left\langle \phi_{n} \middle| \Psi(t) \right\rangle \right|^{2}$.
->
+
 > 5°) <u>Si la valeur propre est non dégénérée</u>, l'état du
 > immédiatement après la mesure ayant donné la valeur propre est l'état
 > propre lui correspondant.
@@ -864,9 +863,9 @@ question posée expérimentalement.
 2°) Une observable est un opérateur hermitique dont les vecteurs propres
 forment une base pour l'espace des états.
 
-4°) [La probabilité pour trouver une valeur propre particulière se
+4°) La probabilité pour trouver une valeur propre particulière se
 confond avec la probabilité pour trouver le système dans l'état propre
-correspondant].
+correspondant.
 
 Supposons que les kets
 $\left\{ \left| u_{k} \right\rangle\; k = 1,...N \right\}$
