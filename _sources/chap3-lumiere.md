@@ -747,20 +747,32 @@ $${mv}^{2}r = \frac{e^{2}}{4\pi\varepsilon_{0}}$$
 
 En tenant compte de la condition de quantification, on obtient :
 
-$$v_{n} = \frac{e^{2}}{4\pi\varepsilon_{0}\text{ℏ}}\frac{1}{n}$$
+```{math}
+:label: eq-vn
 
+v_{n} = \frac{e^{2}}{4\pi\varepsilon_{0}\text{ℏ}}\frac{1}{n}
+```
 L\'expression ci-dessus donne les vitesses tangentielles possibles sur
 les orbites stables de l\'atome de Bohr.
 
 Les rayons des orbites de Bohr sont donnés :
 
-$$r_{n} = \frac{1}{m}\frac{e^{2}}{4\pi\varepsilon_{0}}\frac{1}{v_{n}^{2}} = \frac{1}{m}\frac{4\pi\varepsilon_{0}}{e^{2}}\hslash^{2}n^{2}$$
+```{math}
+:label: eq-rn
 
-soit $r_{n} = {a_{0}n}^{2}$ avec
-$a_{0} = \frac{4\pi\varepsilon_{0}}{me^{2}}\hslash^{2} = 0,53\ 10^{- 10}m$
-le rayon de Bohr
+r_{n} = \frac{1}{m}\frac{e^{2}}{4\pi\varepsilon_{0}}\frac{1}{v_{n}^{2}} = \frac{1}{m}\frac{4\pi\varepsilon_{0}}{e^{2}}\hslash^{2}n^{2}
+```
+soit :
 
-A partir des expressions des vitesses et des rayons des orbites stables
+$$r_{n} = {a_{0}n}^{2}$$
+
+où :
+
+$$a_{0} = \frac{4\pi\varepsilon_{0}}{me^{2}}\hslash^{2} = 0,53\ 10^{- 10}m$$
+
+est le rayon de Bohr.
+
+A partir de l'expression des vitesses {eq}`eq-vn` et du rayon des orbites stables {eq}`eq-rn`
 il est facile de trouver les énergies permises. En effet, l\'énergie
 totale de l\'électron est [^37] :
 
