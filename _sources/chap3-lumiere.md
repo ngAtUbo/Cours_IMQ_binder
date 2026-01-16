@@ -665,7 +665,7 @@ Cette formule est restée sans le moindre fondement théorique pendant
 près de 30 ans.
 
 Pour rendre compte de la stabilité de l\'atome dont le modèle de
-Rutherford ne pouvait rendre compte, Bohr [^36] a formulé l\'hypothèse
+Rutherford ne pouvait rendre compte, Bohr [^36] a formulé l\'hypothèse {cite}`bohr1913constitution`
 qu\'un atome {cite}`bohr2011theory`, conformément au modèle de Jean Perrin, repose sur un
 modèle planétaire où il existe des orbites stables (mouvement circulaire
 uniforme décrit par l'électron), c\'est-à-dire telles que l\'électron ne
